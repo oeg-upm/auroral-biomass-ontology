@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "biom:BiomassSubType" "biom:BiomassType" "biom:BiomassSubGroup" "biom:BiomassGroup" ; /*classes style*/
+	"biom:BiomassSubType" -> "biom:BiomassType" [ label = "rdfs:subClassOf" ];
+	"biom:BiomassSubGroup" -> "biom:BiomassGroup" [ label = "rdfs:subClassOf" ];
+	"biom:BiomassType" -> "biom:BiomassSubGroup" [ label = "rdfs:subClassOf" ];
+
+}
