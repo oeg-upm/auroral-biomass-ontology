@@ -1,0 +1,70 @@
+{
+  "@context" : {
+    "Humidity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity"
+    },
+    "hasAshes" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAshes",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasHumidity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasHumidity",
+      "@type" : "@id"
+    },
+    "narrower" : {
+      "@id" : "https://www.w3.org/ns/org#narrower",
+      "@type" : "@id"
+    },
+    "Biomass" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+    },
+    "BiomassOrigin" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"
+    },
+    "BiomassGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
+    },
+    "BiomassSubGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
+    },
+    "Aches" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches"
+    },
+    "belongsToType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#belongsToType",
+      "@type" : "@id"
+    },
+    "hasSubType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubType",
+      "@type" : "@id"
+    },
+    "broader" : {
+      "@id" : "https://www.w3.org/ns/org#broader",
+      "@type" : "@id"
+    },
+    "hasOrigin" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasOrigin",
+      "@type" : "@id"
+    },
+    "hasGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasGroup",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "hasSubGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup",
+      "@type" : "@id"
+    },
+    "BiomassType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
+    },
+    "BiomassSubType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
+    }
+  }
+}
