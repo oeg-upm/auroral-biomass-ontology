@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="139" parse.nodes="95" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="136" parse.nodes="95" parse.order="free">
       <node id="nid_biom:FruitBiomass">
          <data key="d0">
             <y:ShapeNode>
@@ -41,6 +41,41 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_biom:Fruit">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:Fruit</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_biom:LegumeCrops">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:LegumeCrops</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader1" source="nid_biom:Fruit" target="nid_biom:LegumeCrops">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_biom:ChemicallyTreatedUsedWood">
          <data key="d0">
             <y:ShapeNode>
@@ -65,7 +100,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader1" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:UsedWood">
+    <edge id="eid_skos:broader2" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:UsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -100,7 +135,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader2" source="nid_biom:WholePlant" target="nid_biom:RootCrops">
+    <edge id="eid_skos:broader3" source="nid_biom:WholePlant" target="nid_biom:RootCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -123,7 +158,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader3" source="nid_biom:WholePlant" target="nid_biom:OilSeedCrops">
+    <edge id="eid_skos:broader4" source="nid_biom:WholePlant" target="nid_biom:OilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -134,19 +169,7 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_biom:LegumeCrops">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:LegumeCrops</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader4" source="nid_biom:WholePlant" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:broader5" source="nid_biom:WholePlant" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -169,30 +192,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader5" source="nid_biom:WholePlant" target="nid_biom:Grasses">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="10100.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader6" source="nid_biom:WholePlant" target="nid_https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers">
+    <edge id="eid_skos:broader6" source="nid_biom:WholePlant" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -238,7 +238,18 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader8" source="nid_biom:RootCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader8" source="nid_biom:Grasses" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader9" source="nid_biom:RootCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -261,7 +272,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader9" source="nid_biom:RootCrops" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader10" source="nid_biom:RootCrops" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -284,7 +295,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader10" source="nid_biom:RootCrops" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader11" source="nid_biom:RootCrops" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -295,29 +306,6 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader11" source="nid_biom:Grasses" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://auroral.iot.linkeddata.es/def/biomass#SegregatedWood%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ABarkFromForestryOperations%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22640.5%22%20width%3D%22190%22%20height%3D%2224.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="10270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://auroral.iot.linkeddata.es/def/biomass#SegregatedWood%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ABarkFromForestryOperations%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22640.5%22%20width%3D%22190%22%20height%3D%2224.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
       <node id="nid_biom:PlantationandForest">
          <data key="d0">
             <y:ShapeNode>
@@ -330,17 +318,6 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader12" source="nid_https://auroral.iot.linkeddata.es/def/biomass#SegregatedWood%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ABarkFromForestryOperations%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22640.5%22%20width%3D%22190%22%20height%3D%2224.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" target="nid_biom:PlantationandForest">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_biom:WoodyBiomass">
          <data key="d0">
             <y:ShapeNode>
@@ -353,7 +330,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader13" source="nid_biom:PlantationandForest" target="nid_biom:WoodyBiomass">
+    <edge id="eid_skos:broader12" source="nid_biom:PlantationandForest" target="nid_biom:WoodyBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -364,7 +341,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader14" source="nid_biom:CerealCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader13" source="nid_biom:CerealCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -387,7 +364,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader15" source="nid_biom:NutsandAcorns" target="nid_biom:OrchardAndHorticultureFruit">
+    <edge id="eid_skos:broader14" source="nid_biom:NutsandAcorns" target="nid_biom:OrchardAndHorticultureFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -422,7 +399,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader16" source="nid_biom:GreenSeaWeed" target="nid_biom:MacroAlgae">
+    <edge id="eid_skos:broader15" source="nid_biom:GreenSeaWeed" target="nid_biom:MacroAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -445,7 +422,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader17" source="nid_biom:ChemicallyUntreatedHerbaceousResidues" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
+    <edge id="eid_skos:broader16" source="nid_biom:ChemicallyUntreatedHerbaceousResidues" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -480,7 +457,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader18" source="nid_biom:BroadLeafWithoutBark" target="nid_biom:Stemwood">
+    <edge id="eid_skos:broader17" source="nid_biom:BroadLeafWithoutBark" target="nid_biom:Stemwood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -503,7 +480,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader19" source="nid_biom:BroadLeafWithoutBark" target="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues">
+    <edge id="eid_skos:broader18" source="nid_biom:BroadLeafWithoutBark" target="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -514,7 +491,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader20" source="nid_biom:OilSeedCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader19" source="nid_biom:OilSeedCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -525,7 +502,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader21" source="nid_biom:OilSeedCrops" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader20" source="nid_biom:OilSeedCrops" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -536,7 +513,30 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader22" source="nid_biom:OilSeedCrops" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader21" source="nid_biom:OilSeedCrops" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:Root">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:Root</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader22" source="nid_biom:Root" target="nid_biom:RootCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -593,39 +593,6 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader25" source="nid_https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader26" source="nid_https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader27" source="nid_https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_biom:BroadLeaf">
          <data key="d0">
             <y:ShapeNode>
@@ -650,7 +617,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader28" source="nid_biom:BroadLeaf" target="nid_biom:WhooleTressWithoutRoots">
+    <edge id="eid_skos:broader25" source="nid_biom:BroadLeaf" target="nid_biom:WhooleTressWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -673,7 +640,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader29" source="nid_biom:BroadLeaf" target="nid_biom:WhooleTressWithRoots">
+    <edge id="eid_skos:broader26" source="nid_biom:BroadLeaf" target="nid_biom:WhooleTressWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -696,7 +663,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader30" source="nid_biom:BroadLeaf" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader27" source="nid_biom:BroadLeaf" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -707,7 +674,52 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader31" source="nid_biom:WhooleTressWithRoots" target="nid_biom:PlantationandForest">
+    <edge id="eid_skos:broader28" source="nid_biom:WhooleTressWithRoots" target="nid_biom:PlantationandForest">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:StalksAndLeaves">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:StalksAndLeaves</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader29" source="nid_biom:StalksAndLeaves" target="nid_biom:RootCrops">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader30" source="nid_biom:StalksAndLeaves" target="nid_biom:OilSeedCrops">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader31" source="nid_biom:StalksAndLeaves" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1258,6 +1270,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_biom:SegregatedWood">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="190.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:SegregatedWood</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader56" source="nid_biom:SegregatedWood" target="nid_biom:PlantationandForest">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_biom:Shells">
          <data key="d0">
             <y:ShapeNode>
@@ -1270,30 +1305,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader56" source="nid_biom:Shells" target="nid_biom:Grasses">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://auroral.iot.linkeddata.es/def/biomass#Root%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="9580.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://auroral.iot.linkeddata.es/def/biomass#Root%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader57" source="nid_https://auroral.iot.linkeddata.es/def/biomass#Root%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" target="nid_biom:RootCrops">
+    <edge id="eid_skos:broader57" source="nid_biom:Shells" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1418,17 +1430,6 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader64" source="nid_biom:Seeds" target="nid_https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_biom:Berries">
          <data key="d0">
             <y:ShapeNode>
@@ -1441,7 +1442,52 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader65" source="nid_biom:Seeds" target="nid_biom:Berries">
+    <edge id="eid_skos:broader64" source="nid_biom:Seeds" target="nid_biom:Berries">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:Flowers">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:Flowers</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader65" source="nid_biom:Flowers" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader66" source="nid_biom:Flowers" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader67" source="nid_biom:Flowers" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1464,7 +1510,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader66" source="nid_biom:Pods" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:broader68" source="nid_biom:Pods" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1499,7 +1545,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader67" source="nid_biom:ExhaustedOliveCake" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader69" source="nid_biom:ExhaustedOliveCake" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1522,7 +1568,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader68" source="nid_biom:ShortRotationCoppice" target="nid_biom:WhooleTressWithoutRoots">
+    <edge id="eid_skos:broader70" source="nid_biom:ShortRotationCoppice" target="nid_biom:WhooleTressWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1533,7 +1579,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader69" source="nid_biom:ShortRotationCoppice" target="nid_biom:WhooleTressWithRoots">
+    <edge id="eid_skos:broader71" source="nid_biom:ShortRotationCoppice" target="nid_biom:WhooleTressWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1544,7 +1590,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader70" source="nid_biom:ShortRotationCoppice" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader72" source="nid_biom:ShortRotationCoppice" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1567,7 +1613,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader71" source="nid_biom:WholeBerries" target="nid_biom:ChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:broader73" source="nid_biom:WholeBerries" target="nid_biom:ChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1578,7 +1624,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader72" source="nid_biom:WholeBerries" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader74" source="nid_biom:WholeBerries" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1589,7 +1635,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader73" source="nid_biom:WholeBerries" target="nid_biom:Berries">
+    <edge id="eid_skos:broader75" source="nid_biom:WholeBerries" target="nid_biom:Berries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1600,7 +1646,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader74" source="nid_biom:StumpsOrRoots" target="nid_biom:PlantationandForest">
+    <edge id="eid_skos:broader76" source="nid_biom:StumpsOrRoots" target="nid_biom:PlantationandForest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1611,7 +1657,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower75" source="nid_biom:WoodyBiomass" target="nid_biom:UsedWood">
+    <edge id="eid_skos:narrower77" source="nid_biom:WoodyBiomass" target="nid_biom:UsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1622,7 +1668,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower76" source="nid_biom:WoodyBiomass" target="nid_biom:PlantationandForest">
+    <edge id="eid_skos:narrower78" source="nid_biom:WoodyBiomass" target="nid_biom:PlantationandForest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1633,7 +1679,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower77" source="nid_biom:WoodyBiomass" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
+    <edge id="eid_skos:narrower79" source="nid_biom:WoodyBiomass" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1644,7 +1690,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader78" source="nid_biom:Algae" target="nid_biom:AquaticBiomass">
+    <edge id="eid_skos:broader80" source="nid_biom:Algae" target="nid_biom:AquaticBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1667,7 +1713,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader79" source="nid_biom:Coniferous" target="nid_biom:WhooleTressWithoutRoots">
+    <edge id="eid_skos:broader81" source="nid_biom:Coniferous" target="nid_biom:WhooleTressWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1678,7 +1724,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader80" source="nid_biom:Coniferous" target="nid_biom:WhooleTressWithRoots">
+    <edge id="eid_skos:broader82" source="nid_biom:Coniferous" target="nid_biom:WhooleTressWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1689,7 +1735,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader81" source="nid_biom:Coniferous" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader83" source="nid_biom:Coniferous" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1700,7 +1746,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader82" source="nid_biom:LegumeCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader84" source="nid_biom:LegumeCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1711,7 +1757,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader83" source="nid_biom:LegumeCrops" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader85" source="nid_biom:LegumeCrops" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1722,7 +1768,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader84" source="nid_biom:LegumeCrops" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader86" source="nid_biom:LegumeCrops" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1733,7 +1779,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower85" source="nid_biom:AquaticBiomass" target="nid_biom:Reeds">
+    <edge id="eid_skos:narrower87" source="nid_biom:AquaticBiomass" target="nid_biom:Reeds">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1744,7 +1790,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower86" source="nid_biom:AquaticBiomass" target="nid_biom:LakeAndSeaGrass">
+    <edge id="eid_skos:narrower88" source="nid_biom:AquaticBiomass" target="nid_biom:LakeAndSeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1767,7 +1813,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader87" source="nid_biom:FreshOrGreenConiferous" target="nid_biom:LoggingResidues">
+    <edge id="eid_skos:broader89" source="nid_biom:FreshOrGreenConiferous" target="nid_biom:LoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1778,7 +1824,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader88" source="nid_biom:ChemicallyTreatedFruitResidues" target="nid_biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
+    <edge id="eid_skos:broader90" source="nid_biom:ChemicallyTreatedFruitResidues" target="nid_biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1789,7 +1835,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader89" source="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
+    <edge id="eid_skos:broader91" source="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1812,7 +1858,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader90" source="nid_biom:StoneOrKernelOrFruitFibre" target="nid_biom:StoneOrKernelFruits">
+    <edge id="eid_skos:broader92" source="nid_biom:StoneOrKernelOrFruitFibre" target="nid_biom:StoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1823,7 +1869,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader91" source="nid_biom:StoneOrKernelOrFruitFibre" target="nid_biom:ChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:broader93" source="nid_biom:StoneOrKernelOrFruitFibre" target="nid_biom:ChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1834,7 +1880,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader92" source="nid_biom:StoneOrKernelOrFruitFibre" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader94" source="nid_biom:StoneOrKernelOrFruitFibre" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1857,7 +1903,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader93" source="nid_biom:WithoutBark" target="nid_biom:ChemicallyUntreatedUsedWood">
+    <edge id="eid_skos:broader95" source="nid_biom:WithoutBark" target="nid_biom:ChemicallyUntreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1868,7 +1914,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader94" source="nid_biom:WithoutBark" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:broader96" source="nid_biom:WithoutBark" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1879,7 +1925,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader95" source="nid_biom:WithoutBark" target="nid_biom:ChemicallyTreatedUsedWood">
+    <edge id="eid_skos:broader97" source="nid_biom:WithoutBark" target="nid_biom:ChemicallyTreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1890,7 +1936,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader96" source="nid_biom:Berries" target="nid_biom:OrchardAndHorticultureFruit">
+    <edge id="eid_skos:broader98" source="nid_biom:Berries" target="nid_biom:OrchardAndHorticultureFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1913,7 +1959,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader97" source="nid_biom:OtherReed" target="nid_biom:Reeds">
+    <edge id="eid_skos:broader99" source="nid_biom:OtherReed" target="nid_biom:Reeds">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1924,7 +1970,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader98" source="nid_biom:WhooleTressWithoutRoots" target="nid_biom:PlantationandForest">
+    <edge id="eid_skos:broader100" source="nid_biom:WhooleTressWithoutRoots" target="nid_biom:PlantationandForest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1947,165 +1993,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader99" source="nid_biom:RedSeaWeed" target="nid_biom:MacroAlgae">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="9690.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader100" source="nid_https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" target="nid_biom:RootCrops">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader101" source="nid_https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" target="nid_biom:OilSeedCrops">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader102" source="nid_https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" target="nid_biom:LegumeCrops">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader103" source="nid_https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" target="nid_https://auroral.iot.linkeddata.es/def/biomass#Flowers%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bbiom%3ALegumeCrops%26lt%3B%2Fu%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2210%22%20y%3D%22930%22%20width%3D%22310%22%20height%3D%2219.5%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EFlowers">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_biom:BroadLeafWithBark">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="220.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:BroadLeafWithBark</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader104" source="nid_biom:BroadLeafWithBark" target="nid_biom:Stemwood">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader105" source="nid_biom:BroadLeafWithBark" target="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader106" source="nid_biom:BroadLeafWithBark" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_biom:FibresAndWoodConstituents">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:FibresAndWoodConstituents</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader107" source="nid_biom:FibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_biom:NutsAndAcorns">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="180.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:NutsAndAcorns</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader108" source="nid_biom:NutsAndAcorns" target="nid_biom:ChemicallyUntreatedFruitResidues">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader109" source="nid_biom:NutsAndAcorns" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader101" source="nid_biom:RedSeaWeed" target="nid_biom:MacroAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2128,7 +2016,109 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader110" source="nid_biom:CommonReed" target="nid_biom:Reeds">
+    <edge id="eid_skos:broader102" source="nid_biom:CommonReed" target="nid_biom:Reeds">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:FibresAndWoodConstituents">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:FibresAndWoodConstituents</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader103" source="nid_biom:FibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:NutsAndAcorns">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="180.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:NutsAndAcorns</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader104" source="nid_biom:NutsAndAcorns" target="nid_biom:ChemicallyUntreatedFruitResidues">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader105" source="nid_biom:NutsAndAcorns" target="nid_biom:ChemicallyTreatedFruitResidues">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:BroadLeafWithBark">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="220.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:BroadLeafWithBark</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_skos:broader106" source="nid_biom:BroadLeafWithBark" target="nid_biom:Stemwood">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader107" source="nid_biom:BroadLeafWithBark" target="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:broader108" source="nid_biom:BroadLeafWithBark" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2151,7 +2141,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader111" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader109" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2162,7 +2152,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader112" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader110" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2185,7 +2175,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader113" source="nid_biom:Flesh" target="nid_biom:StoneOrKernelFruits">
+    <edge id="eid_skos:broader111" source="nid_biom:Flesh" target="nid_biom:StoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2196,7 +2186,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader114" source="nid_biom:Flesh" target="nid_biom:Berries">
+    <edge id="eid_skos:broader112" source="nid_biom:Flesh" target="nid_biom:Berries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2219,7 +2209,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader115" source="nid_biom:WholeFruit" target="nid_biom:StoneOrKernelFruits">
+    <edge id="eid_skos:broader113" source="nid_biom:WholeFruit" target="nid_biom:StoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2242,7 +2232,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader116" source="nid_biom:StrawParts" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader114" source="nid_biom:StrawParts" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2253,7 +2243,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader117" source="nid_biom:StrawParts" target="nid_biom:CerealCrops">
+    <edge id="eid_skos:broader115" source="nid_biom:StrawParts" target="nid_biom:CerealCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2276,7 +2266,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader118" source="nid_biom:StoredConiferous" target="nid_biom:LoggingResidues">
+    <edge id="eid_skos:broader116" source="nid_biom:StoredConiferous" target="nid_biom:LoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2299,7 +2289,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader119" source="nid_biom:ConiferousWithoutBark" target="nid_biom:Stemwood">
+    <edge id="eid_skos:broader117" source="nid_biom:ConiferousWithoutBark" target="nid_biom:Stemwood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2310,23 +2300,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader120" source="nid_biom:ConiferousWithoutBark" target="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues">
+    <edge id="eid_skos:broader118" source="nid_biom:ConiferousWithoutBark" target="nid_biom:ChemicallyUntreatedWoodByProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:narrower121" source="nid_biom:HerbaceousBiomass" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:narrower</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2344,12 +2323,23 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader122" source="nid_biom:SeaGrass" target="nid_biom:LakeAndSeaGrass">
+    <edge id="eid_skos:broader119" source="nid_biom:SeaGrass" target="nid_biom:LakeAndSeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_skos:narrower120" source="nid_biom:HerbaceousBiomass" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:narrower</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2367,7 +2357,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader123" source="nid_biom:SegregatedHerbaceous" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader121" source="nid_biom:SegregatedHerbaceous" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2390,7 +2380,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader124" source="nid_biom:Bamboo" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader122" source="nid_biom:Bamboo" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2401,7 +2391,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader125" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
+    <edge id="eid_skos:broader123" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2412,19 +2402,7 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_https://auroral.iot.linkeddata.es/def/biomass#Fruit%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="9590.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://auroral.iot.linkeddata.es/def/biomass#Fruit%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_skos:broader126" source="nid_https://auroral.iot.linkeddata.es/def/biomass#Fruit%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22biom%3ABamboo%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BsnapToPoint%3D1%3Bpoints%3D%5B%5B0.1%2C0%5D%2C%5B0.2%2C0%5D%2C%5B0.3%2C0%5D%2C%5B0.4%2C0%5D%2C%5B0.5%2C0%5D%2C%5B0.6%2C0%5D%2C%5B0.7%2C0%5D%2C%5B0.8%2C0%5D%2C%5B0.9%2C0%5D%2C%5B0%2C0.1%5D%2C%5B0%2C0.3%5D%2C%5B0%2C0.5%5D%2C%5B0%2C0.7%5D%2C%5B0%2C0.9%5D%2C%5B0.1%2C1%5D%2C%5B0.2%2C1%5D%2C%5B0.3%2C1%5D%2C%5B0.4%2C1%5D%2C%5B0.5%2C1%5D%2C%5B0.6%2C1%5D%2C%5B0.7%2C1%5D%2C%5B0.8%2C1%5D%2C%5B0.9%2C1%5D%2C%5B1%2C0.1%5D%2C%5B1%2C0.3%5D%2C%5B1%2C0.5%5D%2C%5B1%2C0.7%5D%2C%5B1%2C0.9%5D%5D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-679%22%20y%3D%22828%22%20width%3D%22190%22%20height%3D%2223%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:broader124" source="nid_biom:LoggingResidues" target="nid_biom:PlantationandForest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2435,18 +2413,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader127" source="nid_biom:LoggingResidues" target="nid_biom:PlantationandForest">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:broader</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_skos:broader128" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:FruitBiomass">
+    <edge id="eid_skos:broader125" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:FruitBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2469,7 +2436,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader129" source="nid_biom:Bushes" target="nid_biom:WhooleTressWithoutRoots">
+    <edge id="eid_skos:broader126" source="nid_biom:Bushes" target="nid_biom:WhooleTressWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2480,7 +2447,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader130" source="nid_biom:Bushes" target="nid_biom:WhooleTressWithRoots">
+    <edge id="eid_skos:broader127" source="nid_biom:Bushes" target="nid_biom:WhooleTressWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2491,7 +2458,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader131" source="nid_biom:Bushes" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader128" source="nid_biom:Bushes" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2526,7 +2493,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:hasSubGroup132" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubGroup">
+    <edge id="eid_biom:hasSubGroup129" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubGroup">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2549,7 +2516,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:hasSubType133" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubType">
+    <edge id="eid_biom:hasSubType130" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2584,7 +2551,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:hasAshes134" source="nid_biom:Biomass" target="nid_biom:Aches">
+    <edge id="eid_biom:hasAshes131" source="nid_biom:Biomass" target="nid_biom:Aches">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2607,7 +2574,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:hasGroup135" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassGroup">
+    <edge id="eid_biom:hasGroup132" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassGroup">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2630,7 +2597,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:hasHumidity136" source="nid_biom:Biomass" target="nid_biom:Humidity">
+    <edge id="eid_biom:hasHumidity133" source="nid_biom:Biomass" target="nid_biom:Humidity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2653,7 +2620,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:belongsToType137" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassType">
+    <edge id="eid_biom:belongsToType134" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2664,7 +2631,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:hasOrigin138" source="nid_biom:Biomass" target="nid_biom:BiomassOrigin">
+    <edge id="eid_biom:hasOrigin135" source="nid_biom:Biomass" target="nid_biom:BiomassOrigin">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
