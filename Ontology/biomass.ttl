@@ -144,7 +144,12 @@ biom:Algae rdf:type owl:NamedIndividual ,
 biom:AquaticBiomass rdf:type owl:NamedIndividual ,
                              biom:BiomassGroup ;
                     skos:narrower biom:LakeAndSeaGrass ,
+<<<<<<< HEAD
+                                  biom:Reeds ;
+                    rdfs:label "Aquatic Biomass" .
+=======
                                   biom:Reeds .
+>>>>>>> dfd2b96fe745330170b5f9aed753e21e35250d61
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Bamboo
@@ -182,7 +187,12 @@ biom:Berries rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Blends
 biom:Blends rdf:type owl:NamedIndividual ,
+<<<<<<< HEAD
+                     biom:BiomassSubGroup ;
+            skos:broader biom:BlendsAndMixtures .
+=======
                      biom:BiomassSubGroup .
+>>>>>>> dfd2b96fe745330170b5f9aed753e21e35250d61
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures
@@ -191,6 +201,40 @@ biom:BlendsAndMixtures rdf:type owl:NamedIndividual ,
                                 biom:BiomassSubGroup ,
                                 biom:BiomassSubType ,
                                 biom:BiomassType ;
+<<<<<<< HEAD
+                       skos:broader biom:Algae ,
+                                    biom:AquaticBiomass ,
+                                    biom:Berries ,
+                                    biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry ,
+                                    biom:ByProductsAndResiduesFromWoodProcessingIndustry ,
+                                    biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry ,
+                                    biom:CerealCrops ,
+                                    biom:ChemicallyTreatedFruitResidues ,
+                                    biom:ChemicallyTreatedHerbaceousResidues ,
+                                    biom:ChemicallyUntreatedFruitResidues ,
+                                    biom:ChemicallyUntreatedHerbaceousResidues ,
+                                    biom:Flowers ,
+                                    biom:FruitBiomass ,
+                                    biom:Grasses ,
+                                    biom:HerbaceousBiomass ,
+                                    biom:HerbaceousBiomassFromAgricultureAndHorticulture ,
+                                    biom:LakeAndSeaGrass ,
+                                    biom:LegumeCrops ,
+                                    biom:LoggingResidues ,
+                                    biom:NutsAndAcorns ,
+                                    biom:OilSeedCrops ,
+                                    biom:OrchardAndHorticultureFruit ,
+                                    biom:PlantationandForest ,
+                                    biom:Reeds ,
+                                    biom:RootCrops ,
+                                    biom:Stemwood ,
+                                    biom:StoneOrKernelFruits ,
+                                    biom:StumpsOrRoots ,
+                                    biom:UsedWood ,
+                                    biom:WhooleTressWithRoots ,
+                                    biom:WhooleTressWithoutRoots ;
+=======
+>>>>>>> dfd2b96fe745330170b5f9aed753e21e35250d61
                        rdfs:label "Blends and mixtures" .
 
 
@@ -244,7 +288,11 @@ biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry rdf:type owl:NamedI
 biom:ByProductsAndResiduesFromWoodProcessingIndustry rdf:type owl:NamedIndividual ,
                                                               biom:BiomassSubGroup ;
                                                      skos:broader biom:WoodyBiomass ;
+<<<<<<< HEAD
+                                                     rdfs:label "by products and residue from wood processing industry" .
+=======
                                                      rdfs:label "by produxcts and residue from wood processing industry" .
+>>>>>>> dfd2b96fe745330170b5f9aed753e21e35250d61
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry
@@ -317,7 +365,12 @@ biom:ChemicallyUntreatedUsedWood rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues
 biom:ChemicallyUntreatedWoodByProductsAndResidues rdf:type owl:NamedIndividual ;
+<<<<<<< HEAD
+                                                  skos:broader biom:ByProductsAndResiduesFromWoodProcessingIndustry ;
+                                                  rdfs:label "Chemically Untreated Wood By products and residues" .
+=======
                                                   skos:broader biom:ByProductsAndResiduesFromWoodProcessingIndustry .
+>>>>>>> dfd2b96fe745330170b5f9aed753e21e35250d61
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#CommonReed
@@ -508,7 +561,12 @@ biom:MicroAlgae rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Mixtures
 biom:Mixtures rdf:type owl:NamedIndividual ,
+<<<<<<< HEAD
+                       biom:BiomassSubGroup ;
+              skos:broader biom:BlendsAndMixtures .
+=======
                        biom:BiomassSubGroup .
+>>>>>>> dfd2b96fe745330170b5f9aed753e21e35250d61
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcorns
@@ -537,7 +595,12 @@ biom:OilSeedCrops rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit
 biom:OrchardAndHorticultureFruit rdf:type owl:NamedIndividual ;
+<<<<<<< HEAD
+                                 skos:broader biom:FruitBiomass ;
+                                 rdfs:label "Orchard and horticulture fruit" .
+=======
                                  skos:broader biom:FruitBiomass .
+>>>>>>> dfd2b96fe745330170b5f9aed753e21e35250d61
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#OtherReed
