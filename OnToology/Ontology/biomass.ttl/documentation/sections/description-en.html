@@ -1,4 +1,61 @@
-<h2 id="desc" class="list">[Ontology Name]: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
+
+
+<h2 id="desc" class="list">Biomass Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+
+    The Biomass ontology represents the hierarchy of the biomass. Figure 1 represets an overview of the main classes, data properties, object properties and instances of the biomass ontology
+</span>
+For the clarity of the figure, in some cases we reuse abrevation. For example to refer to the "Blends and Mixtures"  type that belongs to the " <b>O</b>rchard <b>A</b>nd
+                                                                                                                                                                <b>H</b>orticulture <b>F</b>ruit" group we call it "BlendsAndMixturesOAHF". We take the first letter of each word in the group in upper case
+<figure>
+    <img src="biomass.png" alt="Biomass" style="width:100%">
+    <figcaption>Fig.1 - Overview of the Biomass Ontology.</figcaption>
+</figure>
+
+<h3><a id="ex1"></a>Instantiating Biomass ontology <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+
+<p>
+    To represent the biomass hierarchy, we use the skos relations (<b>skos:narrower</b> and <b>skos:broader</b>). <br />  To specify that one concept has a more generic meaning than another, we use the <b>skos:broader</b> relation.
+    For example, to represent that biom:WoodyBiomass is more generic than biom:PlantationandForest we define the <b>skos:broader </b>relation as : <b>biom:PlantationandForest skos:broader biom:WoodyBiomass.</b> <br />
+    To specify that one concept has a more specific meaning than another, <b> skos:narrower</b> is used. <br />
+    The figure does not contain these relationships for reasons of clarity.
+    Figure 2 shows an example of the use of these relationships.
+    The biomass information represented in the example is as follows:
+</p>
+<p>
+    <strong>
+        Biomass Name:
+    </strong> Briquettes
+    
+</p>
+<p>
+    <strong>
+        Biomass Group:
+    </strong>  Woody Biomass
+   
+</p>
+
+<p>
+    <strong>
+        Biomass Sub-Group:
+    </strong> Plantation Forest
+  
+</p>
+
+<p>
+    <strong>
+        Biomass Type:
+    </strong> Plantation Forest
+   
+</p>
+<p>
+    <strong>
+        Biomass Sub-Type:
+    </strong> Blends and mixtures
+    
+</p>
+<figure>
+    <img src="example1.png" alt="Briquettes description example." style="width:100%">
+    <figcaption>Fig.2 - Briquettes description example.</figcaption>
+</figure>
