@@ -245,6 +245,9 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Algae">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae"/>
     </owl:NamedIndividual>
     
 
@@ -254,29 +257,68 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Algae"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass"/>
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass"/>
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Reeds"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth"/>
+        <rdfs:label>Aquatic Biomass</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Bamboo -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Bamboo">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Grasses"/>
+        <rdfs:label>Bamboo grasses</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Bark -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BarkCTUW -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Bark">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BarkCTUW">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood"/>
+        <rdfs:label>Bark chemically treated used wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BarkCTWBPRFAWC -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BarkCTWBPRFAWC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"/>
+        <rdfs:label>Bark chemically treated wood by products residues fibres and wood constituents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BarkCUUW -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BarkCUUW">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"/>
+        <rdfs:label>Bark chemically untreated used wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BarkCUWBPAR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BarkCUWBPAR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"/>
+        <rdfs:comment>from industry operations</rdfs:comment>
+        <rdfs:label>Bark chemically untreated wood by products and residues</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -286,7 +328,6 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest"/>
         <rdfs:label>Bark from forestry operations</rdfs:label>
     </owl:NamedIndividual>
     
@@ -297,7 +338,6 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues"/>
         <rdfs:label>Bark from industry operations</rdfs:label>
     </owl:NamedIndividual>
     
@@ -309,6 +349,32 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Berries">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FleshBerries"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholeBerries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BerriesCTFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BerriesCTFR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"/>
+        <rdfs:label>Berries chemically treated fruit residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BerriesCUFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BerriesCUFR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"/>
+        <rdfs:label>Berries chemically untreated fruit residues</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -322,52 +388,441 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesSKF -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesSKF">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"/>
+        <rdfs:label>Blends and mixtures stone or kernel fruit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures -->
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <rdfs:label>Blends and mixtures</rdfs:label>
+        <rdfs:label>Blends and Mixtures</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeaf -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeaf">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Algae"/>
+        <rdfs:label>Blends and mixtures algae</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass"/>
+        <rdfs:label>Blends and mixtures aquatic biomass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFFAFPI -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFFAFPI">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"/>
+        <rdfs:label>Blends and mixtures by products and residues from food and  fruit processing industry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFFAHPI -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFFAHPI">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"/>
+        <rdfs:label>Blends and mixtures by products and residues from food and herbaceous procesing industry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFWPI -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFWPI">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry"/>
+        <rdfs:label>Blends and mixtures by products and residues from wood processing industry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Berries"/>
+        <rdfs:label>Blends and mixtures berries</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCTFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCTFR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"/>
+        <rdfs:label>Blends and mixtures chemically treated fruit residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCTHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCTHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <rdfs:label>Blends and mixtures chemically treated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCUFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCUFR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"/>
+        <rdfs:label>Blends and mixtures chemically untreated fruit residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCUHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCUHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
+        <rdfs:label>Blends and mixtures chemically untreated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"/>
+        <rdfs:label>Blends and mixtures cereal crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Flowers"/>
+        <rdfs:label>Blends and mixtures flowers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
+        <rdfs:label>Blends and mixtures forest plantation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass"/>
+        <rdfs:label>Blends and mixtures fruit biomass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Grasses"/>
+        <rdfs:label>Blends and mixtures grasses</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHBFAAH -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHBFAAH">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
+        <rdfs:label>Blends and mixtures herbaceous biomass from agriculture and horticulture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass"/>
+        <rdfs:label>Blends and mixtures herbaceous biomass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLASG -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLASG">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass"/>
+        <rdfs:label>Blends and mixtures leak and sea grass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"/>
+        <rdfs:label>Blends and mixtures logging residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"/>
+        <rdfs:label>Blends and mixtures legume crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNA -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNA">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"/>
+        <rdfs:label>Blends and mixtures nuts and acorns</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOAHF -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOAHF">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"/>
+        <rdfs:label>Blends and mixtures orchard and horticulture fruit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOSC -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOSC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"/>
+        <rdfs:label>Blends and mixtures oil seed crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Reeds"/>
+        <rdfs:label>Blends and mixtures reeeds</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCrops"/>
+        <rdfs:label>Blends and mixtures root crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesSR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesSR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"/>
+        <rdfs:label>Blends And Mixtures Stumps or roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
+        <rdfs:label>Blends and mixtures stemwood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#UsedWood"/>
+        <rdfs:label>Blends and mixtures used wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots"/>
+        <rdfs:label>Blends and mixtures whole trees with roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithoutR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithoutR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots"/>
+        <rdfs:label>Blends and mixtures whole trees without roots</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBark -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBark">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
-        <rdfs:label>Broad leaf with bark</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"/>
+        <rdfs:label>Blends and mixtures woody biomass</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBark -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafSR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBark">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafSR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"/>
+        <rdfs:label>Broad leaf stumps or roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots"/>
+        <rdfs:label>Broad leaf whole trees with roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithoutR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithoutR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots"/>
+        <rdfs:label>Broad Leaf whole trees without roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkCUWBPAR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkCUWBPAR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"/>
+        <rdfs:label>Broad leaf with bark chemically untreated wood by products and residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStem -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStem">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
-        <rdfs:label>Broad leaf without bark</rdfs:label>
+        <rdfs:label>Broad leaf with bark stemwood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkCUWBPAR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkCUWBPAR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"/>
+        <rdfs:label>Broad leaf without bark chemically untreated wood by products and residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStem -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStem">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
+        <rdfs:label>Broad leaf without bark stemwood</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -383,14 +838,35 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Bushes -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BushesSR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Bushes">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BushesSR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"/>
+        <rdfs:label>Bushes stumps or roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots"/>
+        <rdfs:label>Bushes shole trees with roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithoutR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithoutR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots"/>
+        <rdfs:label>Bushes whole trees without roots</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -400,6 +876,10 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFFAFPI"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"/>
         <rdfs:label>By product and residues from food and fruit processing industry</rdfs:label>
     </owl:NamedIndividual>
     
@@ -411,7 +891,10 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"/>
-        <rdfs:label>by produxcts and residue from wood processing industry</rdfs:label>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFWPI"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"/>
+        <rdfs:label>by products and residue from wood processing industry</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -421,7 +904,11 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
-        <rdfs:label>By product and residues From food amd Herbaceous processing industry</rdfs:label>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBPARFFAHPI"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
+        <rdfs:label>By product and residues From food and Herbaceous processing industry</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -432,6 +919,12 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops"/>
+        <rdfs:label>Cereal crops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -448,12 +941,39 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesCTHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesCTHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <rdfs:label>Cereal crops and grasses chemically treated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesCUHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesCUHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
+        <rdfs:label>Cereal crops and grasses chemically untreated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues -->
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BerriesCTFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCTFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeCTFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsCTFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsCTFR"/>
         <rdfs:label>Chemically treated fruit residues</rdfs:label>
     </owl:NamedIndividual>
     
@@ -465,6 +985,12 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCTHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesCTHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FlowersCTHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsCTHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsCTHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCropsCTHR"/>
         <rdfs:label>Chemically treated herbaceous residues</rdfs:label>
     </owl:NamedIndividual>
     
@@ -476,6 +1002,9 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#UsedWood"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BarkCTUW"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WithBarkCTUW"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCTUW"/>
         <rdfs:label>Chemically treated used wood</rdfs:label>
     </owl:NamedIndividual>
     
@@ -486,6 +1015,11 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BarkCTWBPRFAWC"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsCTWBPRFAWC"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WithBarkCTWBPRFAWC"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCTWBPRFAWC"/>
         <rdfs:label>Chemically treated wood by products residues fibres and wood constituents</rdfs:label>
     </owl:NamedIndividual>
     
@@ -497,6 +1031,11 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BerriesCUFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCUFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeCUFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsCUFR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreCUFR"/>
         <rdfs:label>Chemically untreated fruit residues</rdfs:label>
     </owl:NamedIndividual>
     
@@ -508,6 +1047,12 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCUHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesCUHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FlowersCUHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsCUHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsCUHR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCropsCUHR"/>
         <rdfs:label>Chemically untreated herbaceous residues</rdfs:label>
     </owl:NamedIndividual>
     
@@ -519,16 +1064,26 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#UsedWood"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BarkCUUW"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WithBrakCUUW"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCUUW"/>
         <rdfs:label>Chemically untreated used wood</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BarkCUWBPAR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkCUWBPAR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkCUWBPAR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakCUWBPAR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkCUWBPAR"/>
+        <rdfs:label>Chemically untreated wood by products and residues</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -544,82 +1099,133 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Coniferous -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousSR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Coniferous">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousSR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"/>
+        <rdfs:label>Coniferous stumps or roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots"/>
+        <rdfs:label>Coniferous whole trees with roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithoutR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithoutR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots"/>
+        <rdfs:label>Coniferous Whole trees without roots</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBark -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStem -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBark">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStem">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
-        <rdfs:label>Coniferous with bark</rdfs:label>
+        <rdfs:label>Coniferous with bark stemwood</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBark -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakCUWBPAR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBark">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakCUWBPAR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodByProductsAndResidues"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
-        <rdfs:label>Coniferous without bark</rdfs:label>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"/>
+        <rdfs:label>Coniferous with bark chemically untreated wood by products and residues</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCake -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkCUWBPAR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCake">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkCUWBPAR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"/>
+        <rdfs:label>Coniferous without bark chemically untreated wood by products and residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStem -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStem">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
+        <rdfs:label>Coniferous without bark stemwood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeCUFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeCUFR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"/>
-        <rdfs:label>Crude olive cake</rdfs:label>
+        <rdfs:label>Crude olive cake chemically untreated fruit residues</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCake -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeCTFR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCake">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeCTFR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"/>
-        <rdfs:label>Exhausted Olive Cake</rdfs:label>
+        <rdfs:label>Exhausted olive cake chemically treated fruit residues</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituents -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsCTWBPRFAWC -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituents">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsCTWBPRFAWC">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"/>
-        <rdfs:label>Fibres and wood constituents</rdfs:label>
+        <rdfs:label>Fibres and wood constituents chemically treated wood by products residues fibres and wood constituents</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Flesh -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#FleshBerries -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Flesh">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FleshBerries">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Berries"/>
+        <rdfs:label>Flesh berries</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#FleshSKF -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FleshSKF">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"/>
+        <rdfs:label>Flesh stone or kernel fruits</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -629,10 +1235,52 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Flowers">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers"/>
         <rdfs:label>Flowers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#FlowersCTHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FlowersCTHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <rdfs:label>Flowers chemically treated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#FlowersCUHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FlowersCUHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
+        <rdfs:label>Flowers chemically untreated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SegregatedWood"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Stemwood"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots"/>
+        <rdfs:label>Forest Plantation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -643,6 +1291,7 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"/>
+        <rdfs:comment>Fresh or green broad leaf  (including leaves)</rdfs:comment>
         <rdfs:label>Fresh or green broad leaf</rdfs:label>
     </owl:NamedIndividual>
     
@@ -654,17 +1303,8 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"/>
+        <rdfs:comment>Fresh or green coniferous (including needles)</rdfs:comment>
         <rdfs:label>Fresh or green coniferous</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Fruit -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Fruit">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"/>
     </owl:NamedIndividual>
     
 
@@ -674,18 +1314,32 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"/>
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"/>
+        <rdfs:label>Fruit Biomass</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeeds -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeeds">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"/>
+        <rdfs:label>Fruit legume Crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"/>
-        <rdfs:label>Grains or seeds</rdfs:label>
+        <rdfs:label>Grains or seeds cereal crops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -696,6 +1350,12 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Grasses">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses"/>
     </owl:NamedIndividual>
     
 
@@ -716,7 +1376,10 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"/>
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
+        <rdfs:label>Herbaceous Biomass</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -727,30 +1390,48 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHBFAAH"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Flowers"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Grasses"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceous"/>
         <rdfs:label>Herbaceous biomass from agriculture and horticulture</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#HusksOrShells -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShells">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"/>
-        <rdfs:label>Husks or shells</rdfs:label>
+        <rdfs:label>Husks or shells cereal crops</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Kernels -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOSC -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Kernels">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOSC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"/>
+        <rdfs:label>Husks or shells oil seed crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#KernelsNA -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#KernelsNA">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"/>
+        <rdfs:label>kernels nuts and acorns</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -761,6 +1442,9 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLASG"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LakeGrass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SeaGrass"/>
         <rdfs:label>Lake and sea grass</rdfs:label>
     </owl:NamedIndividual>
     
@@ -782,10 +1466,35 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
-        <rdfs:label>Legume corps</rdfs:label>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops"/>
+        <rdfs:label>Legume crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsCTHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsCTHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <rdfs:label>Legume crops chemically treated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsCUHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsCUHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
+        <rdfs:label>Legume crops chemically untreated herbaceous residues</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -795,7 +1504,12 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous"/>
         <rdfs:label>Logging residues</rdfs:label>
     </owl:NamedIndividual>
     
@@ -807,6 +1521,9 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Algae"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed"/>
         <rdfs:label>Macro algae</rdfs:label>
     </owl:NamedIndividual>
     
@@ -832,14 +1549,24 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcorns -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsCTFR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcorns">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsCTFR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"/>
+        <rdfs:label>Nuts and acorns chemically treated fruit residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsCUFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsCUFR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"/>
-        <rdfs:label>Nuts and Acorns</rdfs:label>
+        <rdfs:label>Nuts and acorns chemically untreated fruit residues</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -850,6 +1577,10 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNA"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#KernelsNA"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNA"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholeNuts"/>
         <rdfs:label>Nuts and acorns</rdfs:label>
     </owl:NamedIndividual>
     
@@ -860,10 +1591,35 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOSC"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOSC"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SeedsOSC"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOSC"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholePlantOSC"/>
         <rdfs:label>OIl seed corps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsCTHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsCTHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <rdfs:label>Oil seed crops chemically treated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsCUHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsCUHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
+        <rdfs:label>Oil seed chemically untreated herbaceous residues</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -872,7 +1628,13 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Berries"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOAHF"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"/>
+        <rdfs:label>Orchard and horticulture fruit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -888,23 +1650,13 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"/>
-        <rdfs:label>Plantation and Forest</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Pods -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Pods">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"/>
+        <rdfs:label>Pods legume crops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -926,16 +1678,9 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Reeds">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Root -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Root">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CommonReed"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OtherReed"/>
     </owl:NamedIndividual>
     
 
@@ -945,10 +1690,45 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#RootCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops"/>
         <rdfs:label>Root corps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#RootCropsCTHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#RootCropsCTHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <rdfs:label>Root crops chemically treated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#RootCropsCUHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#RootCropsCUHR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"/>
+        <rdfs:label>Root crops chemically untreated herbaceous residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCrops"/>
+        <rdfs:label>Root root crops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -959,19 +1739,50 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SeaGrass">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass"/>
-        <rdfs:label>sea grass</rdfs:label>
+        <rdfs:label>Sea grass</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Seeds -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Seeds">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Berries"/>
+        <rdfs:label>Seeds berries</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Flowers"/>
+        <rdfs:label>Seeds Flowers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Grasses"/>
+        <rdfs:label>Seeds grasses</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#SeedsOSC -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SeedsOSC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"/>
+        <rdfs:label>Seeds oil seed crops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -982,7 +1793,7 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceous">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"/>
-        <rdfs:label>segregated herbaceous</rdfs:label>
+        <rdfs:label>Segregated herbaceous</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -992,44 +1803,107 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SegregatedWood">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest"/>
-        <rdfs:label>segregated wood</rdfs:label>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
+        <rdfs:label>Segregated wood</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#Shells -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Shells">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Grasses"/>
+        <rdfs:label>Shells Grasses</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppice -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNA -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppice">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNA">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"/>
+        <rdfs:label>Shells or husks nuts and acorns</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceSR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceSR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots"/>
-        <rdfs:label>Short rotation coppice</rdfs:label>
+        <rdfs:label>Short rotation coppice stumps or roots</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeaves">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots"/>
+        <rdfs:label>Short rotation coppice whole trees with roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithoutR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithoutR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots"/>
+        <rdfs:label>Short rotation coppice whole trees without roots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Flowers"/>
+        <rdfs:label>Stalks and leaves flowers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"/>
+        <rdfs:label>Stalks and leaves legume crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOSC -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOSC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"/>
+        <rdfs:label>Stalks and leaves oil seed crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCrops"/>
-        <rdfs:label>Stalks and Leaves</rdfs:label>
+        <rdfs:label>Stalks and leaves root crops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1039,7 +1913,13 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Stemwood">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <rdfs:label>stem wood</rdfs:label>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStem"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStem"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStem"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStem"/>
+        <rdfs:label>Stemwood</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1048,21 +1928,44 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"/>
-        <rdfs:label>stone or kernel fruits</rdfs:label>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesSKF"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#FleshSKF"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreSKF"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WholeFruitSKF"/>
+        <rdfs:label>Stone or kernel fruits</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibre -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsCTFR -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibre">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsCTFR">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"/>
+        <rdfs:label>Stone or kernels fruits chemically treated fuit residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreCUFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreCUFR">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"/>
+        <rdfs:label>Stone or kernel fruits or fruit fibre chemically untreated fruit residues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreSKF -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreSKF">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"/>
         <rdfs:label>Stone or kernel or fruit fibre</rdfs:label>
     </owl:NamedIndividual>
@@ -1091,14 +1994,24 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#StrawParts -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StrawParts">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"/>
+        <rdfs:label>Straw parts cereal crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Grasses"/>
-        <rdfs:label>Straw parts</rdfs:label>
+        <rdfs:label>Straw parts grasses</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1108,8 +2021,13 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest"/>
-        <rdfs:label>stumps or roots</rdfs:label>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesSR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafSR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BushesSR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ConiferousSR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceSR"/>
+        <rdfs:label>Stumps or roots</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1119,6 +2037,10 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#UsedWood">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"/>
         <rdfs:label>Used wood</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1141,8 +2063,6 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholeBerries">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Berries"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"/>
         <rdfs:label>Whole berries</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1158,6 +2078,17 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholeFruitSKF -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholeFruitSKF">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"/>
+        <rdfs:label>Whole fruit stone or kernel fruits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/biomass#WholeNuts -->
 
 
@@ -1169,17 +2100,68 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholePlant -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholePlant">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"/>
+        <rdfs:label>Whole plant cereal crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Flowers"/>
+        <rdfs:label>Whole plant flowers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Grasses"/>
+        <rdfs:label>Whole plant grasses</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"/>
+        <rdfs:label>Whole plant legume crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholePlantOSC -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholePlantOSC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"/>
+        <rdfs:label>Whole plant oil seed crops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#RootCrops"/>
-        <rdfs:label>Whole plant</rdfs:label>
+        <rdfs:label>Whole plant root crops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1189,8 +2171,13 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest"/>
-        <rdfs:label>Whoole trees with roots</rdfs:label>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithR"/>
+        <rdfs:label>Whole tree with roots</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1200,34 +2187,79 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithoutR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithoutR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithoutR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithoutR"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithoutR"/>
         <rdfs:label>Whole tree without roots</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithBark -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithBarkCTUW -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithBark">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithBarkCTUW">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"/>
-        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"/>
-        <rdfs:label>with bark</rdfs:label>
+        <rdfs:label>With bark chemically treated used  wood</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithoutBark -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithBarkCTWBPRFAWC -->
 
 
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithoutBark">
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithBarkCTWBPRFAWC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"/>
+        <rdfs:label>With bark chemically treated wood by products residues fibres and wood constituents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithBrakCUUW -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithBrakCUUW">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+        <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"/>
+        <rdfs:label>With bark chemically untreated used wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCTUW -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCTUW">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood"/>
+        <rdfs:label>Without bark chemically treated used wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCTWBPRFAWC -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCTWBPRFAWC">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"/>
+        <rdfs:label>Without bark chemically treated wood by products residues fibres and wood constituents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCUUW -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkCUUW">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
         <org:broader rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"/>
-        <rdfs:label>Without bark</rdfs:label>
+        <rdfs:label>Without bark chemically untreated used wood</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1237,9 +2269,11 @@
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass"/>
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry"/>
-        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#PlantationandForest"/>
+        <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#UsedWood"/>
+        <rdfs:label>Woody Biomass</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

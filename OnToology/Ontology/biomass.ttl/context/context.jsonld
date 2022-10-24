@@ -49,6 +49,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasOrigin",
       "@type" : "@id"
     },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
     "hasGroup" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasGroup",
       "@type" : "@id"
