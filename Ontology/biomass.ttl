@@ -84,6 +84,80 @@ skos:narrower rdf:type owl:ObjectProperty ;
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/biomass#dimension
+biom:dimension rdf:type owl:DatatypeProperty ;
+               rdfs:domain biom:Biomass ;
+               rdfs:range xsd:string .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasDescription
+biom:hasDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain biom:Aches ,
+                                biom:BiomassGroup ,
+                                biom:BiomassOrigin ,
+                                biom:Humidity ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "has Description" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasID
+biom:hasID rdf:type owl:DatatypeProperty ;
+           rdfs:domain biom:Aches ,
+                       biom:Biomass ,
+                       biom:BiomassGroup ,
+                       biom:BiomassOrigin ,
+                       biom:Humidity ;
+           rdfs:range xsd:string ;
+           rdfs:label "has ID" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasName
+biom:hasName rdf:type owl:DatatypeProperty ;
+             rdfs:domain biom:Aches ,
+                         biom:Biomass ,
+                         biom:BiomassGroup ,
+                         biom:Humidity ;
+             rdfs:range xsd:string ;
+             rdfs:label "has Name" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg
+biom:pciKwhPerKg rdf:type owl:DatatypeProperty ;
+                 rdfs:domain biom:Biomass ;
+                 rdfs:range xsd:string .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg
+biom:pcimjPerKg rdf:type owl:DatatypeProperty ;
+                rdfs:domain biom:Biomass ;
+                rdfs:range xsd:string .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost
+biom:primaryEnergyCost rdf:type owl:DatatypeProperty ;
+                       rdfs:domain biom:Biomass ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "primary Energy Cost" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs
+biom:primaryEnergyCostObs rdf:type owl:DatatypeProperty ;
+                          rdfs:domain biom:Biomass ;
+                          rdfs:range xsd:string ;
+                          rdfs:label "primary Energy Cost Obs" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#tradingForm
+biom:tradingForm rdf:type owl:DatatypeProperty ;
+                 rdfs:domain biom:Biomass ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "trading Form" .
+
+
+#################################################################
 #    Classes
 #################################################################
 
