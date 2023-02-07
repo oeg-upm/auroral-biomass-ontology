@@ -517,14 +517,14 @@ biom:BlendsAndMixturesUsedWood rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithR
 biom:BlendsAndMixturesWTwithR rdf:type owl:NamedIndividual ,
                                        biom:BiomassSubType ;
-                              skos:broader biom:WhooleTressWithRoots ;
+                              skos:broader biom:WholeTreesWithRoots ;
                               rdfs:label "Blends and mixtures whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWTwithoutR
 biom:BlendsAndMixturesWTwithoutR rdf:type owl:NamedIndividual ,
                                           biom:BiomassSubType ;
-                                 skos:broader biom:WhooleTressWithoutRoots ;
+                                 skos:broader biom:WholeTreesWithoutRoots ;
                                  rdfs:label "Blends and mixtures whole trees without roots" .
 
 
@@ -545,14 +545,14 @@ biom:BroadLeafSR rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithR
 biom:BroadLeafWTwithR rdf:type owl:NamedIndividual ,
                                biom:BiomassSubType ;
-                      skos:broader biom:WhooleTressWithRoots ;
+                      skos:broader biom:WholeTreesWithRoots ;
                       rdfs:label "Broad leaf whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWTwithoutR
 biom:BroadLeafWTwithoutR rdf:type owl:NamedIndividual ,
                                   biom:BiomassSubType ;
-                         skos:broader biom:WhooleTressWithoutRoots ;
+                         skos:broader biom:WholeTreesWithoutRoots ;
                          rdfs:label "Broad Leaf whole trees without roots" .
 
 
@@ -601,14 +601,14 @@ biom:BushesSR rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithR
 biom:BushesWTwithR rdf:type owl:NamedIndividual ,
                             biom:BiomassSubType ;
-                   skos:broader biom:WhooleTressWithRoots ;
+                   skos:broader biom:WholeTreesWithRoots ;
                    rdfs:label "Bushes shole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BushesWTwithoutR
 biom:BushesWTwithoutR rdf:type owl:NamedIndividual ,
                                biom:BiomassSubType ;
-                      skos:broader biom:WhooleTressWithoutRoots ;
+                      skos:broader biom:WholeTreesWithoutRoots ;
                       rdfs:label "Bushes whole trees without roots" .
 
 
@@ -786,14 +786,14 @@ biom:ConiferousSR rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithR
 biom:ConiferousWTwithR rdf:type owl:NamedIndividual ,
                                 biom:BiomassSubType ;
-                       skos:broader biom:WhooleTressWithRoots ;
+                       skos:broader biom:WholeTreesWithRoots ;
                        rdfs:label "Coniferous whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWTwithoutR
 biom:ConiferousWTwithoutR rdf:type owl:NamedIndividual ,
                                    biom:BiomassSubType ;
-                          skos:broader biom:WhooleTressWithoutRoots ;
+                          skos:broader biom:WholeTreesWithoutRoots ;
                           rdfs:label "Coniferous Whole trees without roots" .
 
 
@@ -893,8 +893,8 @@ biom:ForestPlantation rdf:type owl:NamedIndividual ,
                                     biom:SegregatedWood ,
                                     biom:Stemwood ,
                                     biom:StumpsOrRoots ,
-                                    biom:WhooleTressWithRoots ,
-                                    biom:WhooleTressWithoutRoots ;
+                                    biom:WholeTreesWithRoots ,
+                                    biom:WholeTreesWithoutRoots ;
                       rdfs:label "Forest Plantation" .
 
 
@@ -976,7 +976,7 @@ biom:HerbaceousBiomassFromAgricultureAndHorticulture rdf:type owl:NamedIndividua
                                                                    biom:LegumeCrops ,
                                                                    biom:OilSeedCrops ,
                                                                    biom:RootCrops ,
-                                                                   biom:SegregatedHerbaceous ;
+                                                                   biom:SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards ;
                                                      rdfs:label "Herbaceous biomass from agriculture and horticulture" .
 
 
@@ -1236,11 +1236,11 @@ biom:SeedsOSC rdf:type owl:NamedIndividual ,
               rdfs:label "Seeds oil seed crops" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceous
-biom:SegregatedHerbaceous rdf:type owl:NamedIndividual ,
-                                   biom:BiomassType ;
-                          skos:broader biom:HerbaceousBiomassFromAgricultureAndHorticulture ;
-                          rdfs:label "Segregated herbaceous" .
+###  https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards
+biom:SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards rdf:type owl:NamedIndividual ,
+                                                                                                      biom:BiomassType ;
+                                                                                             skos:broader biom:HerbaceousBiomassFromAgricultureAndHorticulture ;
+                                                                                             rdfs:label "Segregated herbaceous" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#SegregatedWood
@@ -1274,14 +1274,14 @@ biom:ShortRotationCoppiceSR rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithR
 biom:ShortRotationCoppiceWTwithR rdf:type owl:NamedIndividual ,
                                           biom:BiomassSubType ;
-                                 skos:broader biom:WhooleTressWithRoots ;
+                                 skos:broader biom:WholeTreesWithRoots ;
                                  rdfs:label "Short rotation coppice whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWTwithoutR
 biom:ShortRotationCoppiceWTwithoutR rdf:type owl:NamedIndividual ,
                                              biom:BiomassSubType ;
-                                    skos:broader biom:WhooleTressWithoutRoots ;
+                                    skos:broader biom:WholeTreesWithoutRoots ;
                                     rdfs:label "Short rotation coppice whole trees without roots" .
 
 
@@ -1483,28 +1483,28 @@ biom:WholePlantRootCrops rdf:type owl:NamedIndividual ,
                          rdfs:label "Whole plant root crops" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithRoots
-biom:WhooleTressWithRoots rdf:type owl:NamedIndividual ,
-                                   biom:BiomassType ;
-                          skos:broader biom:ForestPlantation ;
-                          skos:narrower biom:BlendsAndMixturesWTwithR ,
-                                        biom:BroadLeafWTwithR ,
-                                        biom:BushesWTwithR ,
-                                        biom:ConiferousWTwithR ,
-                                        biom:ShortRotationCoppiceWTwithR ;
-                          rdfs:label "Whole tree with roots" .
+###  https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots
+biom:WholeTreesWithRoots rdf:type owl:NamedIndividual ,
+                                  biom:BiomassType ;
+                         skos:broader biom:ForestPlantation ;
+                         skos:narrower biom:BlendsAndMixturesWTwithR ,
+                                       biom:BroadLeafWTwithR ,
+                                       biom:BushesWTwithR ,
+                                       biom:ConiferousWTwithR ,
+                                       biom:ShortRotationCoppiceWTwithR ;
+                         rdfs:label "Whole trees with roots" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#WhooleTressWithoutRoots
-biom:WhooleTressWithoutRoots rdf:type owl:NamedIndividual ,
-                                      biom:BiomassType ;
-                             skos:broader biom:ForestPlantation ;
-                             skos:narrower biom:BlendsAndMixturesWTwithoutR ,
-                                           biom:BroadLeafWTwithoutR ,
-                                           biom:BushesWTwithoutR ,
-                                           biom:ConiferousWTwithoutR ,
-                                           biom:ShortRotationCoppiceWTwithoutR ;
-                             rdfs:label "Whole tree without roots" .
+###  https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots
+biom:WholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
+                                     biom:BiomassType ;
+                            skos:broader biom:ForestPlantation ;
+                            skos:narrower biom:BlendsAndMixturesWTwithoutR ,
+                                          biom:BroadLeafWTwithoutR ,
+                                          biom:BushesWTwithoutR ,
+                                          biom:ConiferousWTwithoutR ,
+                                          biom:ShortRotationCoppiceWTwithoutR ;
+                            rdfs:label "Whole trees without roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WithBarkCTUW
