@@ -237,31 +237,31 @@ biom:BambooGrasses rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood
 biom:BarkChemicallyTreatedUsedWood rdf:type owl:NamedIndividual ,
-                       biom:BiomassSubType ;
-              skos:broader biom:ChemicallyTreatedUsedWood ;
-              rdfs:label "Bark chemically treated used wood" .
+                                            biom:BiomassSubType ;
+                                   skos:broader biom:ChemicallyTreatedUsedWood ;
+                                   rdfs:label "Bark chemically treated used wood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 biom:BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents rdf:type owl:NamedIndividual ,
-                             biom:BiomassSubType ;
-                    skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
-                    rdfs:label "Bark chemically treated wood by products residues fibres and wood constituents" .
+                                                                                   biom:BiomassSubType ;
+                                                                          skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
+                                                                          rdfs:label "Bark chemically treated wood by products residues fibres and wood constituents" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood
 biom:BarkChemicallyUntreatedUsedWood rdf:type owl:NamedIndividual ,
-                       biom:BiomassSubType ;
-              skos:broader biom:ChemicallyUntreatedUsedWood ;
-              rdfs:label "Bark chemically untreated used wood" .
+                                              biom:BiomassSubType ;
+                                     skos:broader biom:ChemicallyUntreatedUsedWood ;
+                                     rdfs:label "Bark chemically untreated used wood" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodbyProductsAndResidues
-biom:BarkChemicallyUntreatedWoodbyProductsAndResidues rdf:type owl:NamedIndividual ,
-                          biom:BiomassSubType ;
-                 skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
-                 rdfs:comment "from industry operations" ;
-                 rdfs:label "Bark chemically untreated wood by products and residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues
+biom:BarkChemicallyUntreatedWoodByProductsAndResidues rdf:type owl:NamedIndividual ,
+                                                               biom:BiomassSubType ;
+                                                      skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
+                                                      rdfs:comment "from industry operations" ;
+                                                      rdfs:label "Bark chemically untreated wood by products and residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations
@@ -271,7 +271,7 @@ biom:BarkFromForestryOperations rdf:type owl:NamedIndividual ,
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations
-biom:BarkFromIndustryOperationsChemicallyUntreatedWoodbyProductsAndResidues rdf:type owl:NamedIndividual ,
+biom:BarkFromIndustryOperations rdf:type owl:NamedIndividual ,
                                          biom:BiomassSubType ;
                                 rdfs:label "Bark from industry operations" .
 
@@ -288,16 +288,16 @@ biom:Berries rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyTreatedFruitResidues
 biom:BerriesChemicallyTreatedFruitResidues rdf:type owl:NamedIndividual ,
-                          biom:BiomassSubType ;
-                 skos:broader biom:ChemicallyTreatedFruitResidues ;
-                 rdfs:label "Berries chemically treated fruit residues" .
+                                                    biom:BiomassSubType ;
+                                           skos:broader biom:ChemicallyTreatedFruitResidues ;
+                                           rdfs:label "Berries chemically treated fruit residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues
 biom:BerriesChemicallyUntreatedFruitResidues rdf:type owl:NamedIndividual ,
-                          biom:BiomassSubType ;
-                 skos:broader biom:ChemicallyUntreatedFruitResidues ;
-                 rdfs:label "Berries chemically untreated fruit residues" .
+                                                      biom:BiomassSubType ;
+                                             skos:broader biom:ChemicallyUntreatedFruitResidues ;
+                                             rdfs:label "Berries chemically untreated fruit residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Blends
@@ -305,11 +305,11 @@ biom:Blends rdf:type owl:NamedIndividual ,
                      biom:BiomassSubGroup .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruits
-biom:BlendsAndMIxturesStoneOrKernelFruits rdf:type owl:NamedIndividual ,
-                                   biom:BiomassSubType ;
-                          skos:broader biom:StoneOrKernelFruits ;
-                          rdfs:label "Blends and mixtures stone or kernel fruit" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruit
+biom:BlendsAndMIxturesStoneOrKernelFruit rdf:type owl:NamedIndividual ,
+                                                  biom:BiomassSubType ;
+                                         skos:broader biom:StoneOrKernelFruits ;
+                                         rdfs:label "Blends and mixtures stone or kernel fruit" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures
@@ -332,27 +332,6 @@ biom:BlendsAndMixturesAquaticBiomass rdf:type owl:NamedIndividual ,
                                      rdfs:label "Blends and mixtures aquatic biomass" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry
-biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry rdf:type owl:NamedIndividual ,
-                                          biom:BiomassType ;
-                                 skos:broader biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry ;
-                                 rdfs:label "Blends and mixtures by products and residues from food and  fruit processing industry" .
-
-
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry
-biom:BlendsAndMixturesByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry rdf:type owl:NamedIndividual ,
-                                          biom:BiomassType ;
-                                 skos:broader biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry ;
-                                 rdfs:label "Blends and mixtures by products and residues from food and herbaceous procesing industry" .
-
-
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry
-biom:BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry rdf:type owl:NamedIndividual ,
-                                        biom:BiomassType ;
-                               skos:broader biom:ByProductsAndResiduesFromWoodProcessingIndustry ;
-                               rdfs:label "Blends and mixtures by products and residues from wood processing industry" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries
 biom:BlendsAndMixturesBerries rdf:type owl:NamedIndividual ,
                                        biom:BiomassSubType ;
@@ -360,32 +339,25 @@ biom:BlendsAndMixturesBerries rdf:type owl:NamedIndividual ,
                               rdfs:label "Blends and mixtures berries" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues
-biom:BlendsAndMixturesChemicallyTreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                    biom:BiomassSubType ;
-                           skos:broader biom:ChemicallyTreatedFruitResidues ;
-                           rdfs:label "Blends and mixtures chemically treated fruit residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry
+biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry rdf:type owl:NamedIndividual ,
+                                                                                       biom:BiomassType ;
+                                                                              skos:broader biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry ;
+                                                                              rdfs:label "Blends and mixtures by products and residues from food and  fruit processing industry" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues
-biom:BlendsAndMixturesChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                                    biom:BiomassSubType ;
-                           skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
-                           rdfs:label "Blends and mixtures chemically treated herbaceous residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry
+biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry rdf:type owl:NamedIndividual ,
+                                                                                           biom:BiomassType ;
+                                                                                  skos:broader biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry ;
+                                                                                  rdfs:label "Blends and mixtures by products and residues from food and herbaceous procesing industry" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues
-biom:BlendsAndMixturesChemicallyUntreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                    biom:BiomassSubType ;
-                           skos:broader biom:ChemicallyUntreatedFruitResidues ;
-                           rdfs:label "Blends and mixtures chemically untreated fruit residues" .
-
-
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues
-biom:BlendsAndMixturesChemicallyUntreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                                    biom:BiomassSubType ;
-                           skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
-                           rdfs:label "Blends and mixtures chemically untreated herbaceous residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry
+biom:BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry rdf:type owl:NamedIndividual ,
+                                                                               biom:BiomassType ;
+                                                                      skos:broader biom:ByProductsAndResiduesFromWoodProcessingIndustry ;
+                                                                      rdfs:label "Blends and mixtures by products and residues from wood processing industry" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops
@@ -393,6 +365,34 @@ biom:BlendsAndMixturesCerealCrops rdf:type owl:NamedIndividual ,
                                            biom:BiomassSubType ;
                                   skos:broader biom:CerealCrops ;
                                   rdfs:label "Blends and mixtures cereal crops" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues
+biom:BlendsAndMixturesChemicallyTreatedFruitResidues rdf:type owl:NamedIndividual ,
+                                                              biom:BiomassSubType ;
+                                                     skos:broader biom:ChemicallyTreatedFruitResidues ;
+                                                     rdfs:label "Blends and mixtures chemically treated fruit residues" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues
+biom:BlendsAndMixturesChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
+                                                                   biom:BiomassSubType ;
+                                                          skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
+                                                          rdfs:label "Blends and mixtures chemically treated herbaceous residues" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues
+biom:BlendsAndMixturesChemicallyUntreatedFruitResidues rdf:type owl:NamedIndividual ,
+                                                                biom:BiomassSubType ;
+                                                       skos:broader biom:ChemicallyUntreatedFruitResidues ;
+                                                       rdfs:label "Blends and mixtures chemically untreated fruit residues" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues
+biom:BlendsAndMixturesChemicallyUntreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
+                                                                     biom:BiomassSubType ;
+                                                            skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
+                                                            rdfs:label "Blends and mixtures chemically untreated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers
@@ -423,13 +423,6 @@ biom:BlendsAndMixturesGrasses rdf:type owl:NamedIndividual ,
                               rdfs:label "Blends and mixtures grasses" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture
-biom:BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture rdf:type owl:NamedIndividual ,
-                                      biom:BiomassType ;
-                             skos:broader biom:HerbaceousBiomassFromAgricultureAndHorticulture ;
-                             rdfs:label "Blends and mixtures herbaceous biomass from agriculture and horticulture" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass
 biom:BlendsAndMixturesHerbaceousBiomass rdf:type owl:NamedIndividual ,
                                                  biom:BiomassSubGroup ;
@@ -437,18 +430,18 @@ biom:BlendsAndMixturesHerbaceousBiomass rdf:type owl:NamedIndividual ,
                                         rdfs:label "Blends and mixtures herbaceous biomass" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLakeAndSeaGrass
-biom:BlendsAndMixturesLakeAndSeaGrass rdf:type owl:NamedIndividual ,
-                                    biom:BiomassType ;
-                           skos:broader biom:LakeAndSeaGrass ;
-                           rdfs:label "Blends and mixtures leak and sea grass" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture
+biom:BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture rdf:type owl:NamedIndividual ,
+                                                                               biom:BiomassType ;
+                                                                      skos:broader biom:HerbaceousBiomassFromAgricultureAndHorticulture ;
+                                                                      rdfs:label "Blends and mixtures herbaceous biomass from agriculture and horticulture" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues
-biom:BlendsAndMixturesLoggingResidues rdf:type owl:NamedIndividual ,
-                                  biom:BiomassSubType ;
-                         skos:broader biom:LoggingResidues ;
-                         rdfs:label "Blends and mixtures logging residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass
+biom:BlendsAndMixturesLeakAndSeaGrass rdf:type owl:NamedIndividual ,
+                                               biom:BiomassType ;
+                                      skos:broader biom:LakeAndSeaGrass ;
+                                      rdfs:label "Blends and mixtures leak and sea grass" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops
@@ -458,32 +451,39 @@ biom:BlendsAndMixturesLegumeCrops rdf:type owl:NamedIndividual ,
                                   rdfs:label "Blends and mixtures legume crops" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsandAcorns
-biom:BlendsAndMixturesNutsandAcorns rdf:type owl:NamedIndividual ,
-                                  biom:BiomassSubType ;
-                         skos:broader biom:NutsandAcorns ;
-                         rdfs:label "Blends and mixtures nuts and acorns" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues
+biom:BlendsAndMixturesLoggingResidues rdf:type owl:NamedIndividual ,
+                                               biom:BiomassSubType ;
+                                      skos:broader biom:LoggingResidues ;
+                                      rdfs:label "Blends and mixtures logging residues" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit
-biom:BlendsAndMixturesOrchardAndHorticultureFruit rdf:type owl:NamedIndividual ,
-                                    biom:BiomassType ;
-                           skos:broader biom:OrchardAndHorticultureFruit ;
-                           rdfs:label "Blends and mixtures orchard and horticulture fruit" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns
+biom:BlendsAndMixturesNutsAndAcorns rdf:type owl:NamedIndividual ,
+                                             biom:BiomassSubType ;
+                                    skos:broader biom:NutsandAcorns ;
+                                    rdfs:label "Blends and mixtures nuts and acorns" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops
 biom:BlendsAndMixturesOilSeedCrops rdf:type owl:NamedIndividual ,
-                                   biom:BiomassSubType ;
-                          skos:broader biom:OilSeedCrops ;
-                          rdfs:label "Blends and mixtures oil seed crops" .
+                                            biom:BiomassSubType ;
+                                   skos:broader biom:OilSeedCrops ;
+                                   rdfs:label "Blends and mixtures oil seed crops" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit
+biom:BlendsAndMixturesOrchardAndHorticultureFruit rdf:type owl:NamedIndividual ,
+                                                           biom:BiomassType ;
+                                                  skos:broader biom:OrchardAndHorticultureFruit ;
+                                                  rdfs:label "Blends and mixtures orchard and horticulture fruit" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds
 biom:BlendsAndMixturesReeds rdf:type owl:NamedIndividual ,
                                      biom:BiomassType ;
                             skos:broader biom:Reeds ;
-                            rdfs:label "Blends and mixtures reeeds" .
+                            rdfs:label "Blends and mixtures reeds" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops
@@ -493,18 +493,18 @@ biom:BlendsAndMixturesRootCrops rdf:type owl:NamedIndividual ,
                                 rdfs:label "Blends and mixtures root crops" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStumpsOrRoots
-biom:BlendsAndMixturesStumpsOrRoots rdf:type owl:NamedIndividual ,
-                                  biom:BiomassSubType ;
-                         skos:broader biom:StumpsOrRoots ;
-                         rdfs:label "Blends And Mixtures Stumps or roots" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood
 biom:BlendsAndMixturesStemwood rdf:type owl:NamedIndividual ,
                                         biom:BiomassSubType ;
                                skos:broader biom:Stemwood ;
                                rdfs:label "Blends and mixtures stemwood" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStumpsOrRoots
+biom:BlendsAndMixturesStumpsOrRoots rdf:type owl:NamedIndividual ,
+                                             biom:BiomassSubType ;
+                                    skos:broader biom:StumpsOrRoots ;
+                                    rdfs:label "Blends And Mixtures Stumps or roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood
@@ -516,16 +516,16 @@ biom:BlendsAndMixturesUsedWood rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots
 biom:BlendsAndMixturesWholeTreesWithRoots rdf:type owl:NamedIndividual ,
-                                       biom:BiomassSubType ;
-                              skos:broader biom:WholeTreesWithRoots ;
-                              rdfs:label "Blends and mixtures whole trees with roots" .
+                                                   biom:BiomassSubType ;
+                                          skos:broader biom:WholeTreesWithRoots ;
+                                          rdfs:label "Blends and mixtures whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots
 biom:BlendsAndMixturesWholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
-                                          biom:BiomassSubType ;
-                                 skos:broader biom:WholeTreesWithoutRoots ;
-                                 rdfs:label "Blends and mixtures whole trees without roots" .
+                                                      biom:BiomassSubType ;
+                                             skos:broader biom:WholeTreesWithoutRoots ;
+                                             rdfs:label "Blends and mixtures whole trees without roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass
@@ -537,51 +537,51 @@ biom:BlendsAndMixturesWoodyBiomass rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots
 biom:BroadLeafStumpsOrRoots rdf:type owl:NamedIndividual ,
-                          biom:BiomassSubType ;
-                 skos:broader biom:StumpsOrRoots ;
-                 rdfs:label "Broad leaf stumps or roots" .
+                                     biom:BiomassSubType ;
+                            skos:broader biom:StumpsOrRoots ;
+                            rdfs:label "Broad leaf stumps or roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots
 biom:BroadLeafWholeTreesWithRoots rdf:type owl:NamedIndividual ,
-                               biom:BiomassSubType ;
-                      skos:broader biom:WholeTreesWithRoots ;
-                      rdfs:label "Broad leaf whole trees with roots" .
+                                           biom:BiomassSubType ;
+                                  skos:broader biom:WholeTreesWithRoots ;
+                                  rdfs:label "Broad leaf whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots
 biom:BroadLeafWholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
-                                  biom:BiomassSubType ;
-                         skos:broader biom:WholeTreesWithoutRoots ;
-                         rdfs:label "Broad Leaf whole trees without roots" .
+                                              biom:BiomassSubType ;
+                                     skos:broader biom:WholeTreesWithoutRoots ;
+                                     rdfs:label "Broad Leaf whole trees without roots" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodbyProductsAndResidues
-biom:BroadLeafWithBarkChemicallyUntreatedWoodbyProductsAndResidues rdf:type owl:NamedIndividual ,
-                                       biom:BiomassSubType ;
-                              skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
-                              rdfs:label "Broad leaf with bark chemically untreated wood by products and residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues
+biom:BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues rdf:type owl:NamedIndividual ,
+                                                                            biom:BiomassSubType ;
+                                                                   skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
+                                                                   rdfs:label "Broad leaf with bark chemically untreated wood by products and residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood
 biom:BroadLeafWithBarkStemwood rdf:type owl:NamedIndividual ,
-                                    biom:BiomassSubType ;
-                           skos:broader biom:Stemwood ;
-                           rdfs:label "Broad leaf with bark stemwood" .
+                                        biom:BiomassSubType ;
+                               skos:broader biom:Stemwood ;
+                               rdfs:label "Broad leaf with bark stemwood" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodbyProductsAndResidues
-biom:BroadLeafWithoutBarkChemicallyUntreatedWoodbyProductsAndResidues rdf:type owl:NamedIndividual ,
-                                          biom:BiomassSubType ;
-                                 skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
-                                 rdfs:label "Broad leaf without bark chemically untreated wood by products and residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues
+biom:BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues rdf:type owl:NamedIndividual ,
+                                                                               biom:BiomassSubType ;
+                                                                      skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
+                                                                      rdfs:label "Broad leaf without bark chemically untreated wood by products and residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood
-biom:BroadLeafWithoutBarkStemwoodrdf:type owl:NamedIndividual ,
-                                       biom:BiomassSubType ;
-                              skos:broader biom:Stemwood ;
-                              rdfs:label "Broad leaf without bark stemwood" .
+biom:BroadLeafWithoutBarkStemwood rdf:type owl:NamedIndividual ,
+                                           biom:BiomassSubType ;
+                                  skos:broader biom:Stemwood ;
+                                  rdfs:label "Broad leaf without bark stemwood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed
@@ -593,30 +593,30 @@ biom:BrownSeaWeed rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots
 biom:BushesStumpsOrRoots rdf:type owl:NamedIndividual ,
-                       biom:BiomassSubType ;
-              skos:broader biom:StumpsOrRoots ;
-              rdfs:label "Bushes stumps or roots" .
+                                  biom:BiomassSubType ;
+                         skos:broader biom:StumpsOrRoots ;
+                         rdfs:label "Bushes stumps or roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots
 biom:BushesWholeTreesWithRoots rdf:type owl:NamedIndividual ,
-                            biom:BiomassSubType ;
-                   skos:broader biom:WholeTreesWithRoots ;
-                   rdfs:label "Bushes whole trees with roots" .
+                                        biom:BiomassSubType ;
+                               skos:broader biom:WholeTreesWithRoots ;
+                               rdfs:label "Bushes whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots
 biom:BushesWholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
-                               biom:BiomassSubType ;
-                      skos:broader biom:WholeTreesWithoutRoots ;
-                      rdfs:label "Bushes whole trees without roots" .
+                                           biom:BiomassSubType ;
+                                  skos:broader biom:WholeTreesWithoutRoots ;
+                                  rdfs:label "Bushes whole trees without roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry
 biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry rdf:type owl:NamedIndividual ,
                                                                       biom:BiomassSubGroup ;
                                                              skos:broader biom:FruitBiomass ;
-                                                             skos:narrower biom:BlendsAndMixturesBPARFFAFPI ,
+                                                             skos:narrower biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry ,
                                                                            biom:ChemicallyTreatedFruitResidues ,
                                                                            biom:ChemicallyUntreatedFruitResidues ;
                                                              rdfs:label "By product and residues from food and fruit processing industry" .
@@ -636,7 +636,7 @@ biom:ByProductsAndResiduesFromWoodProcessingIndustry rdf:type owl:NamedIndividua
 biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry rdf:type owl:NamedIndividual ,
                                                                            biom:BiomassSubGroup ;
                                                                   skos:broader biom:HerbaceousBiomass ;
-                                                                  skos:narrower biom:BlendsAndMixturesByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry ,
+                                                                  skos:narrower biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry ,
                                                                                 biom:ChemicallyTreatedHerbaceousResidues ,
                                                                                 biom:ChemicallyUntreatedHerbaceousResidues ;
                                                                   rdfs:label "By product and residues From food and Herbaceous processing industry" .
@@ -654,18 +654,26 @@ biom:CerealCrops rdf:type owl:NamedIndividual ,
                  rdfs:label "Cereal crops" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedHerbaceousResidues
-biom:CerealCropsAndGrassesChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                                        biom:BiomassSubType ;
-                               skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
-                               rdfs:label "Cereal crops and grasses chemically treated herbaceous residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses
+biom:CerealCropsAndGrasses rdf:type owl:NamedIndividual ,
+                                    biom:BiomassSubType ;
+                           skos:broader biom:ChemicallyTreatedHerbaceousResidues ,
+                                        biom:ChemicallyUntreatedHerbaceousResidues ;
+                           rdfs:label "Cereal crops and grasses" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesCerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues
+###  https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues
+biom:CerealCropsAndGrassesChemicallyTreatedherbaceousResidues rdf:type owl:NamedIndividual ,
+                                                                       biom:BiomassSubType ;
+                                                              skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
+                                                              rdfs:label "Cereal crops and grasses chemically treated herbaceous residues" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues
 biom:CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                                        biom:BiomassSubType ;
-                               skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
-                               rdfs:label "Cereal crops and grasses chemically untreated herbaceous residues" .
+                                                                         biom:BiomassSubType ;
+                                                                skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
+                                                                rdfs:label "Cereal crops and grasses chemically untreated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues
@@ -685,9 +693,9 @@ biom:ChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
                                                   biom:BiomassType ;
                                          skos:broader biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry ;
                                          skos:narrower biom:BlendsAndMixturesChemicallyTreatedHerbaceousResidues ,
-                                                       biom:CerealCropsAndGrassesChemicallyTreatedHerbaceousResidues ,
+                                                       biom:CerealCropsAndGrassesChemicallyTreatedherbaceousResidues ,
                                                        biom:FlowersChemicallyTreatedHerbaceousResidues ,
-                                                       biom:LegumeCropsCTHR ,
+                                                       biom:LegumeCropsChemicallyTreatedHerbaceousResidues ,
                                                        biom:OilSeedCropsChemicallyTreatedHerbaceousResidues ,
                                                        biom:RootCropsChemicallyTreatedHerbaceousResidues ;
                                          rdfs:label "Chemically treated herbaceous residues" .
@@ -753,11 +761,11 @@ biom:ChemicallyUntreatedUsedWood rdf:type owl:NamedIndividual ,
 biom:ChemicallyUntreatedWoodbyProductsAndResidues rdf:type owl:NamedIndividual ,
                                                            biom:BiomassType ;
                                                   skos:broader biom:ByProductsAndResiduesFromWoodProcessingIndustry ;
-                                                  skos:narrower biom:BarkChemicallyUntreatedWoodbyProductsAndResidues ,
-                                                                biom:BroadLeafWithBarkChemicallyUntreatedWoodbyProductsAndResidues ,
-                                                                biom:BroadLeafWithoutBarkChemicallyUntreatedWoodbyProductsAndResidues ,
-                                                                biom:ConiferousWithBrakChemicallyUntreatedWoodbyProductsAndResidues ,
-                                                                biom:ConiferousWithoutBarkChemicallyUntreatedWoodbyProductsAndResidues ;
+                                                  skos:narrower biom:BarkChemicallyUntreatedWoodByProductsAndResidues ,
+                                                                biom:BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues ,
+                                                                biom:BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues ,
+                                                                biom:ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues ,
+                                                                biom:ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues ;
                                                   rdfs:label "Chemically untreated wood by products and residues" .
 
 
@@ -770,72 +778,72 @@ biom:CommonReed rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots
 biom:ConiferousStumpsOrRoots rdf:type owl:NamedIndividual ,
-                           biom:BiomassSubType ;
-                  skos:broader biom:StumpsOrRoots ;
-                  rdfs:label "Coniferous stumps or roots" .
+                                      biom:BiomassSubType ;
+                             skos:broader biom:StumpsOrRoots ;
+                             rdfs:label "Coniferous stumps or roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots
 biom:ConiferousWholeTreesWithRoots rdf:type owl:NamedIndividual ,
-                                biom:BiomassSubType ;
-                       skos:broader biom:WholeTreesWithRoots ;
-                       rdfs:label "Coniferous whole trees with roots" .
+                                            biom:BiomassSubType ;
+                                   skos:broader biom:WholeTreesWithRoots ;
+                                   rdfs:label "Coniferous whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots
 biom:ConiferousWholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
-                                   biom:BiomassSubType ;
-                          skos:broader biom:WholeTreesWithoutRoots ;
-                          rdfs:label "Coniferous Whole trees without roots" .
+                                               biom:BiomassSubType ;
+                                      skos:broader biom:WholeTreesWithoutRoots ;
+                                      rdfs:label "Coniferous Whole trees without roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood
 biom:ConiferousWithBarkStemwood rdf:type owl:NamedIndividual ,
-                                     biom:BiomassSubType ;
-                            skos:broader biom:Stemwood ;
-                            rdfs:label "Coniferous with bark stemwood" .
+                                         biom:BiomassSubType ;
+                                skos:broader biom:Stemwood ;
+                                rdfs:label "Coniferous with bark stemwood" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodbyProductsAndResidues
-biom:ConiferousWithBrakChemicallyUntreatedWoodbyProductsAndResidues rdf:type owl:NamedIndividual ,
-                                        biom:BiomassSubType ;
-                               skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
-                               rdfs:label "Coniferous with bark chemically untreated wood by products and residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues
+biom:ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues rdf:type owl:NamedIndividual ,
+                                                                             biom:BiomassSubType ;
+                                                                    skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
+                                                                    rdfs:label "Coniferous with bark chemically untreated wood by products and residues" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodbyProductsAndResidues
-biom:ConiferousWithoutBarkChemicallyUntreatedWoodbyProductsAndResidues rdf:type owl:NamedIndividual ,
-                                           biom:BiomassSubType ;
-                                  skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
-                                  rdfs:label "Coniferous without bark chemically untreated wood by products and residues" .
+###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues
+biom:ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues rdf:type owl:NamedIndividual ,
+                                                                                biom:BiomassSubType ;
+                                                                       skos:broader biom:ChemicallyUntreatedWoodbyProductsAndResidues ;
+                                                                       rdfs:label "Coniferous without bark chemically untreated wood by products and residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood
 biom:ConiferousWithoutBarkStemwood rdf:type owl:NamedIndividual ,
-                                        biom:BiomassSubType ;
-                               skos:broader biom:Stemwood ;
-                               rdfs:label "Coniferous without bark stemwood" .
+                                            biom:BiomassSubType ;
+                                   skos:broader biom:Stemwood ;
+                                   rdfs:label "Coniferous without bark stemwood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues
 biom:CrudeOliveCakeChemicallyUntreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                 biom:BiomassSubType ;
-                        skos:broader biom:ChemicallyUntreatedFruitResidues ;
-                        rdfs:label "Crude olive cake chemically untreated fruit residues" .
+                                                             biom:BiomassSubType ;
+                                                    skos:broader biom:ChemicallyUntreatedFruitResidues ;
+                                                    rdfs:label "Crude olive cake chemically untreated fruit residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues
 biom:ExhaustedOliveCakeChemicallyTreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                     biom:BiomassSubType ;
-                            skos:broader biom:ChemicallyTreatedFruitResidues ;
-                            rdfs:label "Exhausted olive cake chemically treated fruit residues" .
+                                                               biom:BiomassSubType ;
+                                                      skos:broader biom:ChemicallyTreatedFruitResidues ;
+                                                      rdfs:label "Exhausted olive cake chemically treated fruit residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 biom:FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents rdf:type owl:NamedIndividual ,
-                                                  biom:BiomassSubType ;
-                                         skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
-                                         rdfs:label "Fibres and wood constituents chemically treated wood by products residues fibres and wood constituents" .
+                                                                                                        biom:BiomassSubType ;
+                                                                                               skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
+                                                                                               rdfs:label "Fibres and wood constituents chemically treated wood by products residues fibres and wood constituents" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#FleshBerries
@@ -846,9 +854,9 @@ biom:FleshBerries rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits
 biom:FleshStoneOrKernelFruits rdf:type owl:NamedIndividual ,
-                       biom:BiomassSubType ;
-              skos:broader biom:StoneOrKernelFruits ;
-              rdfs:label "Flesh stone or kernel fruits" .
+                                       biom:BiomassSubType ;
+                              skos:broader biom:StoneOrKernelFruits ;
+                              rdfs:label "Flesh stone or kernel fruits" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Flowers
@@ -864,16 +872,16 @@ biom:Flowers rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues
 biom:FlowersChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                          biom:BiomassSubType ;
-                 skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
-                 rdfs:label "Flowers chemically treated herbaceous residues" .
+                                                         biom:BiomassSubType ;
+                                                skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
+                                                rdfs:label "Flowers chemically treated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues
 biom:FlowersChemicallyUntreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                          biom:BiomassSubType ;
-                 skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
-                 rdfs:label "Flowers chemically untreated herbaceous residues" .
+                                                           biom:BiomassSubType ;
+                                                  skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
+                                                  rdfs:label "Flowers chemically untreated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation
@@ -882,7 +890,7 @@ biom:ForestPlantation rdf:type owl:NamedIndividual ,
                       skos:broader biom:WoodyBiomass ;
                       skos:narrower biom:BlendsAndMixturesForestPlantation ,
                                     biom:LoggingResidues ,
-                                    biom:SegregatedWood ,
+                                    biom:SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater ,
                                     biom:Stemwood ,
                                     biom:StumpsOrRoots ,
                                     biom:WholeTreesWithRoots ,
@@ -981,23 +989,23 @@ biom:HusksOrShellsCerealCrops rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops
 biom:HusksOrShellsOilSeedCrops rdf:type owl:NamedIndividual ,
-                               biom:BiomassSubType ;
-                      skos:broader biom:OilSeedCrops ;
-                      rdfs:label "Husks or shells oil seed crops" .
+                                        biom:BiomassSubType ;
+                               skos:broader biom:OilSeedCrops ;
+                               rdfs:label "Husks or shells oil seed crops" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsandAcorns
-biom:KernelsNutsandAcorns rdf:type owl:NamedIndividual ,
-                        biom:BiomassSubType ;
-               skos:broader biom:NutsandAcorns ;
-               rdfs:label "kernels nuts and acorns" .
+###  https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns
+biom:KernelsNutsAndAcorns rdf:type owl:NamedIndividual ,
+                                   biom:BiomassSubType ;
+                          skos:broader biom:NutsandAcorns ;
+                          rdfs:label "kernels nuts and acorns" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass
 biom:LakeAndSeaGrass rdf:type owl:NamedIndividual ,
                               biom:BiomassSubGroup ;
                      skos:broader biom:AquaticBiomass ;
-                     skos:narrower biom:BlendsAndMixturesLakeAndSeaGrass ,
+                     skos:narrower biom:BlendsAndMixturesLeakAndSeaGrass ,
                                    biom:LakeGrass ,
                                    biom:SeaGrass ;
                      rdfs:label "Lake and sea grass" .
@@ -1024,16 +1032,16 @@ biom:LegumeCrops rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues
 biom:LegumeCropsChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                              biom:BiomassSubType ;
-                     skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
-                     rdfs:label "Legume crops chemically treated herbaceous residues" .
+                                                             biom:BiomassSubType ;
+                                                    skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
+                                                    rdfs:label "Legume crops chemically treated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues
 biom:LegumeCropsChemicallyUntreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                              biom:BiomassSubType ;
-                     skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
-                     rdfs:label "Legume crops chemically untreated herbaceous residues" .
+                                                               biom:BiomassSubType ;
+                                                      skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
+                                                      rdfs:label "Legume crops chemically untreated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues
@@ -1072,25 +1080,25 @@ biom:Mixtures rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues
 biom:NutsAndAcornsChemicallyTreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                biom:BiomassSubType ;
-                       skos:broader biom:ChemicallyTreatedFruitResidues ;
-                       rdfs:label "Nuts and acorns chemically treated fruit residues" .
+                                                          biom:BiomassSubType ;
+                                                 skos:broader biom:ChemicallyTreatedFruitResidues ;
+                                                 rdfs:label "Nuts and acorns chemically treated fruit residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues
 biom:NutsAndAcornsChemicallyUntreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                biom:BiomassSubType ;
-                       skos:broader biom:ChemicallyUntreatedFruitResidues ;
-                       rdfs:label "Nuts and acorns chemically untreated fruit residues" .
+                                                            biom:BiomassSubType ;
+                                                   skos:broader biom:ChemicallyUntreatedFruitResidues ;
+                                                   rdfs:label "Nuts and acorns chemically untreated fruit residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns
 biom:NutsandAcorns rdf:type owl:NamedIndividual ,
                             biom:BiomassType ;
                    skos:broader biom:OrchardAndHorticultureFruit ;
-                   skos:narrower biom:BlendsAndMixturesNutsandAcorns ,
-                                 biom:KernelsNutsandAcorns ,
-                                 biom:ShellsOrHusksNutsandAcorns ,
+                   skos:narrower biom:BlendsAndMixturesNutsAndAcorns ,
+                                 biom:KernelsNutsAndAcorns ,
+                                 biom:ShellsOrHusksNutsAndAcorns ,
                                  biom:WholeNuts ;
                    rdfs:label "Nuts and acorns" .
 
@@ -1109,16 +1117,16 @@ biom:OilSeedCrops rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues
 biom:OilSeedCropsChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                               biom:BiomassSubType ;
-                      skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
-                      rdfs:label "Oil seed crops chemically treated herbaceous residues" .
+                                                              biom:BiomassSubType ;
+                                                     skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
+                                                     rdfs:label "Oil seed crops chemically treated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues
 biom:OilSeedCropsChemicallyUntreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                               biom:BiomassSubType ;
-                      skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
-                      rdfs:label "Oil seed chemically untreated herbaceous residues" .
+                                                                biom:BiomassSubType ;
+                                                       skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
+                                                       rdfs:label "Oil seed chemically untreated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit
@@ -1175,16 +1183,16 @@ biom:RootCrops rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues
 biom:RootCropsChemicallyTreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                            biom:BiomassSubType ;
-                   skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
-                   rdfs:label "Root crops chemically treated herbaceous residues" .
+                                                           biom:BiomassSubType ;
+                                                  skos:broader biom:ChemicallyTreatedHerbaceousResidues ;
+                                                  rdfs:label "Root crops chemically treated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues
 biom:RootCropsChemicallyUntreatedHerbaceousResidues rdf:type owl:NamedIndividual ,
-                            biom:BiomassSubType ;
-                   skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
-                   rdfs:label "Root crops chemically untreated herbaceous residues" .
+                                                             biom:BiomassSubType ;
+                                                    skos:broader biom:ChemicallyUntreatedHerbaceousResidues ;
+                                                    rdfs:label "Root crops chemically untreated herbaceous residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops
@@ -1223,9 +1231,9 @@ biom:SeedsGrasses rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops
 biom:SeedsOilSeedCrops rdf:type owl:NamedIndividual ,
-                       biom:BiomassSubType ;
-              skos:broader biom:OilSeedCrops ;
-              rdfs:label "Seeds oil seed crops" .
+                                biom:BiomassSubType ;
+                       skos:broader biom:OilSeedCrops ;
+                       rdfs:label "Seeds oil seed crops" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards
@@ -1237,9 +1245,9 @@ biom:SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndF
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater
 biom:SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater rdf:type owl:NamedIndividual ,
-                             biom:BiomassType ;
-                    skos:broader biom:ForestPlantation ;
-                    rdfs:label "Segregated wood" .
+                                                                                                                biom:BiomassType ;
+                                                                                                       skos:broader biom:ForestPlantation ;
+                                                                                                       rdfs:label "Segregated wood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses
@@ -1249,32 +1257,32 @@ biom:ShellsGrasses rdf:type owl:NamedIndividual ,
                    rdfs:label "Shells Grasses" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsandAcorns
-biom:ShellsOrHusksNutsandAcorns rdf:type owl:NamedIndividual ,
-                              biom:BiomassSubType ;
-                     skos:broader biom:NutsandAcorns ;
-                     rdfs:label "Shells or husks nuts and acorns" .
+###  https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns
+biom:ShellsOrHusksNutsAndAcorns rdf:type owl:NamedIndividual ,
+                                         biom:BiomassSubType ;
+                                skos:broader biom:NutsandAcorns ;
+                                rdfs:label "Shells or husks nuts and acorns" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots
 biom:ShortRotationCoppiceStumpsOrRoots rdf:type owl:NamedIndividual ,
-                                     biom:BiomassSubType ;
-                            skos:broader biom:StumpsOrRoots ;
-                            rdfs:label "Short rotation coppice stumps or roots" .
+                                                biom:BiomassSubType ;
+                                       skos:broader biom:StumpsOrRoots ;
+                                       rdfs:label "Short rotation coppice stumps or roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots
 biom:ShortRotationCoppiceWholeTreesWithRoots rdf:type owl:NamedIndividual ,
-                                          biom:BiomassSubType ;
-                                 skos:broader biom:WholeTreesWithRoots ;
-                                 rdfs:label "Short rotation coppice whole trees with roots" .
+                                                      biom:BiomassSubType ;
+                                             skos:broader biom:WholeTreesWithRoots ;
+                                             rdfs:label "Short rotation coppice whole trees with roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots
 biom:ShortRotationCoppiceWholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
-                                             biom:BiomassSubType ;
-                                    skos:broader biom:WholeTreesWithoutRoots ;
-                                    rdfs:label "Short rotation coppice whole trees without roots" .
+                                                         biom:BiomassSubType ;
+                                                skos:broader biom:WholeTreesWithoutRoots ;
+                                                rdfs:label "Short rotation coppice whole trees without roots" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers
@@ -1293,9 +1301,9 @@ biom:StalksAndLeavesLegumeCrops rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops
 biom:StalksAndLeavesOilSeedCrops rdf:type owl:NamedIndividual ,
-                                 biom:BiomassSubType ;
-                        skos:broader biom:OilSeedCrops ;
-                        rdfs:label "Stalks and leaves oil seed crops" .
+                                          biom:BiomassSubType ;
+                                 skos:broader biom:OilSeedCrops ;
+                                 rdfs:label "Stalks and leaves oil seed crops" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops
@@ -1321,32 +1329,32 @@ biom:Stemwood rdf:type owl:NamedIndividual ,
 biom:StoneOrKernelFruits rdf:type owl:NamedIndividual ,
                                   biom:BiomassType ;
                          skos:broader biom:OrchardAndHorticultureFruit ;
-                         skos:narrower biom:BlendsAndMIxturesStoneOrKernelFruits ,
+                         skos:narrower biom:BlendsAndMIxturesStoneOrKernelFruit ,
                                        biom:FleshStoneOrKernelFruits ,
-                                       biom:StoneOrKernelOrFruitFibreStoneOrKernelFruits ,
+                                       biom:StoneOrKernelOrFruitFibreStoneOrKernelFruit ,
                                        biom:WholeFruitStoneOrKernelFruits ;
                          rdfs:label "Stone or kernel fruits" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues
 biom:StoneOrKernelFruitsChemicallyTreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                      biom:BiomassSubType ;
-                             skos:broader biom:ChemicallyTreatedFruitResidues ;
-                             rdfs:label "Stone or kernels fruits chemically treated fuit residues" .
+                                                                biom:BiomassSubType ;
+                                                       skos:broader biom:ChemicallyTreatedFruitResidues ;
+                                                       rdfs:label "Stone or kernels fruits chemically treated fuit residues" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues
 biom:StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues rdf:type owl:NamedIndividual ,
-                                                  biom:BiomassSubType ;
-                                         skos:broader biom:ChemicallyUntreatedFruitResidues ;
-                                         rdfs:label "Stone or kernel fruits or fruit fibre chemically untreated fruit residues" .
+                                                                              biom:BiomassSubType ;
+                                                                     skos:broader biom:ChemicallyUntreatedFruitResidues ;
+                                                                     rdfs:label "Stone or kernel fruits or fruit fibre chemically untreated fruit residues" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruits
-biom:StoneOrKernelOrFruitFibreStoneOrKernelFruits rdf:type owl:NamedIndividual ,
-                                           biom:BiomassSubType ;
-                                  skos:broader biom:StoneOrKernelFruits ;
-                                  rdfs:label "Stone or kernel or fruit fibre" .
+###  https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit
+biom:StoneOrKernelOrFruitFibreStoneOrKernelFruit rdf:type owl:NamedIndividual ,
+                                                          biom:BiomassSubType ;
+                                                 skos:broader biom:StoneOrKernelFruits ;
+                                                 rdfs:label "Stone or kernel or fruit fibre" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf
@@ -1421,9 +1429,9 @@ biom:WholeFruit rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits
 biom:WholeFruitStoneOrKernelFruits rdf:type owl:NamedIndividual ,
-                            biom:BiomassSubType ;
-                   skos:broader biom:StoneOrKernelFruits ;
-                   rdfs:label "Whole fruit stone or kernel fruits" .
+                                            biom:BiomassSubType ;
+                                   skos:broader biom:StoneOrKernelFruits ;
+                                   rdfs:label "Whole fruit stone or kernel fruits" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WholeNuts
@@ -1463,9 +1471,9 @@ biom:WholePlantLegumeCrops rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops
 biom:WholePlantOilSeedCrops rdf:type owl:NamedIndividual ,
-                            biom:BiomassSubType ;
-                   skos:broader biom:OilSeedCrops ;
-                   rdfs:label "Whole plant oil seed crops" .
+                                     biom:BiomassSubType ;
+                            skos:broader biom:OilSeedCrops ;
+                            rdfs:label "Whole plant oil seed crops" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops
@@ -1492,8 +1500,8 @@ biom:WholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
                                      biom:BiomassType ;
                             skos:broader biom:ForestPlantation ;
                             skos:narrower biom:BlendsAndMixturesWholeTreesWithoutRoots ,
-                                          biom:BroadLeafWholeTreesWithoutRoots,
-                                          biom:BushesWholeTreesWithoutRoots,
+                                          biom:BroadLeafWholeTreesWithoutRoots ,
+                                          biom:BushesWholeTreesWithoutRoots ,
                                           biom:ConiferousWholeTreesWithoutRoots ,
                                           biom:ShortRotationCoppiceWholeTreesWithoutRoots ;
                             rdfs:label "Whole trees without roots" .
@@ -1501,44 +1509,44 @@ biom:WholeTreesWithoutRoots rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood
 biom:WithBarkChemicallyTreatedUsedWood rdf:type owl:NamedIndividual ,
-                           biom:BiomassSubType ;
-                  skos:broader biom:ChemicallyTreatedUsedWood ;
-                  rdfs:label "With bark chemically treated used  wood" .
+                                                biom:BiomassSubType ;
+                                       skos:broader biom:ChemicallyTreatedUsedWood ;
+                                       rdfs:label "With bark chemically treated used  wood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 biom:WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents rdf:type owl:NamedIndividual ,
-                                 biom:BiomassSubType ;
-                        skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
-                        rdfs:label "With bark chemically treated wood by products residues fibres and wood constituents" .
+                                                                                       biom:BiomassSubType ;
+                                                                              skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
+                                                                              rdfs:label "With bark chemically treated wood by products residues fibres and wood constituents" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood
 biom:WithBrakChemicallyUntreatedUsedWood rdf:type owl:NamedIndividual ,
-                           biom:BiomassSubType ;
-                  skos:broader biom:ChemicallyUntreatedUsedWood ;
-                  rdfs:label "With bark chemically untreated used wood" .
+                                                  biom:BiomassSubType ;
+                                         skos:broader biom:ChemicallyUntreatedUsedWood ;
+                                         rdfs:label "With bark chemically untreated used wood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood
 biom:WithoutBarkChemicallyTreatedUsedWood rdf:type owl:NamedIndividual ,
-                              biom:BiomassSubType ;
-                     skos:broader biom:ChemicallyTreatedUsedWood ;
-                     rdfs:label "Without bark chemically treated used wood" .
+                                                   biom:BiomassSubType ;
+                                          skos:broader biom:ChemicallyTreatedUsedWood ;
+                                          rdfs:label "Without bark chemically treated used wood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 biom:WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents rdf:type owl:NamedIndividual ,
-                                    biom:BiomassSubType ;
-                           skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
-                           rdfs:label "Without bark chemically treated wood by products residues fibres and wood constituents" .
+                                                                                          biom:BiomassSubType ;
+                                                                                 skos:broader biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents ;
+                                                                                 rdfs:label "Without bark chemically treated wood by products residues fibres and wood constituents" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood
-biom:WithoutBarkChemicallyUntreatedUsedWoodrdf:type owl:NamedIndividual ,
-                              biom:BiomassSubType ;
-                     skos:broader biom:ChemicallyUntreatedUsedWood ;
-                     rdfs:label "Without bark chemically untreated used wood" .
+biom:WithoutBarkChemicallyUntreatedUsedWood rdf:type owl:NamedIndividual ,
+                                                     biom:BiomassSubType ;
+                                            skos:broader biom:ChemicallyUntreatedUsedWood ;
+                                            rdfs:label "Without bark chemically untreated used wood" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass
