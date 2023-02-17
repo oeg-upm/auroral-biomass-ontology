@@ -1,7 +1,23 @@
 {
   "@context" : {
+    "tradingForm" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#tradingForm",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Humidity" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity"
+    },
+    "hasName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasID" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "primaryEnergyCostObs" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasAshes" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAshes",
@@ -14,9 +30,17 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasHumidity",
       "@type" : "@id"
     },
+    "primaryEnergyCost" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "narrower" : {
       "@id" : "https://www.w3.org/ns/org#narrower",
       "@type" : "@id"
+    },
+    "pciKwhPerKg" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Biomass" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
@@ -41,6 +65,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubType",
       "@type" : "@id"
     },
+    "pcimjPerKg" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "broader" : {
       "@id" : "https://www.w3.org/ns/org#broader",
       "@type" : "@id"
@@ -55,6 +83,14 @@
     "hasGroup" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasGroup",
       "@type" : "@id"
+    },
+    "dimension" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#dimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDescription" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
