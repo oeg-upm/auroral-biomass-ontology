@@ -180,19 +180,16 @@
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup
 :BiomassSubGroup rdf:type owl:Class ;
-                 rdfs:subClassOf :BiomassGroup ;
                  rdfs:label "Biomass Sub Group" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType
 :BiomassSubType rdf:type owl:Class ;
-                rdfs:subClassOf :BiomassType ;
                 rdfs:label "Biomass Sub Type" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassType
 :BiomassType rdf:type owl:Class ;
-             rdfs:subClassOf :BiomassSubGroup ;
              rdfs:label "Biomass Type" .
 
 

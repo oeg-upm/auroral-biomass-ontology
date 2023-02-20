@@ -195,27 +195,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Sub Group"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Sub Type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Blends",
