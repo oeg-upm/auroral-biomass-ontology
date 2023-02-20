@@ -310,7 +310,6 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
         <rdfs:label>Biomass Sub Group</rdfs:label>
     </owl:Class>
     
@@ -320,7 +319,6 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <rdfs:label>Biomass Sub Type</rdfs:label>
     </owl:Class>
     
@@ -330,7 +328,6 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassType">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
         <rdfs:label>Biomass Type</rdfs:label>
     </owl:Class>
     
