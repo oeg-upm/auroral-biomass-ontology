@@ -183,19 +183,16 @@ biom:BiomassOrigin rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup
 biom:BiomassSubGroup rdf:type owl:Class ;
-                     rdfs:subClassOf biom:BiomassGroup ;
                      rdfs:label "Biomass Sub Group" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType
 biom:BiomassSubType rdf:type owl:Class ;
-                    rdfs:subClassOf biom:BiomassType ;
                     rdfs:label "Biomass Sub Type" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassType
 biom:BiomassType rdf:type owl:Class ;
-                 rdfs:subClassOf biom:BiomassSubGroup ;
                  rdfs:label "Biomass Type" .
 
 
