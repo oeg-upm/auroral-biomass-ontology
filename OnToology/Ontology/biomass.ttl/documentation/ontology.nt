@@ -168,17 +168,14 @@
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Sub Group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Sub Type" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassType
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://auroral.iot.linkeddata.es/def/biomass#BiomassType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Type" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Humidity
