@@ -12,7 +12,7 @@ ns1:Briquettes a ns1:Biomass ;
                ns1:tradingForm "null"^^xsd:string ; 
                ns1:dimension "null"^^xsd:string ; 
                ns1:hasHumidity ns1:HumidityBriquettes ; 
-               ns1:hasaches ns1:AchesBriquettes ; 
+               ns1:hasAches ns1:AchesBriquettes ; 
                ns1:produces ns4:EnergyProduction ;
 
 ns4:EnergyProduction a ns4:Energy ;
@@ -23,12 +23,12 @@ ns4:EnergyProduction a ns4:Energy ;
 
  ns1:EnergyBriquette1 a ns3:Measurement ; 
                       ns3:hasValue 4.85 ; 
-                      ns3:isMeasuredIn ns5:KilowattPerKg;
+                      ns3:isMeasuredIn ns5:KilowattPerKg ;
 
 
 ns1:EnergyBriquette2 a ns3:Measurement ; 
                       ns3:hasValue 17.46 ; 
-                      ns3:isMeasuredIn ns5:MegajoulePerKg;                    
+                      ns3:isMeasuredIn ns5:MegajoulePerKg ;                    
 
 ns1:PrimaryEnergyCost a ns1:BiomassEnergyPrice ;
                       ns1:hasValue null ;
