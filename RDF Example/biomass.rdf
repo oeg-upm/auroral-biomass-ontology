@@ -1,0 +1,84 @@
+@prefix ns1: < https://auroral.iot.linkeddata.es/def/biomass# > .
+@prefix ns2: < https://www.w3.org/ns/org# > .
+@prefix ns3: < https://saref.etsi.org/core# > .
+@prefix ns4: < https://auroral.iot.linkeddata.es/def/adapters# > .
+@prefix ns5: < https://auroral.iot.linkeddata.es/def/core# >
+@prefix xsd: < http://www.w3.org/2001/XMLSchema# > .
+
+ns1:Briquettes a ns1:Biomass ;
+               ns1:hasId "7d066f83-ad18-4147-9b05-cbf884c86518^^xsd:string ;
+               ns1:hasName "Briquettes"^^xsd:string ;
+               ns1:hasOrigin ns1:OriginBriquettes ; 
+               ns1:tradingForm "null"^^xsd:string ; 
+               ns1:dimension "null"^^xsd:string ; 
+               ns1:hasHumidity ns1:HumidityBriquettes ; 
+               ns1:hasaches ns1:AchesBriquettes ; 
+               ns1:produces ns4:EnergyProduction ;
+
+ns4:EnergyProduction a ns4:Energy ;
+                     ns3:hasPrice ns1:PrimaryEnergyCost ; 
+                     ns3:hasPrice ns1:PrimaryEnergyCostObs ; 
+                     ns3:relatesToMeasurement ns1:EnergyBriquette1 ; 
+                     ns3:relatesToMeasurement ns1:EnergyBriquette2 ;
+
+ ns1:EnergyBriquette1 a ns3:Measurement ; 
+                      ns3:hasValue 4.85 ; 
+                      ns3:isMeasuredIn ns5:KilowattPerKg;
+
+
+ns1:EnergyBriquette2 a ns3:Measurement ; 
+                      ns3:hasValue 17.46 ; 
+                      ns3:isMeasuredIn ns5:MegajoulePerKg;                    
+
+ns1:PrimaryEnergyCost a ns1:BiomassEnergyPrice ;
+                      ns1:hasValue null ;
+
+ns1:PrimaryEnergyCostObs a ns1:BiomassEnergyPrice ;
+                      ns1:hasValue null ;
+
+ns1:HumidityBriquettes a ns1:Humidity ; 
+                       ns1:hasId "81813d27-d816-4a6e-971f-ba56c0b21089^^xsd:string ;
+                       ns1:hasName "M10"^^xsd:string ;
+                       ns1:hasDescription "<=10%% humidity, as per ISO 18134-1, ISO 18134-2"^^xsd:string ;
+               
+ ns1:AchesBriquettes a ns1:Aches ; 
+                     ns1:hasId "9798c5a9-73da-4dc5-bae4-11baa990a00e^^xsd:string ;
+                     ns1:hasName "A0.5"^^xsd:string ;
+                     ns1:hasDescription "<=0.5%% ashes, as per ISO 18122"^^xsd:string ;              
+
+ns1:OriginBriquettes a ns1:BriquetteOrigin ; 
+                     ns1:hasId "4f914b83-9d10-4df7-a15f-a329ae2a7751^^xsd:string ;
+                     ns1:hasGroup ns1:WoodyBiomass ; 
+                     ns1:hasSubGroup ns1:ForestPlantationAndOtherVirginWood ; 
+                     ns1:belongToType ns1:WhooleTreesWithoutRoots ;
+                     ns1:hasSubType ns1:BlendsAndMixtures ;
+                      
+
+ns1:WoodyBiomass a ns1:BiomassGroup ; 
+                 ns1:hasId "1"^^xsd:string ; 
+                 ns1:hasDescription "null"^^xsd:string ; 
+                 ns1:hasName "Woody Briquettes" ; 
+                 ns2:narrower ns1:ForestPlantationAndOtherVirginWood ;
+
+
+ns1:ForestPlantationAndOtherVirginWood a ns1:BiomassSubGroup ; 
+                 ns1:hasId "1"^^xsd:string ; 
+                 ns1:hasDescription "null"^^xsd:string ; 
+                 ns1:hasName "Forest Plantation And Other Virgin Wood" ; 
+                 ns2:narrower ns1:WhooleTreesWithoutRoots ;
+                 ns2:broader ns1:WoodyBiomass ;
+
+ns1:WhooleTreesWithoutRoots a ns1:BiomassType ; 
+                 ns1:hasId "1"^^xsd:string ; 
+                 ns1:hasDescription "null"^^xsd:string ; 
+                 ns1:hasName "Whoole Trees Without Roots" ;
+                 ns2:narrower ns1:BlendsAndMixtures ;
+                 ns2:broader ns1:ForestPlantationAndOtherVirginWood ;
+
+ns1:BlendsAndMixtures a ns1:BiomassSubType ; 
+                 ns1:hasId "5"^^xsd:string ; 
+                 ns1:hasDescription "null"^^xsd:string ; 
+                 ns1:hasName "Blends And Mixtures" ;
+                 ns2:broader ns1:WhooleTreesWithoutRoots ;
+
+
