@@ -1,5 +1,6 @@
 @prefix : <https://auroral.iot.linkeddata.es/def/biomass#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix cur: <http://publications.europa.eu/resource/authority/currency/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,6 +8,8 @@
 @prefix biom: <https://auroral.iot.linkeddata.es/def/biomass#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <https://www.w3.org/ns/org#> .
+@prefix saref: <https://saref.etsi.org/core#> .
+@prefix adapters: <https://auroral.iot.linkeddata.es/def/adapters#> .
 @base <https://auroral.iot.linkeddata.es/def/biomass#> .
 
 <https://auroral.iot.linkeddata.es/def/biomass#> rdf:type owl:Ontology ;
@@ -29,6 +32,12 @@ biom:belongsToType rdf:type owl:ObjectProperty ;
                    rdfs:domain biom:BiomassOrigin ;
                    rdfs:range biom:BiomassType ;
                    rdfs:label "belongs to type" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#consumes
+biom:consumes rdf:type owl:ObjectProperty ;
+              rdfs:domain biom:Biomass ;
+              rdfs:range adapters:Energy .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#hasAshes
@@ -71,6 +80,12 @@ biom:hasSubType rdf:type owl:ObjectProperty ;
                 rdfs:domain biom:BiomassOrigin ;
                 rdfs:range biom:BiomassSubType ;
                 rdfs:label "has sub type" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#produces
+biom:produces rdf:type owl:ObjectProperty ;
+              rdfs:domain biom:Biomass ;
+              rdfs:range adapters:Energy .
 
 
 ###  https://www.w3.org/ns/org#broader
@@ -136,6 +151,13 @@ biom:pcimjPerKg rdf:type owl:DatatypeProperty ;
                 rdfs:range xsd:string .
 
 
+###  https://auroral.iot.linkeddata.es/def/biomass#priceValue
+biom:priceValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain biom:BiomassEnergyPrice ;
+                rdfs:range xsd:float ;
+                rdfs:label "price value" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost
 biom:primaryEnergyCost rdf:type owl:DatatypeProperty ;
                        rdfs:domain biom:Biomass ;
@@ -161,6 +183,11 @@ biom:tradingForm rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  https://auroral.iot.linkeddata.es/def/adapters#Energy
+adapters:Energy rdf:type owl:Class ;
+                rdfs:label "Energy" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/biomass#Aches
 biom:Aches rdf:type owl:Class ;
            rdfs:label "Aches" .
@@ -169,6 +196,11 @@ biom:Aches rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/biomass#Biomass
 biom:Biomass rdf:type owl:Class ;
              rdfs:label "Biomass" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice
+biom:BiomassEnergyPrice rdf:type owl:Class ;
+                        rdfs:subClassOf saref:Price .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup
@@ -201,9 +233,24 @@ biom:Humidity rdf:type owl:Class ;
               rdfs:label "Humidity" .
 
 
+###  https://saref.etsi.org/core#Price
+saref:Price rdf:type owl:Class ;
+            rdfs:label "Price" .
+
+
 #################################################################
 #    Individuals
 #################################################################
+
+###  https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption
+adapters:EnergyConsumption rdf:type owl:NamedIndividual ,
+                                    adapters:Energy .
+
+
+###  https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction
+adapters:EnergyProduction rdf:type owl:NamedIndividual ,
+                                   adapters:Energy .
+
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Algae
 biom:Algae rdf:type owl:NamedIndividual ,
