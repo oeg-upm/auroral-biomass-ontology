@@ -1,0 +1,271 @@
+@prefix :      <https://auroral.iot.linkeddata.es/def/biomass#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68>
+        a               sh:NodeShape ;
+        rdfs:label      "Biomass Type" ;
+        sh:name         "Biomass Type" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :BiomassType .
+
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :pcimjPerKg ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a>
+        a            sh:PropertyShape ;
+        rdfs:label   "has Name" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has Name" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :hasName ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5>
+        a               sh:NodeShape ;
+        rdfs:label      "Biomass" ;
+        sh:name         "Biomass" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> , <https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> , <https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> , <https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> , <https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> , <https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> , <https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> , <https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> , <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> , <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> , <https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> , <https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> , <https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> ;
+        sh:targetClass  :Biomass .
+
+<https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> ;
+        sh:targetClass  :BiomassEnergyPrice .
+
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520>
+        a               sh:NodeShape ;
+        rdfs:label      "Biomass Group" ;
+        sh:name         "Biomass Group" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> , <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> , <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ;
+        sh:targetClass  :BiomassGroup .
+
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6>
+        a            sh:PropertyShape ;
+        rdfs:label   "trading Form" ;
+        sh:datatype  xsd:string ;
+        sh:name      "trading Form" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :tradingForm ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :dimension ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30>
+        a               sh:NodeShape ;
+        rdfs:label      "Energy" ;
+        sh:name         "Energy" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880>
+        a            sh:PropertyShape ;
+        rdfs:label   "has origin" ;
+        sh:class     :BiomassOrigin ;
+        sh:name      "has origin" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasOrigin .
+
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671>
+        a               sh:NodeShape ;
+        rdfs:label      "Humidity" ;
+        sh:name         "Humidity" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> , <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> , <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ;
+        sh:targetClass  :Humidity .
+
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a>
+        a            sh:PropertyShape ;
+        rdfs:label   "has sub group" ;
+        sh:class     :BiomassSubGroup ;
+        sh:name      "has sub group" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasSubGroup .
+
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58>
+        a               sh:NodeShape ;
+        rdfs:label      "Biomass Sub Type" ;
+        sh:name         "Biomass Sub Type" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :BiomassSubType .
+
+<https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73>
+        a            sh:PropertyShape ;
+        sh:class     <https://auroral.iot.linkeddata.es/def/adapters#Energy> ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :consumes .
+
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b>
+        a            sh:PropertyShape ;
+        rdfs:label   "has ID" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has ID" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :hasID ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b>
+        a               sh:NodeShape ;
+        rdfs:label      "Biomass Sub Group" ;
+        sh:name         "Biomass Sub Group" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :BiomassSubGroup .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> , <https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> , <https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> , <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> , <https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> , <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> , <https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> , <https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> , <https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> , <https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> , <https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> , <https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> , <https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> , <https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> , <https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> , <https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> , <https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> , <https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> , <https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> , <https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> , <https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> , <https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> , <https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> , <https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> , <https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> , <https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> , <https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> , <https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> , <https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> , <https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> , <https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> , <https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/712795377> .
+
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069>
+        a            sh:PropertyShape ;
+        rdfs:label   "broader" ;
+        sh:name      "broader" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://www.w3.org/ns/org#broader> .
+
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0>
+        a            sh:PropertyShape ;
+        rdfs:label   "primary Energy Cost" ;
+        sh:datatype  xsd:string ;
+        sh:name      "primary Energy Cost" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :primaryEnergyCost ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec>
+        a            sh:PropertyShape ;
+        rdfs:label   "narrower" ;
+        sh:name      "narrower" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <https://www.w3.org/ns/org#narrower> .
+
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be>
+        a               sh:NodeShape ;
+        rdfs:label      "Biomass Origin" ;
+        sh:name         "Biomass Origin" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> , <https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> , <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> , <https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> , <https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> , <https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> ;
+        sh:targetClass  :BiomassOrigin .
+
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad>
+        a            sh:PropertyShape ;
+        rdfs:label   "price value" ;
+        sh:datatype  xsd:float ;
+        sh:name      "price value" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :priceValue ;
+        sh:pattern   "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6>
+        a            sh:PropertyShape ;
+        rdfs:label   "belongs to type" ;
+        sh:class     :BiomassType ;
+        sh:name      "belongs to type" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :belongsToType .
+
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :pciKwhPerKg ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c>
+        a            sh:PropertyShape ;
+        sh:class     <https://auroral.iot.linkeddata.es/def/adapters#Energy> ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :produces .
+
+<https://astrea.linkeddata.es/report/712795377>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://auroral.iot.linkeddata.es/def/biomass/ontology.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852>
+        a            sh:PropertyShape ;
+        rdfs:label   "has ashes" ;
+        sh:class     :Aches ;
+        sh:name      "has ashes" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasAshes .
+
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb>
+        a            sh:PropertyShape ;
+        rdfs:label   "primary Energy Cost Obs" ;
+        sh:datatype  xsd:string ;
+        sh:name      "primary Energy Cost Obs" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :primaryEnergyCostObs ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee>
+        a            sh:PropertyShape ;
+        rdfs:label   "has humidity" ;
+        sh:class     :Humidity ;
+        sh:name      "has humidity" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasHumidity .
+
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f>
+        a               sh:NodeShape ;
+        rdfs:label      "Price" ;
+        sh:name         "Price" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://saref.etsi.org/core#Price> .
+
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7>
+        a               sh:NodeShape ;
+        rdfs:label      "Aches" ;
+        sh:name         "Aches" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> , <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> , <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ;
+        sh:targetClass  :Aches .
+
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678>
+        a            sh:PropertyShape ;
+        rdfs:label   "has Description" ;
+        sh:datatype  xsd:string ;
+        sh:name      "has Description" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :hasDescription ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608>
+        a            sh:PropertyShape ;
+        rdfs:label   "has group" ;
+        sh:class     :BiomassGroup ;
+        sh:name      "has group" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasGroup .
+
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062>
+        a            sh:PropertyShape ;
+        rdfs:label   "has sub type" ;
+        sh:class     :BiomassSubType ;
+        sh:name      "has sub type" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasSubType .
