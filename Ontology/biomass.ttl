@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix biom: <https://auroral.iot.linkeddata.es/def/biomass#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ship: <https://auroral.iot.linkeddata.es/def/shipment#> .
 @prefix skos: <https://www.w3.org/ns/org#> .
 @prefix saref: <https://saref.etsi.org/core#> .
 @prefix adapters: <https://auroral.iot.linkeddata.es/def/adapters#> .
@@ -38,6 +39,16 @@ biom:belongsToType rdf:type owl:ObjectProperty ;
 biom:consumes rdf:type owl:ObjectProperty ;
               rdfs:domain biom:Biomass ;
               rdfs:range adapters:Energy .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#forCaliber
+biom:forCaliber rdf:type owl:ObjectProperty ;
+                rdfs:label "for caliber" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#forGroup
+biom:forGroup rdf:type owl:ObjectProperty ;
+              rdfs:label "for group" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#hasAshes
@@ -86,6 +97,22 @@ biom:hasSubType rdf:type owl:ObjectProperty ;
 biom:produces rdf:type owl:ObjectProperty ;
               rdfs:domain biom:Biomass ;
               rdfs:range adapters:Energy .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#quantity
+biom:quantity rdf:type owl:ObjectProperty ;
+              rdfs:domain biom:Biomass ;
+              rdfs:range biom:Quantity .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber
+biom:quantityPerCaliber rdf:type owl:ObjectProperty ;
+                        rdfs:label "quantity per caliber" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup
+biom:quantityPerGroup rdf:type owl:ObjectProperty ;
+                      rdfs:label "quantity per group" .
 
 
 ###  https://www.w3.org/ns/org#broader
@@ -139,18 +166,6 @@ biom:hasName rdf:type owl:DatatypeProperty ;
              rdfs:label "has Name" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg
-biom:pciKwhPerKg rdf:type owl:DatatypeProperty ;
-                 rdfs:domain biom:Biomass ;
-                 rdfs:range xsd:string .
-
-
-###  https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg
-biom:pcimjPerKg rdf:type owl:DatatypeProperty ;
-                rdfs:domain biom:Biomass ;
-                rdfs:range xsd:string .
-
-
 ###  https://auroral.iot.linkeddata.es/def/biomass#priceValue
 biom:priceValue rdf:type owl:DatatypeProperty ;
                 rdfs:domain biom:BiomassEnergyPrice ;
@@ -177,6 +192,12 @@ biom:tradingForm rdf:type owl:DatatypeProperty ;
                  rdfs:domain biom:Biomass ;
                  rdfs:range xsd:string ;
                  rdfs:label "trading Form" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#value
+biom:value rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:float ;
+           rdfs:label "value" .
 
 
 #################################################################
@@ -228,9 +249,72 @@ biom:BiomassType rdf:type owl:Class ;
                  rdfs:label "Biomass Type" .
 
 
+###  https://auroral.iot.linkeddata.es/def/biomass#Caliber
+biom:Caliber rdf:type owl:Class ;
+             rdfs:label "Caliber" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation
+biom:CaliberAllocation rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty biom:forCaliber ;
+                                         owl:someValuesFrom biom:Caliber
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty biom:value ;
+                                         owl:someValuesFrom xsd:float
+                                       ] ;
+                       rdfs:label "Caliber Allocation" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity
+biom:CurrentQuantity rdf:type owl:Class ;
+                     rdfs:subClassOf biom:Quantity .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation
+biom:GroupAllocation rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty biom:forGroup ;
+                                       owl:someValuesFrom biom:BiomassSubGroup
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty biom:value ;
+                                       owl:someValuesFrom xsd:float
+                                     ] ;
+                     rdfs:label "Group Allocation" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/biomass#Humidity
 biom:Humidity rdf:type owl:Class ;
               rdfs:label "Humidity" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Quantity
+biom:Quantity rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty biom:value ;
+                                owl:someValuesFrom xsd:float
+                              ] ;
+              rdfs:comment "Quantity" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity
+biom:TotalQuantity rdf:type owl:Class ;
+                   rdfs:subClassOf biom:Quantity .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity
+ship:BoughtQuantity rdf:type owl:Class ;
+                    rdfs:subClassOf biom:Quantity ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty biom:quantityPerCaliber ;
+                                      owl:someValuesFrom biom:CaliberAllocation
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty biom:quantityPerGroup ;
+                                      owl:someValuesFrom biom:GroupAllocation
+                                    ] .
 
 
 ###  https://saref.etsi.org/core#Price
