@@ -1,5 +1,8 @@
 {
   "@context" : {
+    "CurrentQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity"
+    },
     "tradingForm" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#tradingForm",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -7,13 +10,27 @@
     "Humidity" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity"
     },
+    "quantityPerCaliber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber",
+      "@type" : "@id"
+    },
+    "consumes" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#consumes",
+      "@type" : "@id"
+    },
     "hasName" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "Caliber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Caliber"
+    },
     "hasID" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GroupAllocation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation"
     },
     "primaryEnergyCostObs" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs",
@@ -38,12 +55,17 @@
       "@id" : "https://www.w3.org/ns/org#narrower",
       "@type" : "@id"
     },
-    "pciKwhPerKg" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "TotalQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity"
+    },
+    "BiomassEnergyPrice" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
     },
     "Biomass" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+    },
+    "Price" : {
+      "@id" : "https://saref.etsi.org/core#Price"
     },
     "BiomassOrigin" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"
@@ -51,23 +73,55 @@
     "BiomassGroup" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
     },
+    "BoughtQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
+    },
     "BiomassSubGroup" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
     },
+    "Energy" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+    },
     "Aches" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches"
+    },
+    "value" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "quantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantity",
+      "@type" : "@id"
+    },
+    "priceValue" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#priceValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "belongsToType" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#belongsToType",
       "@type" : "@id"
     },
+    "Quantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity"
+    },
     "hasSubType" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubType",
       "@type" : "@id"
     },
-    "pcimjPerKg" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "produces" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#produces",
+      "@type" : "@id"
+    },
+    "forGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#forGroup",
+      "@type" : "@id"
+    },
+    "forCaliber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#forCaliber",
+      "@type" : "@id"
+    },
+    "CaliberAllocation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation"
     },
     "broader" : {
       "@id" : "https://www.w3.org/ns/org#broader",
@@ -75,6 +129,10 @@
     },
     "hasOrigin" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasOrigin",
+      "@type" : "@id"
+    },
+    "quantityPerGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup",
       "@type" : "@id"
     },
     "comment" : {

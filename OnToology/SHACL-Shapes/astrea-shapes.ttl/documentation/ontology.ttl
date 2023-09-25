@@ -1,0 +1,471 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#name
+<http://www.w3.org/ns/shacl#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#pattern
+<http://www.w3.org/ns/shacl#pattern> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#contains
+<https://w3id.org/def/astrea#contains> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#generatedShapesFrom
+<https://w3id.org/def/astrea#generatedShapesFrom> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#message
+<https://w3id.org/def/astrea#message> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#source
+<https://w3id.org/def/astrea#source> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#statusCode
+<https://w3id.org/def/astrea#statusCode> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ReportEntry
+<https://w3id.org/def/astrea#ReportEntry> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ShapeReport
+<https://w3id.org/def/astrea#ShapeReport> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://astrea.linkeddata.es/report
+<http://astrea.linkeddata.es/report> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/def/astrea#ShapeReport> ;
+                                     <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> ,
+                                                                            <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> ,
+                                                                            <https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> ,
+                                                                            <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ,
+                                                                            <https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> ,
+                                                                            <https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> ,
+                                                                            <https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> ,
+                                                                            <https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> ,
+                                                                            <https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> ,
+                                                                            <https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> ,
+                                                                            <https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> ,
+                                                                            <https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> ,
+                                                                            <https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> ,
+                                                                            <https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> ,
+                                                                            <https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> ,
+                                                                            <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> ,
+                                                                            <https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> ,
+                                                                            <https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> ,
+                                                                            <https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> ,
+                                                                            <https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> ,
+                                                                            <https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> ,
+                                                                            <https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> ,
+                                                                            <https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> ,
+                                                                            <https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> ,
+                                                                            <https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> ,
+                                                                            <https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> ,
+                                                                            <https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> ,
+                                                                            <https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> ;
+                                     <https://w3id.org/def/astrea#generatedShapesFrom> <https://astrea.linkeddata.es/report/712795377> .
+
+
+###  https://astrea.linkeddata.es/report/712795377
+<https://astrea.linkeddata.es/report/712795377> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/astrea#ReportEntry> ;
+                                                <https://w3id.org/def/astrea#message> "Shapes generated with no errors" ;
+                                                <https://w3id.org/def/astrea#source> "https://auroral.iot.linkeddata.es/def/biomass/ontology.ttl" ;
+                                                <https://w3id.org/def/astrea#statusCode> "200"^^xsd:int .
+
+
+###  https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "primary Energy Cost" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "primary Energy Cost" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has Description" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has Description" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has Name" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has Name" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasName> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "belongs to type" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "belongs to type" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#belongsToType> .
+
+
+###  https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Biomass Group" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Biomass Group" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> .
+
+
+###  https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Aches" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Aches" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#Aches> .
+
+
+###  https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Price" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Price" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://saref.etsi.org/core#Price> .
+
+
+###  https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has sub type" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has sub type" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> .
+
+
+###  https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has ashes" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#Aches> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has ashes" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasAshes> .
+
+
+###  https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "price value" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:float ;
+                                                                       <http://www.w3.org/ns/shacl#name> "price value" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#priceValue> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+
+###  https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Biomass Type" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Biomass Type" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
+
+
+###  https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405
+<https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> .
+
+
+###  https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has sub group" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has sub group" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> .
+
+
+###  https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73
+<https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/adapters#Energy> ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#consumes> .
+
+
+###  https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Energy" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Energy" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+
+
+###  https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Biomass Sub Group" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Biomass Sub Group" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
+
+
+###  https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c
+<https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/adapters#Energy> ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#produces> .
+
+
+###  https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has ID" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has ID" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasID> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Biomass Sub Type" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Biomass Sub Type" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
+
+
+###  https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Biomass" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Biomass" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
+
+
+###  https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "broader" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "broader" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://www.w3.org/ns/org#broader> .
+
+
+###  https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "trading Form" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "trading Form" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#tradingForm> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has group" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has group" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasGroup> .
+
+
+###  https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Biomass Origin" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Biomass Origin" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
+
+
+###  https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has origin" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has origin" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> .
+
+
+###  https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has humidity" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#Humidity> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has humidity" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> .
+
+
+###  https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "narrower" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "narrower" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://www.w3.org/ns/org#narrower> .
+
+
+###  https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#dimension> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "primary Energy Cost Obs" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "primary Energy Cost Obs" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Humidity" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Humidity" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#Humidity> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
