@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "biom:Humidity" "biom:BiomassType" "biom:BiomassSubType" "biom:BiomassSubGroup" "biom:BiomassOrigin" "biom:BiomassGroup" "biom:Biomass" "biom:Aches" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "biom:GroupAllocation" "biom:BiomassGroup" "biom:BiomassSubGroup" "biom:Humidity" "biom:BiomassType" "biom:Aches" "biom:BiomassSubType" "biom:Caliber" "adapters:Energy" "biom:Quantity" "biom:BiomassEnergyPrice" "biom:BiomassOrigin" "biom:CaliberAllocation" "biom:Biomass" ; /*classes style*/
 	"biom:RootCrops" -> "biom:WholePlantRootCrops" [ label = "skos:narrower" ];
 	"biom:RootCrops" -> "biom:StalksAndLeavesRootCrops" [ label = "skos:narrower" ];
 	"biom:RootCrops" -> "biom:RootRootCrops" [ label = "skos:narrower" ];
@@ -288,8 +288,8 @@ node [shape = rectangle, color="orange"]; "biom:Humidity" "biom:BiomassType" "bi
 	"biom:WholeTreesWithRoots" -> "biom:BroadLeafWholeTreesWithRoots" [ label = "skos:narrower" ];
 	"biom:WholeTreesWithRoots" -> "biom:BlendsAndMixturesWholeTreesWithRoots" [ label = "skos:narrower" ];
 	"biom:WholeTreesWithRoots" -> "biom:ForestPlantation" [ label = "skos:broader" ];
-	"biom:HusksOrShellsOilSeedCrops" -> "biom:OilSeedCrops" [ label = "skos:broader" ];
 	"biom:RootCropsChemicallyTreatedHerbaceousResidues" -> "biom:ChemicallyTreatedHerbaceousResidues" [ label = "skos:broader" ];
+	"biom:HusksOrShellsOilSeedCrops" -> "biom:OilSeedCrops" [ label = "skos:broader" ];
 	"biom:ChemicallyUntreatedFruitResidues" -> "biom:StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues" [ label = "skos:narrower" ];
 	"biom:ChemicallyUntreatedFruitResidues" -> "biom:NutsAndAcornsChemicallyUntreatedFruitResidues" [ label = "skos:narrower" ];
 	"biom:ChemicallyUntreatedFruitResidues" -> "biom:CrudeOliveCakeChemicallyUntreatedFruitResidues" [ label = "skos:narrower" ];
@@ -297,6 +297,16 @@ node [shape = rectangle, color="orange"]; "biom:Humidity" "biom:BiomassType" "bi
 	"biom:ChemicallyUntreatedFruitResidues" -> "biom:BerriesChemicallyUntreatedFruitResidues" [ label = "skos:narrower" ];
 	"biom:ChemicallyUntreatedFruitResidues" -> "biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry" [ label = "skos:broader" ];
 	"biom:LegumeCropsChemicallyTreatedHerbaceousResidues" -> "biom:ChemicallyTreatedHerbaceousResidues" [ label = "skos:broader" ];
+	"NULL" -> "biom:forGroup" [ label = "owl:onProperty" ];
+	"NULL" -> "biom:BiomassSubGroup" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "xsd:float" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "biom:quantityPerGroup" [ label = "owl:onProperty" ];
+	"NULL" -> "biom:Caliber" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "biom:forCaliber" [ label = "owl:onProperty" ];
+	"NULL" -> "biom:value" [ label = "owl:onProperty" ];
+	"NULL" -> "biom:GroupAllocation" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "biom:CaliberAllocation" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "biom:quantityPerCaliber" [ label = "owl:onProperty" ];
 	"biom:BlendsAndMixturesCerealCrops" -> "biom:CerealCrops" [ label = "skos:broader" ];
 	"biom:WholeFruit" -> "biom:StoneOrKernelFruits" [ label = "skos:broader" ];
 	"biom:WithoutBarkChemicallyUntreatedUsedWood" -> "biom:ChemicallyUntreatedUsedWood" [ label = "skos:broader" ];
@@ -327,19 +337,22 @@ node [shape = rectangle, color="orange"]; "biom:Humidity" "biom:BiomassType" "bi
 	"biom:WholePlantLegumeCrops" -> "biom:LegumeCrops" [ label = "skos:broader" ];
 	"biom:BiomassOrigin" -> "biom:BiomassSubGroup" [ label = "biom:hasSubGroup" ];
 	"biom:BiomassOrigin" -> "biom:BiomassSubType" [ label = "biom:hasSubType" ];
+	"biom:Biomass" -> "biom:Quantity" [ label = "biom:quantity" ];
 	"biom:Aches" -> "xsd:string" [ label = "biom:hasID" ];
 	"biom:Biomass" -> "biom:Humidity" [ label = "biom:hasHumidity" ];
+	"biom:Biomass" -> "adapters:Energy" [ label = "biom:consumes" ];
 	"biom:Biomass" -> "biom:BiomassOrigin" [ label = "biom:hasOrigin" ];
+	"biom:Biomass" -> "adapters:Energy" [ label = "biom:produces" ];
 	"biom:Aches" -> "xsd:string" [ label = "biom:hasName" ];
 	"biom:Biomass" -> "xsd:string" [ label = "biom:primaryEnergyCost" ];
 	"biom:Biomass" -> "xsd:string" [ label = "biom:tradingForm" ];
 	"biom:Biomass" -> "xsd:string" [ label = "biom:primaryEnergyCostObs" ];
 	"biom:Biomass" -> "biom:Aches" [ label = "biom:hasAshes" ];
 	"biom:Aches" -> "xsd:string" [ label = "biom:hasDescription" ];
-	"biom:Biomass" -> "xsd:string" [ label = "biom:pcimjPerKg" ];
 	"biom:BiomassOrigin" -> "biom:BiomassGroup" [ label = "biom:hasGroup" ];
+	"biom:BiomassEnergyPrice" -> "xsd:float" [ label = "biom:priceValue" ];
+	"owl:Thing" -> "xsd:float" [ label = "biom:value" ];
 	"biom:BiomassOrigin" -> "biom:BiomassType" [ label = "biom:belongsToType" ];
-	"biom:Biomass" -> "xsd:string" [ label = "biom:pciKwhPerKg" ];
 	"biom:Biomass" -> "xsd:string" [ label = "biom:dimension" ];
 
 }

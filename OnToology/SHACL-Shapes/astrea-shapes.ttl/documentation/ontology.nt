@@ -1,0 +1,426 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#name
+<http://www.w3.org/ns/shacl#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#pattern
+<http://www.w3.org/ns/shacl#pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#contains
+<https://w3id.org/def/astrea#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#generatedShapesFrom
+<https://w3id.org/def/astrea#generatedShapesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#message
+<https://w3id.org/def/astrea#message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#source
+<https://w3id.org/def/astrea#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#statusCode
+<https://w3id.org/def/astrea#statusCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/astrea#ReportEntry
+<https://w3id.org/def/astrea#ReportEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/astrea#ShapeReport
+<https://w3id.org/def/astrea#ShapeReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://astrea.linkeddata.es/report
+<http://astrea.linkeddata.es/report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://astrea.linkeddata.es/report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/astrea#ShapeReport> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#generatedShapesFrom> <https://astrea.linkeddata.es/report/712795377> .
+# 
+# https://astrea.linkeddata.es/report/712795377
+<https://astrea.linkeddata.es/report/712795377> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/report/712795377> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/astrea#ReportEntry> .
+<https://astrea.linkeddata.es/report/712795377> <https://w3id.org/def/astrea#message> "Shapes generated with no errors" .
+<https://astrea.linkeddata.es/report/712795377> <https://w3id.org/def/astrea#source> "https://auroral.iot.linkeddata.es/def/biomass/ontology.ttl" .
+<https://astrea.linkeddata.es/report/712795377> <https://w3id.org/def/astrea#statusCode> "200"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/2000/01/rdf-schema#label> "primary Energy Cost" .
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/ns/shacl#name> "primary Energy Cost" .
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost> .
+<https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/2000/01/rdf-schema#label> "has Description" .
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/ns/shacl#name> "has Description" .
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> .
+<https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg> .
+<https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/2000/01/rdf-schema#label> "has Name" .
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/ns/shacl#name> "has Name" .
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasName> .
+<https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to type" .
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> <http://www.w3.org/ns/shacl#name> "belongs to type" .
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#belongsToType> .
+# 
+# https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Group" .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/ns/shacl#name> "Biomass Group" .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> .
+<https://astrea.linkeddata.es/shapes#bced42a79ad2ad9b580219025cafa520> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> .
+# 
+# https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/2000/01/rdf-schema#label> "Aches" .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/ns/shacl#name> "Aches" .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> .
+<https://astrea.linkeddata.es/shapes#cc5c9faa08aba33c06fb5b7583c1efd7> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#Aches> .
+# 
+# https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg> .
+<https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> <http://www.w3.org/2000/01/rdf-schema#label> "Price" .
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> <http://www.w3.org/ns/shacl#name> "Price" .
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#ede4f91fe078daa7c90abe1a22de219f> <http://www.w3.org/ns/shacl#targetClass> <https://saref.etsi.org/core#Price> .
+# 
+# https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> <http://www.w3.org/2000/01/rdf-schema#label> "has sub type" .
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> <http://www.w3.org/ns/shacl#name> "has sub type" .
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> .
+# 
+# https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> <http://www.w3.org/2000/01/rdf-schema#label> "has ashes" .
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#Aches> .
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> <http://www.w3.org/ns/shacl#name> "has ashes" .
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasAshes> .
+# 
+# https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/2000/01/rdf-schema#label> "price value" .
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/ns/shacl#name> "price value" .
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#priceValue> .
+<https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> <http://www.w3.org/ns/shacl#pattern> "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+# 
+# https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Type" .
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> <http://www.w3.org/ns/shacl#name> "Biomass Type" .
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#11bfe5ed180ac4fcd02a086057ca6f68> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
+# 
+# https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405
+<https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#1ebfa8038d34c9ff4a3a9bcadb8d9cad> .
+<https://astrea.linkeddata.es/shapes#14616ba4f6aef1451c20b3e1c147c405> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> .
+# 
+# https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> <http://www.w3.org/2000/01/rdf-schema#label> "has sub group" .
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> <http://www.w3.org/ns/shacl#name> "has sub group" .
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> .
+# 
+# https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73
+<https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+<https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#consumes> .
+# 
+# https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> <http://www.w3.org/2000/01/rdf-schema#label> "Energy" .
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> <http://www.w3.org/ns/shacl#name> "Energy" .
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#20c8ae88dbd32f8e7b4856810b7cee30> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+# 
+# https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Sub Group" .
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> <http://www.w3.org/ns/shacl#name> "Biomass Sub Group" .
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#2565c131efcdb17da9bf6cf683a65c9b> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
+# 
+# https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c
+<https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+<https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#produces> .
+# 
+# https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/2000/01/rdf-schema#label> "has ID" .
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/ns/shacl#name> "has ID" .
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasID> .
+<https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Sub Type" .
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> <http://www.w3.org/ns/shacl#name> "Biomass Sub Type" .
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#4fe1abd5bdc90b4b592812009473ce58> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
+# 
+# https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass" .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#name> "Biomass" .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#a1d4ff336539ee07f33325f7ea278ee0> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b12dc38575ab4268d1d2db4ff3566506> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#ec6e5f07d86d1578b1964938d24a350a> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#055f35904204a3b4a77432029fc71852> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2c8df3a33658162a8f7c09fefbee4d73> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2888dbfe7453e928817336ea7f2d066c> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> .
+<https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
+# 
+# https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> <http://www.w3.org/2000/01/rdf-schema#label> "broader" .
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> <http://www.w3.org/ns/shacl#name> "broader" .
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#5fed772452ec2cb98c654d02ab41f069> <http://www.w3.org/ns/shacl#path> <https://www.w3.org/ns/org#broader> .
+# 
+# https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/2000/01/rdf-schema#label> "trading Form" .
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/ns/shacl#name> "trading Form" .
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#tradingForm> .
+<https://astrea.linkeddata.es/shapes#51918b4e09531f3ea61ce59f97b34bc6> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> <http://www.w3.org/2000/01/rdf-schema#label> "has group" .
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> .
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> <http://www.w3.org/ns/shacl#name> "has group" .
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasGroup> .
+# 
+# https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Origin" .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#name> "Biomass Origin" .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#bc2d827220cd7f48fb19a924cdad4fc6> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#fcd0295eae77dafe6fbcb0433e010062> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2a4b8d552ce6ad0ff0f6fbcbc816706a> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#57f8e6f130c5569f04156380f4ad9608> .
+<https://astrea.linkeddata.es/shapes#6c5ef532ccffa38bdb3fa7277fd345be> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
+# 
+# https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> <http://www.w3.org/2000/01/rdf-schema#label> "has origin" .
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> <http://www.w3.org/ns/shacl#name> "has origin" .
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#6971acae0abec4c7df93f26be3b24880> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> .
+# 
+# https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> <http://www.w3.org/2000/01/rdf-schema#label> "has humidity" .
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/biomass#Humidity> .
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> <http://www.w3.org/ns/shacl#name> "has humidity" .
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#7a6de095ec25d14adbe5577408a722ee> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> .
+# 
+# https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> <http://www.w3.org/2000/01/rdf-schema#label> "narrower" .
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> <http://www.w3.org/ns/shacl#name> "narrower" .
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#704d6c030e4271766204b5fd077eafec> <http://www.w3.org/ns/shacl#path> <https://www.w3.org/ns/org#narrower> .
+# 
+# https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#dimension> .
+<https://astrea.linkeddata.es/shapes#76c4dfa8d2f7105121a63b8a3bea3fb9> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/2000/01/rdf-schema#label> "primary Energy Cost Obs" .
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/ns/shacl#name> "primary Energy Cost Obs" .
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs> .
+<https://astrea.linkeddata.es/shapes#796450834dbcb2def72a619feeb2f5bb> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity" .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/ns/shacl#name> "Humidity" .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#afb6c248c321f028d8678bafcf68a678> .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b21c7be7069d817ce471c21e7529429a> .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3aaa4f96df515b7875948dd0c0789a0b> .
+<https://astrea.linkeddata.es/shapes#9545f544433985bb0cc6eb89e7eb1671> <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/biomass#Humidity> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

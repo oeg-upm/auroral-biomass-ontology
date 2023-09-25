@@ -2,7 +2,9 @@
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+<ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
    <li>
       <a href="#Aches"
          title="https://auroral.iot.linkeddata.es/def/biomass#Aches">Aches</a>
@@ -10,6 +12,12 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Biomass"
          title="https://auroral.iot.linkeddata.es/def/biomass#Biomass">Biomass</a>
+   </li>
+   <li>
+      <a href="#BiomassEnergyPrice"
+         title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">
+         <span>biomass energy price</span>
+      </a>
    </li>
    <li>
       <a href="#BiomassGroup"
@@ -32,16 +40,75 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/biomass#BiomassType">Biomass Type</a>
    </li>
    <li>
+      <a href="#https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
+         title="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity">
+         <span>bought quantity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Caliber"
+         title="https://auroral.iot.linkeddata.es/def/biomass#Caliber">Caliber</a>
+   </li>
+   <li>
+      <a href="#CaliberAllocation"
+         title="https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation">Caliber Allocation</a>
+   </li>
+   <li>
+      <a href="#CurrentQuantity"
+         title="https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity">
+         <span>current quantity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://auroral.iot.linkeddata.es/def/adapters#Energy"
+         title="https://auroral.iot.linkeddata.es/def/adapters#Energy">Energy</a>
+   </li>
+   <li>
+      <a href="#GroupAllocation"
+         title="https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation">Group Allocation</a>
+   </li>
+   <li>
       <a href="#Humidity"
          title="https://auroral.iot.linkeddata.es/def/biomass#Humidity">Humidity</a>
    </li>
-</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#https://saref.etsi.org/core#Price" title="https://saref.etsi.org/core#Price">Price</a>
+   </li>
+   <li>
+      <a href="#Quantity"
+         title="https://auroral.iot.linkeddata.es/def/biomass#Quantity">
+         <span>quantity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#TotalQuantity"
+         title="https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity">
+         <span>total quantity</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
    <li>
       <a href="#belongsToType"
          title="https://auroral.iot.linkeddata.es/def/biomass#belongsToType">belongs to type</a>
    </li>
    <li>
       <a href="#https://www.w3.org/ns/org#broader" title="https://www.w3.org/ns/org#broader">broader</a>
+   </li>
+   <li>
+      <a href="#consumes"
+         title="https://auroral.iot.linkeddata.es/def/biomass#consumes">
+         <span>consumes</span>
+      </a>
+   </li>
+   <li>
+      <a href="#forCaliber"
+         title="https://auroral.iot.linkeddata.es/def/biomass#forCaliber">for caliber</a>
+   </li>
+   <li>
+      <a href="#forGroup"
+         title="https://auroral.iot.linkeddata.es/def/biomass#forGroup">for group</a>
    </li>
    <li>
       <a href="#hasAshes"
@@ -70,7 +137,29 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#https://www.w3.org/ns/org#narrower" title="https://www.w3.org/ns/org#narrower">narrower</a>
    </li>
-</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#produces"
+         title="https://auroral.iot.linkeddata.es/def/biomass#produces">
+         <span>produces</span>
+      </a>
+   </li>
+   <li>
+      <a href="#quantity"
+         title="https://auroral.iot.linkeddata.es/def/biomass#quantity">
+         <span>quantity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#quantityPerCaliber"
+         title="https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber">quantity per caliber</a>
+   </li>
+   <li>
+      <a href="#quantityPerGroup"
+         title="https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup">quantity per group</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
    <li>
       <a href="#dimension"
          title="https://auroral.iot.linkeddata.es/def/biomass#dimension">
@@ -90,16 +179,8 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/biomass#hasName">has Name</a>
    </li>
    <li>
-      <a href="#pciKwhPerKg"
-         title="https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg">
-         <span>pci kwh per kg</span>
-      </a>
-   </li>
-   <li>
-      <a href="#pcimjPerKg"
-         title="https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg">
-         <span>pcimj per kg</span>
-      </a>
+      <a href="#priceValue"
+         title="https://auroral.iot.linkeddata.es/def/biomass#priceValue">price value</a>
    </li>
    <li>
       <a href="#primaryEnergyCost"
@@ -113,7 +194,13 @@ This ontology has the following classes and properties.</span>
       <a href="#tradingForm"
          title="https://auroral.iot.linkeddata.es/def/biomass#tradingForm">trading Form</a>
    </li>
-</ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#value"
+         title="https://auroral.iot.linkeddata.es/def/biomass#value">value</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
    <li>
       <a href="#Algae"
          title="https://auroral.iot.linkeddata.es/def/biomass#Algae">
@@ -443,6 +530,18 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#CrudeOliveCakeChemicallyUntreatedFruitResidues"
          title="https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues">Crude olive cake chemically untreated fruit residues</a>
+   </li>
+   <li>
+      <a href="#https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption"
+         title="https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption">
+         <span>energy consumption</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction"
+         title="https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction">
+         <span>energy production</span>
+      </a>
    </li>
    <li>
       <a href="#ExhaustedOliveCakeChemicallyTreatedFruitResidues"

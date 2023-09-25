@@ -1,6 +1,87 @@
 [ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#forCaliber"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Caliber"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#forGroup"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+  } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -177,6 +258,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core#Price"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup",
@@ -797,6 +884,23 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Caliber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Caliber"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Caliber Allocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CerealCrops",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1144,6 +1248,12 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1363,6 +1473,17 @@
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Group Allocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass",
@@ -1725,6 +1846,15 @@
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed",
@@ -2152,6 +2282,12 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#UsedWood",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2448,6 +2584,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#consumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#dimension",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2455,6 +2600,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#forCaliber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "for caliber"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#forGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "for group"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAshes",
@@ -2585,22 +2742,16 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#pciKwhPerKg",
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#priceValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "price value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#pcimjPerKg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost",
@@ -2627,6 +2778,36 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "quantity per caliber"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "quantity per group"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#tradingForm",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2637,6 +2818,31 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core#Price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Price"
   } ]
 }, {
   "@id" : "https://www.w3.org/ns/org#broader",
