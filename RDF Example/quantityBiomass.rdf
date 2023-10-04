@@ -1,0 +1,62 @@
+@prefix ns1: <https://auroral.iot.linkeddata.es/def/biomass#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Biomass1 a ns1:Biomass ;
+    ns1:quantity ns1:BoughtQuantityBiomass1,
+        ns1:CurrentQuantityBiomass1,
+        ns1:SoldQuantityBiomass1,
+        ns1:TotalQuantityBiomass1 .
+
+ns1:Trady a ns1:TradingForm .
+
+ns1:BoughtQuantityBiomass1 a <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> ;
+    ns1:quantityPerGroup ns1:BoughtQuantityForest,
+        ns1:BoughtQuantityHerbaceaous .
+
+ns1:BoughtQuantityForest a ns1:BoughtQuantityPerGroup ;
+    ns1:relatedTo ns1:ForestPlantationAndOtherVirginWood .
+
+ns1:BoughtQuantityHerbaceaous a ns1:BoughtQuantityPerGroup ;
+    ns1:relatedTo ns1:HerbaceousBiomassFromAgriculture .
+
+ns1:CurrentQuantityBiomass1 a ns1:CurrentQuantity .
+
+ns1:PS1 a ns1:Caliber .
+
+ns1:PS2 a ns1:Caliber .
+
+ns1:SoldQuantityBiomass1 a ns1:SoldQuantity ;
+    ns1:quantityPerGroup ns1:SoldQuantityForest,
+        ns1:SoldQuantityHerbaceaous ;
+    ns1:value "200"^^xsd:string .
+
+ns1:SoldQuantityForest a ns1:BoughtQuantityPerGroup ;
+    ns1:relatedTo ns1:ForestPlantationAndOtherVirginWood ;
+    ns1:value "90"^^xsd:string .
+
+ns1:SoldQuantityHerbaceaous a ns1:BoughtQuantityPerGroup ;
+    ns1:quantityPerCaliber ns1:SoldQuantityPerCaliber1,
+        ns1:SoldQuantityPerCaliber2,
+        ns1:SoldQuantityPerCaliber3 ;
+    ns1:relatedTo ns1:HerbaceousBiomassFromAgriculture ;
+    ns1:value "110"^^xsd:string .
+
+ns1:SoldQuantityPerCaliber1 a ns1:SoldQuantityPerCaliber ;
+    ns1:hasCaliber ns1:PS1 ;
+    ns1:hasTradingForm ns1:WoodyChip ;
+    ns1:value "50"^^xsd:string .
+
+ns1:SoldQuantityPerCaliber2 a ns1:SoldQuantityPerCaliber ;
+    ns1:hasCaliber ns1:PS2 ;
+    ns1:hasTradingForm ns1:WoodyChip ;
+    ns1:value "60"^^xsd:string .
+
+ns1:SoldQuantityPerCaliber3 a ns1:SoldQuantityPerCaliber .
+
+ns1:TotalQuantityBiomass1 a ns1:TotalQuantity .
+
+ns1:ForestPlantationAndOtherVirginWood a ns1:BiomassSubGroup .
+
+ns1:HerbaceousBiomassFromAgriculture a ns1:BiomassSubGroup .
+
+ns1:WoodyChip a ns1:TradingForm .
