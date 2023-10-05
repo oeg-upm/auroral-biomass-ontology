@@ -9,6 +9,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/def/biomass#">
+        <dc:creator>Ahlem Rhayem</dc:creator>
+        <dc:creator>Andrea Cimmino</dc:creator>
+        <dc:creator>Juan Cano</dc:creator>
+        <dc:creator>Maria Poveda Villalon</dc:creator>
+        <dc:creator>Raul Garcia Castro</dc:creator>
         <dc:description>Ontology code created by Chowlk</dc:description>
     </owl:Ontology>
     
@@ -23,6 +28,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -52,6 +64,17 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"/>
         <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
         <rdfs:label>belongs to type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"/>
+        <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BoughtGroup"/>
+        <rdfs:label>bought quantity per group</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -91,6 +114,15 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Biomass"/>
         <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Aches"/>
         <rdfs:label>has ashes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#hasCaliber -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/biomass#hasCaliber">
+        <rdfs:label>has caliber</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -150,6 +182,15 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm">
+        <rdfs:label>has trading form</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/biomass#produces -->
 
 
@@ -174,16 +215,62 @@
 
 
     <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SoldGroup"/>
+        <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber"/>
         <rdfs:label>quantity per caliber</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup -->
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#relatedTo -->
 
 
-    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup">
-        <rdfs:label>quantity per group</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/biomass#relatedTo">
+        <rdfs:label>related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity"/>
+        <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#SoldGroup"/>
+        <rdfs:label>sold quantity per group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#isMeasuredIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#isMeasuredIn">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"/>
+        <rdfs:label>is measured in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#relatesToMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#relatesToMeasurement">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Property"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:label>relates to measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#relatesToProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#relatesToProperty">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core#Property"/>
+        <rdfs:label>relates to property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -325,6 +412,27 @@
     
 
 
+    <!-- https://saref.etsi.org/core#hasTimeStamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core#hasTimeStamp">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core#hasValue">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -334,6 +442,15 @@
      -->
 
 
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure -->
+
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">
+        <rdfs:label>Unit of Measure</rdfs:label>
+    </owl:Class>
     
 
 
@@ -359,6 +476,42 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Biomass">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#consumes"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Energy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasAshes"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Aches"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasHumidity"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Humidity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasOrigin"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#produces"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/adapters#Energy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#quantity"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Quantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Biomass</rdfs:label>
     </owl:Class>
     
@@ -377,6 +530,12 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/ns/org#narrower"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Biomass Group</rdfs:label>
     </owl:Class>
     
@@ -386,6 +545,30 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#belongsToType"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasGroup"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasSubType"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Biomass Origin</rdfs:label>
     </owl:Class>
     
@@ -395,6 +578,18 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/ns/org#broader"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/ns/org#narrower"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Biomass Sub Group</rdfs:label>
     </owl:Class>
     
@@ -404,6 +599,12 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/ns/org#broader"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Biomass Sub Type</rdfs:label>
     </owl:Class>
     
@@ -413,7 +614,41 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BiomassType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/ns/org#broader"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3.org/ns/org#narrower"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Biomass Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#BoughtGroup -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#BoughtGroup">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#relatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Bought Group</rdfs:label>
     </owl:Class>
     
 
@@ -427,53 +662,12 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#forCaliber"/>
-                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Caliber"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Caliber Allocation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity -->
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity">
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Quantity"/>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#forGroup"/>
-                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Group Allocation</rdfs:label>
+        <rdfs:label>Current Quantity</rdfs:label>
     </owl:Class>
     
 
@@ -502,11 +696,74 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#SoldGroup -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SoldGroup">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#relatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#value"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Sold Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasCaliber"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Caliber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#TradingForm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Sold Per Caliber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Quantity"/>
+        <rdfs:label>Sold Quantity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity -->
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity">
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Quantity"/>
+        <rdfs:label>Total Quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#TradingForm -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/biomass#TradingForm">
+        <rdfs:label>Trading Form</rdfs:label>
     </owl:Class>
     
 
@@ -516,18 +773,22 @@
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity">
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Quantity"/>
+        <rdfs:label>Bought Quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core#Measurement -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core#Measurement">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber"/>
-                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#CaliberAllocation"/>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core#relatesToProperty"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core#Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup"/>
-                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#GroupAllocation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:label>Measurement</rdfs:label>
     </owl:Class>
     
 
@@ -537,6 +798,15 @@
 
     <owl:Class rdf:about="https://saref.etsi.org/core#Price">
         <rdfs:label>Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core#Property -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core#Property">
+        <rdfs:label>Property</rdfs:label>
     </owl:Class>
     
 
@@ -2606,6 +2876,24 @@
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"/>
         <org:narrower rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#UsedWood"/>
         <rdfs:label>Woody Biomass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#KilowattPerKg -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#KilowattPerKg">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

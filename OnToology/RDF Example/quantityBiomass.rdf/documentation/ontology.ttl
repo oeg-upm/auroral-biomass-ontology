@@ -1,0 +1,205 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasCaliber
+<https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm
+<https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#quantity
+<https://auroral.iot.linkeddata.es/def/biomass#quantity> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber
+<https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup
+<https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#relatedTo
+<https://auroral.iot.linkeddata.es/def/biomass#relatedTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#value
+<https://auroral.iot.linkeddata.es/def/biomass#value> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Biomass
+<https://auroral.iot.linkeddata.es/def/biomass#Biomass> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityPerGroup
+<https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityPerGroup> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Caliber
+<https://auroral.iot.linkeddata.es/def/biomass#Caliber> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity
+<https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity
+<https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#TradingForm
+<https://auroral.iot.linkeddata.es/def/biomass#TradingForm> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity
+<https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Biomass1
+<https://auroral.iot.linkeddata.es/def/biomass#Biomass1> rdf:type owl:NamedIndividual ,
+                                                                  <https://auroral.iot.linkeddata.es/def/biomass#Biomass> ;
+                                                         <https://auroral.iot.linkeddata.es/def/biomass#quantity> <https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityBiomass1> ,
+                                                                                                                  <https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantityBiomass1> ,
+                                                                                                                  <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityBiomass1> ,
+                                                                                                                  <https://auroral.iot.linkeddata.es/def/biomass#TotalQuantityBiomass1> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityBiomass1
+<https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityBiomass1> rdf:type owl:NamedIndividual ,
+                                                                                <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> ;
+                                                                       <https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup> <https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityForest> ,
+                                                                                                                                        <https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityHerbaceaous> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityForest
+<https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityForest> rdf:type owl:NamedIndividual ,
+                                                                              <https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityPerGroup> ;
+                                                                     <https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityHerbaceaous
+<https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityHerbaceaous> rdf:type owl:NamedIndividual ,
+                                                                                   <https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityPerGroup> ;
+                                                                          <https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgriculture> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantityBiomass1
+<https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantityBiomass1> rdf:type owl:NamedIndividual ,
+                                                                                 <https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood
+<https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood> rdf:type owl:NamedIndividual ,
+                                                                                            <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgriculture
+<https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgriculture> rdf:type owl:NamedIndividual ,
+                                                                                          <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#PS1
+<https://auroral.iot.linkeddata.es/def/biomass#PS1> rdf:type owl:NamedIndividual ,
+                                                             <https://auroral.iot.linkeddata.es/def/biomass#Caliber> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#PS2
+<https://auroral.iot.linkeddata.es/def/biomass#PS2> rdf:type owl:NamedIndividual ,
+                                                             <https://auroral.iot.linkeddata.es/def/biomass#Caliber> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityBiomass1
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityBiomass1> rdf:type owl:NamedIndividual ,
+                                                                              <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> ;
+                                                                     <https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup> <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityForest> ,
+                                                                                                                                      <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityHerbaceaous> ;
+                                                                     <https://auroral.iot.linkeddata.es/def/biomass#value> "200" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityForest
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityForest> rdf:type owl:NamedIndividual ,
+                                                                            <https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityPerGroup> ;
+                                                                   <https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood> ;
+                                                                   <https://auroral.iot.linkeddata.es/def/biomass#value> "90" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityHerbaceaous
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityHerbaceaous> rdf:type owl:NamedIndividual ,
+                                                                                 <https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityPerGroup> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber> <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber1> ,
+                                                                                                                                           <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber2> ,
+                                                                                                                                           <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber3> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgriculture> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#value> "110" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber1
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber1> rdf:type owl:NamedIndividual ,
+                                                                                 <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> <https://auroral.iot.linkeddata.es/def/biomass#PS1> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <https://auroral.iot.linkeddata.es/def/biomass#WoodyChip> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#value> "50" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber2
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber2> rdf:type owl:NamedIndividual ,
+                                                                                 <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> <https://auroral.iot.linkeddata.es/def/biomass#PS2> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <https://auroral.iot.linkeddata.es/def/biomass#WoodyChip> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#value> "60" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber3
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber3> rdf:type owl:NamedIndividual ,
+                                                                                 <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#TotalQuantityBiomass1
+<https://auroral.iot.linkeddata.es/def/biomass#TotalQuantityBiomass1> rdf:type owl:NamedIndividual ,
+                                                                               <https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Trady
+<https://auroral.iot.linkeddata.es/def/biomass#Trady> rdf:type owl:NamedIndividual ,
+                                                               <https://auroral.iot.linkeddata.es/def/biomass#TradingForm> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#WoodyChip
+<https://auroral.iot.linkeddata.es/def/biomass#WoodyChip> rdf:type owl:NamedIndividual ,
+                                                                   <https://auroral.iot.linkeddata.es/def/biomass#TradingForm> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

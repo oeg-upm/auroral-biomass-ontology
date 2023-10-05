@@ -1,0 +1,55 @@
+{
+  "@context" : {
+    "CurrentQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity"
+    },
+    "quantityPerCaliber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber"
+    },
+    "relatedTo" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#relatedTo"
+    },
+    "Caliber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Caliber"
+    },
+    "SoldQuantityPerCaliber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldQuantityPerCaliber"
+    },
+    "TotalQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity"
+    },
+    "Biomass" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+    },
+    "TradingForm" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#TradingForm"
+    },
+    "BoughtQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
+    },
+    "BiomassSubGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
+    },
+    "BoughtQuantityPerGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BoughtQuantityPerGroup"
+    },
+    "value" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#value"
+    },
+    "quantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantity"
+    },
+    "hasTradingForm" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm"
+    },
+    "SoldQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity"
+    },
+    "quantityPerGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerGroup"
+    },
+    "hasCaliber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasCaliber"
+    }
+  }
+}

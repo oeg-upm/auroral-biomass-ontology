@@ -1,10 +1,11 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "biom:CurrentQuantity" "biom:TotalQuantity" "ship:BoughtQuantity" "biom:Quantity" "biom:BiomassEnergyPrice" "saref:Price" ; /*classes style*/
+node [shape = rectangle, color="black"]; "biom:SoldQuantity" "biom:CurrentQuantity" "biom:TotalQuantity" "ship:BoughtQuantity" "biom:Quantity" "biom:BiomassEnergyPrice" "saref:Price" ; /*classes style*/
 	"biom:CurrentQuantity" -> "biom:Quantity" [ label = "rdfs:subClassOf" ];
 	"ship:BoughtQuantity" -> "biom:Quantity" [ label = "rdfs:subClassOf" ];
 	"biom:BiomassEnergyPrice" -> "saref:Price" [ label = "rdfs:subClassOf" ];
+	"biom:SoldQuantity" -> "biom:Quantity" [ label = "rdfs:subClassOf" ];
 	"biom:TotalQuantity" -> "biom:Quantity" [ label = "rdfs:subClassOf" ];
 
 }

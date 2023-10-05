@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns1:SoldQuantityForest" -> "ns1:ForestPlantationAndOtherVirginWood" [ label = "ns1:relatedTo" ];
+	"ns1:BoughtQuantityForest" -> "ns1:ForestPlantationAndOtherVirginWood" [ label = "ns1:relatedTo" ];
+	"ns1:SoldQuantityBiomass1" -> "ns1:SoldQuantityHerbaceaous" [ label = "ns1:quantityPerGroup" ];
+	"ns1:SoldQuantityBiomass1" -> "ns1:SoldQuantityForest" [ label = "ns1:quantityPerGroup" ];
+	"ns1:BoughtQuantityHerbaceaous" -> "ns1:HerbaceousBiomassFromAgriculture" [ label = "ns1:relatedTo" ];
+	"ns1:SoldQuantityPerCaliber1" -> "ns1:WoodyChip" [ label = "ns1:hasTradingForm" ];
+	"ns1:SoldQuantityPerCaliber1" -> "ns1:PS1" [ label = "ns1:hasCaliber" ];
+	"ns1:Biomass1" -> "ns1:TotalQuantityBiomass1" [ label = "ns1:quantity" ];
+	"ns1:Biomass1" -> "ns1:SoldQuantityBiomass1" [ label = "ns1:quantity" ];
+	"ns1:Biomass1" -> "ns1:CurrentQuantityBiomass1" [ label = "ns1:quantity" ];
+	"ns1:Biomass1" -> "ns1:BoughtQuantityBiomass1" [ label = "ns1:quantity" ];
+	"ns1:BoughtQuantityBiomass1" -> "ns1:BoughtQuantityHerbaceaous" [ label = "ns1:quantityPerGroup" ];
+	"ns1:BoughtQuantityBiomass1" -> "ns1:BoughtQuantityForest" [ label = "ns1:quantityPerGroup" ];
+	"ns1:SoldQuantityHerbaceaous" -> "ns1:HerbaceousBiomassFromAgriculture" [ label = "ns1:relatedTo" ];
+	"ns1:SoldQuantityHerbaceaous" -> "ns1:SoldQuantityPerCaliber3" [ label = "ns1:quantityPerCaliber" ];
+	"ns1:SoldQuantityHerbaceaous" -> "ns1:SoldQuantityPerCaliber2" [ label = "ns1:quantityPerCaliber" ];
+	"ns1:SoldQuantityHerbaceaous" -> "ns1:SoldQuantityPerCaliber1" [ label = "ns1:quantityPerCaliber" ];
+	"ns1:SoldQuantityPerCaliber2" -> "ns1:WoodyChip" [ label = "ns1:hasTradingForm" ];
+	"ns1:SoldQuantityPerCaliber2" -> "ns1:PS2" [ label = "ns1:hasCaliber" ];
+
+}
