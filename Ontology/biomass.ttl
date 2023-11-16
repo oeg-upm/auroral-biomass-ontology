@@ -141,6 +141,7 @@ biom:quantityPerCaliber rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#relatedTo
 biom:relatedTo rdf:type owl:ObjectProperty ;
+               rdfs:range biom:BiomassSubGroup ;
                rdfs:label "related to" .
 
 
@@ -217,20 +218,6 @@ biom:priceValue rdf:type owl:DatatypeProperty ;
                 rdfs:label "price value" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost
-biom:primaryEnergyCost rdf:type owl:DatatypeProperty ;
-                       rdfs:domain biom:Biomass ;
-                       rdfs:range xsd:string ;
-                       rdfs:label "primary Energy Cost" .
-
-
-###  https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs
-biom:primaryEnergyCostObs rdf:type owl:DatatypeProperty ;
-                          rdfs:domain biom:Biomass ;
-                          rdfs:range xsd:string ;
-                          rdfs:label "primary Energy Cost Obs" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/biomass#value
 biom:value rdf:type owl:DatatypeProperty ;
            rdfs:domain biom:Quantity ;
@@ -301,7 +288,8 @@ biom:Biomass rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice
 biom:BiomassEnergyPrice rdf:type owl:Class ;
-                        rdfs:subClassOf saref:Price .
+                        rdfs:subClassOf saref:Price ;
+                        rdfs:label "Biomass Energy Price" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup
@@ -1435,6 +1423,18 @@ biom:PodsLegumeCrops rdf:type owl:NamedIndividual ,
                               biom:BiomassSubType ;
                      skos:broader biom:LegumeCrops ;
                      rdfs:label "Pods legume crops" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost
+biom:PrimaryEnergyCost rdf:type owl:NamedIndividual ,
+                                biom:BiomassEnergyPrice ;
+                       rdfs:label "Primary Energy Cost" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs
+biom:PrimaryEnergyCostObs rdf:type owl:NamedIndividual ,
+                                   biom:BiomassEnergyPrice ;
+                          rdfs:label "Primary Energy Cost Obs" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed
