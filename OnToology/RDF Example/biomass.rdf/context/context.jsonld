@@ -1,0 +1,94 @@
+{
+  "@context" : {
+    "hasPrice" : {
+      "@id" : "https://saref.etsi.org/core#hasPrice"
+    },
+    "tradingForm" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#tradingForm"
+    },
+    "belongToType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#belongToType"
+    },
+    "Humidity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity"
+    },
+    "hasName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasName"
+    },
+    "hasValue" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasValue"
+    },
+    "hasHumidity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasHumidity"
+    },
+    "narrower" : {
+      "@id" : "https://www.w3.org/ns/org#narrower"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core#Measurement"
+    },
+    "BiomassEnergyPrice" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
+    },
+    "Biomass" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+    },
+    "BiomassGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
+    },
+    "BiomassSubGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
+    },
+    "Energy" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+    },
+    "Aches" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches"
+    },
+    "BriquetteOrigin" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BriquetteOrigin"
+    },
+    "hasId" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasId"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core#relatesToMeasurement"
+    },
+    "hasSubType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubType"
+    },
+    "hasAches" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAches"
+    },
+    "produces" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#produces"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core#isMeasuredIn"
+    },
+    "broader" : {
+      "@id" : "https://www.w3.org/ns/org#broader"
+    },
+    "hasOrigin" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasOrigin"
+    },
+    "hasGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasGroup"
+    },
+    "dimension" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#dimension"
+    },
+    "hasDescription" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasDescription"
+    },
+    "hasSubGroup" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup"
+    },
+    "BiomassType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
+    },
+    "BiomassSubType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
+    }
+  }
+}

@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="381" parse.nodes="210" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="382" parse.nodes="212" parse.order="free">
       <node id="nid_biom:RootCrops">
          <data key="d0">
             <y:ShapeNode>
@@ -2159,6 +2159,41 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_biom:">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="50.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_http://purl.org/NET/rdflicense/cc-by4.0">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="390.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://purl.org/NET/rdflicense/cc-by4.0</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_:license91" source="nid_biom:" target="nid_http://purl.org/NET/rdflicense/cc-by4.0">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">:license</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_biom:FlowersChemicallyTreatedHerbaceousResidues">
          <data key="d0">
             <y:ShapeNode>
@@ -2171,7 +2206,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower91" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:FlowersChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:narrower92" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:FlowersChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2194,7 +2229,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower92" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:RootCropsChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:narrower93" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:RootCropsChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2217,7 +2252,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower93" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:OilSeedCropsChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:narrower94" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:OilSeedCropsChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2240,7 +2275,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower94" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:LegumeCropsChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:narrower95" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:LegumeCropsChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2251,7 +2286,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader95" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
+    <edge id="eid_skos:broader96" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2274,7 +2309,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower96" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:CerealCropsAndGrassesChemicallyTreatedherbaceousResidues">
+    <edge id="eid_skos:narrower97" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:CerealCropsAndGrassesChemicallyTreatedherbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2297,7 +2332,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower97" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:BlendsAndMixturesChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:narrower98" source="nid_biom:ChemicallyTreatedHerbaceousResidues" target="nid_biom:BlendsAndMixturesChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2308,7 +2343,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader98" source="nid_biom:WholePlantCerealCrops" target="nid_biom:CerealCrops">
+    <edge id="eid_skos:broader99" source="nid_biom:WholePlantCerealCrops" target="nid_biom:CerealCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2343,7 +2378,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader99" source="nid_biom:SeaGrass" target="nid_biom:LakeAndSeaGrass">
+    <edge id="eid_skos:broader100" source="nid_biom:SeaGrass" target="nid_biom:LakeAndSeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2366,7 +2401,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader100" source="nid_biom:WholePlantOilSeedCrops" target="nid_biom:OilSeedCrops">
+    <edge id="eid_skos:broader101" source="nid_biom:WholePlantOilSeedCrops" target="nid_biom:OilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2401,7 +2436,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower101" source="nid_biom:Grasses" target="nid_biom:WholePlantGrasses">
+    <edge id="eid_skos:narrower102" source="nid_biom:Grasses" target="nid_biom:WholePlantGrasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2424,7 +2459,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower102" source="nid_biom:Grasses" target="nid_biom:StrawPartsGrasses">
+    <edge id="eid_skos:narrower103" source="nid_biom:Grasses" target="nid_biom:StrawPartsGrasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2447,7 +2482,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower103" source="nid_biom:Grasses" target="nid_biom:ShellsGrasses">
+    <edge id="eid_skos:narrower104" source="nid_biom:Grasses" target="nid_biom:ShellsGrasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2470,7 +2505,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower104" source="nid_biom:Grasses" target="nid_biom:SeedsGrasses">
+    <edge id="eid_skos:narrower105" source="nid_biom:Grasses" target="nid_biom:SeedsGrasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2493,7 +2528,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower105" source="nid_biom:Grasses" target="nid_biom:BlendsAndMixturesGrasses">
+    <edge id="eid_skos:narrower106" source="nid_biom:Grasses" target="nid_biom:BlendsAndMixturesGrasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2516,7 +2551,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower106" source="nid_biom:Grasses" target="nid_biom:BambooGrasses">
+    <edge id="eid_skos:narrower107" source="nid_biom:Grasses" target="nid_biom:BambooGrasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2527,7 +2562,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader107" source="nid_biom:Grasses" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader108" source="nid_biom:Grasses" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2538,7 +2573,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower108" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:StoneOrKernelFruits">
+    <edge id="eid_skos:narrower109" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:StoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2549,7 +2584,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower109" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:NutsandAcorns">
+    <edge id="eid_skos:narrower110" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:NutsandAcorns">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2572,7 +2607,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower110" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:BlendsAndMixturesOrchardAndHorticultureFruit">
+    <edge id="eid_skos:narrower111" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:BlendsAndMixturesOrchardAndHorticultureFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2595,7 +2630,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower111" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:Berries">
+    <edge id="eid_skos:narrower112" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:Berries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2606,7 +2641,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader112" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:FruitBiomass">
+    <edge id="eid_skos:broader113" source="nid_biom:OrchardAndHorticultureFruit" target="nid_biom:FruitBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2629,7 +2664,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader113" source="nid_biom:BushesWholeTreesWithoutRoots" target="nid_biom:WholeTreesWithoutRoots">
+    <edge id="eid_skos:broader114" source="nid_biom:BushesWholeTreesWithoutRoots" target="nid_biom:WholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2640,7 +2675,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader114" source="nid_biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
+    <edge id="eid_skos:broader115" source="nid_biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2651,7 +2686,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader115" source="nid_biom:ExhaustedOliveCakeChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader116" source="nid_biom:ExhaustedOliveCakeChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2662,7 +2697,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader116" source="nid_biom:ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
+    <edge id="eid_skos:broader117" source="nid_biom:ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2685,7 +2720,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader117" source="nid_biom:FruitLegumeCrops" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:broader118" source="nid_biom:FruitLegumeCrops" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2708,7 +2743,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader118" source="nid_biom:WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:broader119" source="nid_biom:WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2719,7 +2754,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader119" source="nid_biom:WholePlantRootCrops" target="nid_biom:RootCrops">
+    <edge id="eid_skos:broader120" source="nid_biom:WholePlantRootCrops" target="nid_biom:RootCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2730,7 +2765,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader120" source="nid_biom:BlendsAndMixturesChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader121" source="nid_biom:BlendsAndMixturesChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2741,7 +2776,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader121" source="nid_biom:StalksAndLeavesRootCrops" target="nid_biom:RootCrops">
+    <edge id="eid_skos:broader122" source="nid_biom:StalksAndLeavesRootCrops" target="nid_biom:RootCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2764,7 +2799,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower122" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:narrower123" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2775,7 +2810,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower123" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:narrower124" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2798,7 +2833,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower124" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:narrower125" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2809,7 +2844,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower125" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:narrower126" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2820,7 +2855,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader126" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
+    <edge id="eid_skos:broader127" source="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2831,7 +2866,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower127" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
+    <edge id="eid_skos:narrower128" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2842,7 +2877,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower128" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:narrower129" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2853,7 +2888,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower129" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry">
+    <edge id="eid_skos:narrower130" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2864,7 +2899,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader130" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:WoodyBiomass">
+    <edge id="eid_skos:broader131" source="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry" target="nid_biom:WoodyBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2887,7 +2922,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower131" source="nid_biom:ForestPlantation" target="nid_biom:SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater">
+    <edge id="eid_skos:narrower132" source="nid_biom:ForestPlantation" target="nid_biom:SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2898,7 +2933,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower132" source="nid_biom:ForestPlantation" target="nid_biom:WholeTreesWithoutRoots">
+    <edge id="eid_skos:narrower133" source="nid_biom:ForestPlantation" target="nid_biom:WholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2909,7 +2944,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower133" source="nid_biom:ForestPlantation" target="nid_biom:Stemwood">
+    <edge id="eid_skos:narrower134" source="nid_biom:ForestPlantation" target="nid_biom:Stemwood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2932,7 +2967,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower134" source="nid_biom:ForestPlantation" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:narrower135" source="nid_biom:ForestPlantation" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2943,7 +2978,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower135" source="nid_biom:ForestPlantation" target="nid_biom:BlendsAndMixturesForestPlantation">
+    <edge id="eid_skos:narrower136" source="nid_biom:ForestPlantation" target="nid_biom:BlendsAndMixturesForestPlantation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2954,7 +2989,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower136" source="nid_biom:ForestPlantation" target="nid_biom:WholeTreesWithRoots">
+    <edge id="eid_skos:narrower137" source="nid_biom:ForestPlantation" target="nid_biom:WholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2965,7 +3000,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower137" source="nid_biom:ForestPlantation" target="nid_biom:LoggingResidues">
+    <edge id="eid_skos:narrower138" source="nid_biom:ForestPlantation" target="nid_biom:LoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2976,7 +3011,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader138" source="nid_biom:ForestPlantation" target="nid_biom:WoodyBiomass">
+    <edge id="eid_skos:broader139" source="nid_biom:ForestPlantation" target="nid_biom:WoodyBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2987,7 +3022,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader139" source="nid_biom:BlendsAndMixturesGrasses" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader140" source="nid_biom:BlendsAndMixturesGrasses" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2998,7 +3033,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader140" source="nid_biom:BlendsAndMixturesUsedWood" target="nid_biom:UsedWood">
+    <edge id="eid_skos:broader141" source="nid_biom:BlendsAndMixturesUsedWood" target="nid_biom:UsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3021,7 +3056,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader141" source="nid_biom:PodsLegumeCrops" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:broader142" source="nid_biom:PodsLegumeCrops" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3032,7 +3067,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader142" source="nid_biom:RootRootCrops" target="nid_biom:RootCrops">
+    <edge id="eid_skos:broader143" source="nid_biom:RootRootCrops" target="nid_biom:RootCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3055,7 +3090,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower143" source="nid_biom:StoneOrKernelFruits" target="nid_biom:WholeFruitStoneOrKernelFruits">
+    <edge id="eid_skos:narrower144" source="nid_biom:StoneOrKernelFruits" target="nid_biom:WholeFruitStoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3078,7 +3113,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower144" source="nid_biom:StoneOrKernelFruits" target="nid_biom:StoneOrKernelOrFruitFibreStoneOrKernelFruit">
+    <edge id="eid_skos:narrower145" source="nid_biom:StoneOrKernelFruits" target="nid_biom:StoneOrKernelOrFruitFibreStoneOrKernelFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3089,7 +3124,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower145" source="nid_biom:StoneOrKernelFruits" target="nid_biom:FleshStoneOrKernelFruits">
+    <edge id="eid_skos:narrower146" source="nid_biom:StoneOrKernelFruits" target="nid_biom:FleshStoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3100,7 +3135,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower146" source="nid_biom:StoneOrKernelFruits" target="nid_biom:BlendsAndMIxturesStoneOrKernelFruit">
+    <edge id="eid_skos:narrower147" source="nid_biom:StoneOrKernelFruits" target="nid_biom:BlendsAndMIxturesStoneOrKernelFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3111,7 +3146,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader147" source="nid_biom:StoneOrKernelFruits" target="nid_biom:OrchardAndHorticultureFruit">
+    <edge id="eid_skos:broader148" source="nid_biom:StoneOrKernelFruits" target="nid_biom:OrchardAndHorticultureFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3134,7 +3169,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader148" source="nid_biom:BlendsAndMixturesChemicallyUntreatedFruitResidues" target="nid_biom:ChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:broader149" source="nid_biom:BlendsAndMixturesChemicallyUntreatedFruitResidues" target="nid_biom:ChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3157,7 +3192,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower149" source="nid_biom:Berries" target="nid_biom:WholeBerries">
+    <edge id="eid_skos:narrower150" source="nid_biom:Berries" target="nid_biom:WholeBerries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3180,7 +3215,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower150" source="nid_biom:Berries" target="nid_biom:SeedsBerries">
+    <edge id="eid_skos:narrower151" source="nid_biom:Berries" target="nid_biom:SeedsBerries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3203,7 +3238,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower151" source="nid_biom:Berries" target="nid_biom:FleshBerries">
+    <edge id="eid_skos:narrower152" source="nid_biom:Berries" target="nid_biom:FleshBerries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3226,7 +3261,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower152" source="nid_biom:Berries" target="nid_biom:BlendsAndMixturesBerries">
+    <edge id="eid_skos:narrower153" source="nid_biom:Berries" target="nid_biom:BlendsAndMixturesBerries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3237,7 +3272,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader153" source="nid_biom:Berries" target="nid_biom:OrchardAndHorticultureFruit">
+    <edge id="eid_skos:broader154" source="nid_biom:Berries" target="nid_biom:OrchardAndHorticultureFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3248,7 +3283,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader154" source="nid_biom:SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater" target="nid_biom:ForestPlantation">
+    <edge id="eid_skos:broader155" source="nid_biom:SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater" target="nid_biom:ForestPlantation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3259,7 +3294,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower155" source="nid_biom:WoodyBiomass" target="nid_biom:UsedWood">
+    <edge id="eid_skos:narrower156" source="nid_biom:WoodyBiomass" target="nid_biom:UsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3270,7 +3305,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower156" source="nid_biom:WoodyBiomass" target="nid_biom:ForestPlantation">
+    <edge id="eid_skos:narrower157" source="nid_biom:WoodyBiomass" target="nid_biom:ForestPlantation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3281,7 +3316,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower157" source="nid_biom:WoodyBiomass" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
+    <edge id="eid_skos:narrower158" source="nid_biom:WoodyBiomass" target="nid_biom:ByProductsAndResiduesFromWoodProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3304,7 +3339,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower158" source="nid_biom:WoodyBiomass" target="nid_biom:BlendsAndMixturesWoodyBiomass">
+    <edge id="eid_skos:narrower159" source="nid_biom:WoodyBiomass" target="nid_biom:BlendsAndMixturesWoodyBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3315,7 +3350,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader159" source="nid_biom:WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:broader160" source="nid_biom:WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3326,7 +3361,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader160" source="nid_biom:SeedsGrasses" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader161" source="nid_biom:SeedsGrasses" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3349,7 +3384,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader161" source="nid_biom:BlendsAndMixturesStumpsOrRoots" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader162" source="nid_biom:BlendsAndMixturesStumpsOrRoots" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3360,7 +3395,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader162" source="nid_biom:BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
+    <edge id="eid_skos:broader163" source="nid_biom:BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3371,7 +3406,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader163" source="nid_biom:ConiferousWithBarkStemwood" target="nid_biom:Stemwood">
+    <edge id="eid_skos:broader164" source="nid_biom:ConiferousWithBarkStemwood" target="nid_biom:Stemwood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3394,7 +3429,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader164" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader165" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3405,7 +3440,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader165" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader166" source="nid_biom:CerealCropsAndGrasses" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3416,7 +3451,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader166" source="nid_biom:BlendsAndMixturesRootCrops" target="nid_biom:RootCrops">
+    <edge id="eid_skos:broader167" source="nid_biom:BlendsAndMixturesRootCrops" target="nid_biom:RootCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3439,7 +3474,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower167" source="nid_biom:NutsandAcorns" target="nid_biom:WholeNuts">
+    <edge id="eid_skos:narrower168" source="nid_biom:NutsandAcorns" target="nid_biom:WholeNuts">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3450,7 +3485,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower168" source="nid_biom:NutsandAcorns" target="nid_biom:ShellsOrHusksNutsAndAcorns">
+    <edge id="eid_skos:narrower169" source="nid_biom:NutsandAcorns" target="nid_biom:ShellsOrHusksNutsAndAcorns">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3473,7 +3508,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower169" source="nid_biom:NutsandAcorns" target="nid_biom:KernelsNutsAndAcorns">
+    <edge id="eid_skos:narrower170" source="nid_biom:NutsandAcorns" target="nid_biom:KernelsNutsAndAcorns">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3484,7 +3519,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower170" source="nid_biom:NutsandAcorns" target="nid_biom:BlendsAndMixturesNutsAndAcorns">
+    <edge id="eid_skos:narrower171" source="nid_biom:NutsandAcorns" target="nid_biom:BlendsAndMixturesNutsAndAcorns">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3495,7 +3530,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader171" source="nid_biom:NutsandAcorns" target="nid_biom:OrchardAndHorticultureFruit">
+    <edge id="eid_skos:broader172" source="nid_biom:NutsandAcorns" target="nid_biom:OrchardAndHorticultureFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3506,7 +3541,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader172" source="nid_biom:FlowersChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader173" source="nid_biom:FlowersChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3529,7 +3564,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader173" source="nid_biom:WithBrakChemicallyUntreatedUsedWood" target="nid_biom:ChemicallyUntreatedUsedWood">
+    <edge id="eid_skos:broader174" source="nid_biom:WithBrakChemicallyUntreatedUsedWood" target="nid_biom:ChemicallyUntreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3540,7 +3575,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader174" source="nid_biom:BlendsAndMixturesBerries" target="nid_biom:Berries">
+    <edge id="eid_skos:broader175" source="nid_biom:BlendsAndMixturesBerries" target="nid_biom:Berries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3551,7 +3586,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader175" source="nid_biom:CerealCropsAndGrassesChemicallyTreatedherbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader176" source="nid_biom:CerealCropsAndGrassesChemicallyTreatedherbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3574,7 +3609,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader176" source="nid_biom:BroadLeafWholeTreesWithoutRoots" target="nid_biom:WholeTreesWithoutRoots">
+    <edge id="eid_skos:broader177" source="nid_biom:BroadLeafWholeTreesWithoutRoots" target="nid_biom:WholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3597,7 +3632,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader177" source="nid_biom:FreshOrGreenConiferous" target="nid_biom:LoggingResidues">
+    <edge id="eid_skos:broader178" source="nid_biom:FreshOrGreenConiferous" target="nid_biom:LoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3608,7 +3643,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader178" source="nid_biom:BlendsAndMixturesFruitBiomass" target="nid_biom:FruitBiomass">
+    <edge id="eid_skos:broader179" source="nid_biom:BlendsAndMixturesFruitBiomass" target="nid_biom:FruitBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3631,7 +3666,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower179" source="nid_biom:LoggingResidues" target="nid_biom:StoredConiferous">
+    <edge id="eid_skos:narrower180" source="nid_biom:LoggingResidues" target="nid_biom:StoredConiferous">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3642,7 +3677,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower180" source="nid_biom:LoggingResidues" target="nid_biom:StoredBroadLeaf">
+    <edge id="eid_skos:narrower181" source="nid_biom:LoggingResidues" target="nid_biom:StoredBroadLeaf">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3653,7 +3688,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower181" source="nid_biom:LoggingResidues" target="nid_biom:FreshOrGreenConiferous">
+    <edge id="eid_skos:narrower182" source="nid_biom:LoggingResidues" target="nid_biom:FreshOrGreenConiferous">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3676,7 +3711,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower182" source="nid_biom:LoggingResidues" target="nid_biom:FreshOrGreenBroadLeaf">
+    <edge id="eid_skos:narrower183" source="nid_biom:LoggingResidues" target="nid_biom:FreshOrGreenBroadLeaf">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3699,7 +3734,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower183" source="nid_biom:LoggingResidues" target="nid_biom:BlendsAndMixturesLoggingResidues">
+    <edge id="eid_skos:narrower184" source="nid_biom:LoggingResidues" target="nid_biom:BlendsAndMixturesLoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3710,7 +3745,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader184" source="nid_biom:LoggingResidues" target="nid_biom:ForestPlantation">
+    <edge id="eid_skos:broader185" source="nid_biom:LoggingResidues" target="nid_biom:ForestPlantation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3733,7 +3768,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader185" source="nid_biom:ShortRotationCoppiceStumpsOrRoots" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader186" source="nid_biom:ShortRotationCoppiceStumpsOrRoots" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3756,7 +3791,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader186" source="nid_biom:StalksAndLeavesLegumeCrops" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:broader187" source="nid_biom:StalksAndLeavesLegumeCrops" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3779,7 +3814,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower187" source="nid_biom:AquaticBiomass" target="nid_biom:WaterHyacinth">
+    <edge id="eid_skos:narrower188" source="nid_biom:AquaticBiomass" target="nid_biom:WaterHyacinth">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3790,7 +3825,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower188" source="nid_biom:AquaticBiomass" target="nid_biom:Reeds">
+    <edge id="eid_skos:narrower189" source="nid_biom:AquaticBiomass" target="nid_biom:Reeds">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3801,7 +3836,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower189" source="nid_biom:AquaticBiomass" target="nid_biom:LakeAndSeaGrass">
+    <edge id="eid_skos:narrower190" source="nid_biom:AquaticBiomass" target="nid_biom:LakeAndSeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3812,7 +3847,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower190" source="nid_biom:AquaticBiomass" target="nid_biom:BlendsAndMixturesAquaticBiomass">
+    <edge id="eid_skos:narrower191" source="nid_biom:AquaticBiomass" target="nid_biom:BlendsAndMixturesAquaticBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3823,7 +3858,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower191" source="nid_biom:AquaticBiomass" target="nid_biom:Algae">
+    <edge id="eid_skos:narrower192" source="nid_biom:AquaticBiomass" target="nid_biom:Algae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3834,7 +3869,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader192" source="nid_biom:ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
+    <edge id="eid_skos:broader193" source="nid_biom:ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3857,7 +3892,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader193" source="nid_biom:ConiferousStumpsOrRoots" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader194" source="nid_biom:ConiferousStumpsOrRoots" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3868,7 +3903,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader194" source="nid_biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry" target="nid_biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
+    <edge id="eid_skos:broader195" source="nid_biom:BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry" target="nid_biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3879,7 +3914,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader195" source="nid_biom:KernelsNutsAndAcorns" target="nid_biom:NutsandAcorns">
+    <edge id="eid_skos:broader196" source="nid_biom:KernelsNutsAndAcorns" target="nid_biom:NutsandAcorns">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3902,7 +3937,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader196" source="nid_biom:ShortRotationCoppiceWholeTreesWithoutRoots" target="nid_biom:WholeTreesWithoutRoots">
+    <edge id="eid_skos:broader197" source="nid_biom:ShortRotationCoppiceWholeTreesWithoutRoots" target="nid_biom:WholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3913,7 +3948,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader197" source="nid_biom:WholePlantFlowers" target="nid_biom:Flowers">
+    <edge id="eid_skos:broader198" source="nid_biom:WholePlantFlowers" target="nid_biom:Flowers">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3936,7 +3971,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader198" source="nid_biom:BarkChemicallyTreatedUsedWood" target="nid_biom:ChemicallyTreatedUsedWood">
+    <edge id="eid_skos:broader199" source="nid_biom:BarkChemicallyTreatedUsedWood" target="nid_biom:ChemicallyTreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3959,7 +3994,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader199" source="nid_biom:BarkChemicallyUntreatedUsedWood" target="nid_biom:ChemicallyUntreatedUsedWood">
+    <edge id="eid_skos:broader200" source="nid_biom:BarkChemicallyUntreatedUsedWood" target="nid_biom:ChemicallyUntreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3982,7 +4017,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader200" source="nid_biom:BlendsAndMixturesHerbaceousBiomass" target="nid_biom:HerbaceousBiomass">
+    <edge id="eid_skos:broader201" source="nid_biom:BlendsAndMixturesHerbaceousBiomass" target="nid_biom:HerbaceousBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4005,7 +4040,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader201" source="nid_biom:ShortRotationCoppiceWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
+    <edge id="eid_skos:broader202" source="nid_biom:ShortRotationCoppiceWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4028,7 +4063,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower202" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:WithoutBarkChemicallyUntreatedUsedWood">
+    <edge id="eid_skos:narrower203" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:WithoutBarkChemicallyUntreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4039,7 +4074,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower203" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:WithBrakChemicallyUntreatedUsedWood">
+    <edge id="eid_skos:narrower204" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:WithBrakChemicallyUntreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4050,7 +4085,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower204" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:BarkChemicallyUntreatedUsedWood">
+    <edge id="eid_skos:narrower205" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:BarkChemicallyUntreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4061,7 +4096,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader205" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:UsedWood">
+    <edge id="eid_skos:broader206" source="nid_biom:ChemicallyUntreatedUsedWood" target="nid_biom:UsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4072,7 +4107,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader206" source="nid_biom:BambooGrasses" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader207" source="nid_biom:BambooGrasses" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4083,7 +4118,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader207" source="nid_biom:FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+    <edge id="eid_skos:broader208" source="nid_biom:FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents" target="nid_biom:ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4094,7 +4129,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader208" source="nid_biom:StrawPartsGrasses" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader209" source="nid_biom:StrawPartsGrasses" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4105,7 +4140,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader209" source="nid_biom:ShellsGrasses" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader210" source="nid_biom:ShellsGrasses" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4128,7 +4163,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader210" source="nid_biom:LakeGrass" target="nid_biom:LakeAndSeaGrass">
+    <edge id="eid_skos:broader211" source="nid_biom:LakeGrass" target="nid_biom:LakeAndSeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4139,7 +4174,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader211" source="nid_biom:LegumeCropsChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader212" source="nid_biom:LegumeCropsChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4150,7 +4185,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader212" source="nid_biom:WaterHyacinth" target="nid_biom:AquaticBiomass">
+    <edge id="eid_skos:broader213" source="nid_biom:WaterHyacinth" target="nid_biom:AquaticBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4161,7 +4196,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower213" source="nid_biom:HerbaceousBiomass" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:narrower214" source="nid_biom:HerbaceousBiomass" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4172,7 +4207,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower214" source="nid_biom:HerbaceousBiomass" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
+    <edge id="eid_skos:narrower215" source="nid_biom:HerbaceousBiomass" target="nid_biom:ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4183,7 +4218,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower215" source="nid_biom:HerbaceousBiomass" target="nid_biom:BlendsAndMixturesHerbaceousBiomass">
+    <edge id="eid_skos:narrower216" source="nid_biom:HerbaceousBiomass" target="nid_biom:BlendsAndMixturesHerbaceousBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4194,7 +4229,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader216" source="nid_biom:NutsAndAcornsChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader217" source="nid_biom:NutsAndAcornsChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4217,7 +4252,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader217" source="nid_biom:BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader218" source="nid_biom:BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4228,7 +4263,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader218" source="nid_biom:WholeBerries" target="nid_biom:Berries">
+    <edge id="eid_skos:broader219" source="nid_biom:WholeBerries" target="nid_biom:Berries">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4239,7 +4274,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader219" source="nid_biom:WholeFruitStoneOrKernelFruits" target="nid_biom:StoneOrKernelFruits">
+    <edge id="eid_skos:broader220" source="nid_biom:WholeFruitStoneOrKernelFruits" target="nid_biom:StoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4262,7 +4297,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader220" source="nid_biom:BushesStumpsOrRoots" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader221" source="nid_biom:BushesStumpsOrRoots" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4273,7 +4308,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader221" source="nid_biom:FlowersChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader222" source="nid_biom:FlowersChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4284,7 +4319,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader222" source="nid_biom:BlendsAndMixturesLoggingResidues" target="nid_biom:LoggingResidues">
+    <edge id="eid_skos:broader223" source="nid_biom:BlendsAndMixturesLoggingResidues" target="nid_biom:LoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4307,7 +4342,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader223" source="nid_biom:SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader224" source="nid_biom:SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4318,7 +4353,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower224" source="nid_biom:OilSeedCrops" target="nid_biom:WholePlantOilSeedCrops">
+    <edge id="eid_skos:narrower225" source="nid_biom:OilSeedCrops" target="nid_biom:WholePlantOilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4341,7 +4376,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower225" source="nid_biom:OilSeedCrops" target="nid_biom:StalksAndLeavesOilSeedCrops">
+    <edge id="eid_skos:narrower226" source="nid_biom:OilSeedCrops" target="nid_biom:StalksAndLeavesOilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4364,7 +4399,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower226" source="nid_biom:OilSeedCrops" target="nid_biom:SeedsOilSeedCrops">
+    <edge id="eid_skos:narrower227" source="nid_biom:OilSeedCrops" target="nid_biom:SeedsOilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4387,7 +4422,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower227" source="nid_biom:OilSeedCrops" target="nid_biom:HusksOrShellsOilSeedCrops">
+    <edge id="eid_skos:narrower228" source="nid_biom:OilSeedCrops" target="nid_biom:HusksOrShellsOilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4398,7 +4433,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower228" source="nid_biom:OilSeedCrops" target="nid_biom:BlendsAndMixturesOilSeedCrops">
+    <edge id="eid_skos:narrower229" source="nid_biom:OilSeedCrops" target="nid_biom:BlendsAndMixturesOilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4409,7 +4444,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader229" source="nid_biom:OilSeedCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader230" source="nid_biom:OilSeedCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4420,7 +4455,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader230" source="nid_biom:BerriesChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader231" source="nid_biom:BerriesChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4431,7 +4466,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower231" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:WithoutBarkChemicallyTreatedUsedWood">
+    <edge id="eid_skos:narrower232" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:WithoutBarkChemicallyTreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4454,7 +4489,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower232" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:WithBarkChemicallyTreatedUsedWood">
+    <edge id="eid_skos:narrower233" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:WithBarkChemicallyTreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4465,7 +4500,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower233" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:BarkChemicallyTreatedUsedWood">
+    <edge id="eid_skos:narrower234" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:BarkChemicallyTreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4476,7 +4511,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader234" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:UsedWood">
+    <edge id="eid_skos:broader235" source="nid_biom:ChemicallyTreatedUsedWood" target="nid_biom:UsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4499,7 +4534,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader235" source="nid_biom:BushesWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
+    <edge id="eid_skos:broader236" source="nid_biom:BushesWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4510,7 +4545,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader236" source="nid_biom:FreshOrGreenBroadLeaf" target="nid_biom:LoggingResidues">
+    <edge id="eid_skos:broader237" source="nid_biom:FreshOrGreenBroadLeaf" target="nid_biom:LoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4521,7 +4556,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader237" source="nid_biom:BarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
+    <edge id="eid_skos:broader238" source="nid_biom:BarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4544,7 +4579,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader238" source="nid_biom:ConiferousWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
+    <edge id="eid_skos:broader239" source="nid_biom:ConiferousWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4555,7 +4590,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower239" source="nid_biom:Reeds" target="nid_biom:OtherReed">
+    <edge id="eid_skos:narrower240" source="nid_biom:Reeds" target="nid_biom:OtherReed">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4566,7 +4601,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower240" source="nid_biom:Reeds" target="nid_biom:CommonReed">
+    <edge id="eid_skos:narrower241" source="nid_biom:Reeds" target="nid_biom:CommonReed">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4577,7 +4612,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower241" source="nid_biom:Reeds" target="nid_biom:BlendsAndMixturesReeds">
+    <edge id="eid_skos:narrower242" source="nid_biom:Reeds" target="nid_biom:BlendsAndMixturesReeds">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4588,7 +4623,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader242" source="nid_biom:Reeds" target="nid_biom:AquaticBiomass">
+    <edge id="eid_skos:broader243" source="nid_biom:Reeds" target="nid_biom:AquaticBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4599,7 +4634,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader243" source="nid_biom:RedSeaWeed" target="nid_biom:MacroAlgae">
+    <edge id="eid_skos:broader244" source="nid_biom:RedSeaWeed" target="nid_biom:MacroAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4610,7 +4645,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader244" source="nid_biom:StoneOrKernelOrFruitFibreStoneOrKernelFruit" target="nid_biom:StoneOrKernelFruits">
+    <edge id="eid_skos:broader245" source="nid_biom:StoneOrKernelOrFruitFibreStoneOrKernelFruit" target="nid_biom:StoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4621,7 +4656,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower245" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:ShortRotationCoppiceWholeTreesWithoutRoots">
+    <edge id="eid_skos:narrower246" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:ShortRotationCoppiceWholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4632,7 +4667,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower246" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:ConiferousWholeTreesWithoutRoots">
+    <edge id="eid_skos:narrower247" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:ConiferousWholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4643,7 +4678,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower247" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:BushesWholeTreesWithoutRoots">
+    <edge id="eid_skos:narrower248" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:BushesWholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4654,7 +4689,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower248" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:BroadLeafWholeTreesWithoutRoots">
+    <edge id="eid_skos:narrower249" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:BroadLeafWholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4665,7 +4700,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower249" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:BlendsAndMixturesWholeTreesWithoutRoots">
+    <edge id="eid_skos:narrower250" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:BlendsAndMixturesWholeTreesWithoutRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4676,7 +4711,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader250" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:ForestPlantation">
+    <edge id="eid_skos:broader251" source="nid_biom:WholeTreesWithoutRoots" target="nid_biom:ForestPlantation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4699,7 +4734,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader251" source="nid_biom:MicroAlgae" target="nid_biom:Algae">
+    <edge id="eid_skos:broader252" source="nid_biom:MicroAlgae" target="nid_biom:Algae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4710,7 +4745,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader252" source="nid_biom:ConiferousWithoutBarkStemwood" target="nid_biom:Stemwood">
+    <edge id="eid_skos:broader253" source="nid_biom:ConiferousWithoutBarkStemwood" target="nid_biom:Stemwood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4721,7 +4756,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader253" source="nid_biom:BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
+    <edge id="eid_skos:broader254" source="nid_biom:BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues" target="nid_biom:ChemicallyUntreatedWoodbyProductsAndResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4732,7 +4767,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader254" source="nid_biom:WithBarkChemicallyTreatedUsedWood" target="nid_biom:ChemicallyTreatedUsedWood">
+    <edge id="eid_skos:broader255" source="nid_biom:WithBarkChemicallyTreatedUsedWood" target="nid_biom:ChemicallyTreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4743,7 +4778,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader255" source="nid_biom:BlendsAndMixturesChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader256" source="nid_biom:BlendsAndMixturesChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4766,7 +4801,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader256" source="nid_biom:BlendsAndMixturesLeakAndSeaGrass" target="nid_biom:LakeAndSeaGrass">
+    <edge id="eid_skos:broader257" source="nid_biom:BlendsAndMixturesLeakAndSeaGrass" target="nid_biom:LakeAndSeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4777,7 +4812,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader257" source="nid_biom:HusksOrShellsCerealCrops" target="nid_biom:CerealCrops">
+    <edge id="eid_skos:broader258" source="nid_biom:HusksOrShellsCerealCrops" target="nid_biom:CerealCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4788,7 +4823,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader258" source="nid_biom:StoneOrKernelFruitsChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
+    <edge id="eid_skos:broader259" source="nid_biom:StoneOrKernelFruitsChemicallyTreatedFruitResidues" target="nid_biom:ChemicallyTreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4799,7 +4834,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader259" source="nid_biom:WholePlantGrasses" target="nid_biom:Grasses">
+    <edge id="eid_skos:broader260" source="nid_biom:WholePlantGrasses" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4810,7 +4845,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader260" source="nid_biom:OilSeedCropsChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader261" source="nid_biom:OilSeedCropsChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4833,7 +4868,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader261" source="nid_biom:BerriesChemicallyUntreatedFruitResidues" target="nid_biom:ChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:broader262" source="nid_biom:BerriesChemicallyUntreatedFruitResidues" target="nid_biom:ChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4844,7 +4879,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower262" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:OilSeedCrops">
+    <edge id="eid_skos:narrower263" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:OilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4855,7 +4890,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower263" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards">
+    <edge id="eid_skos:narrower264" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4866,7 +4901,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower264" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:narrower265" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4877,7 +4912,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader265" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:HerbaceousBiomass">
+    <edge id="eid_skos:broader266" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:HerbaceousBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4888,7 +4923,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower266" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:narrower267" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4899,7 +4934,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower267" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:RootCrops">
+    <edge id="eid_skos:narrower268" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:RootCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4910,7 +4945,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower268" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:Flowers">
+    <edge id="eid_skos:narrower269" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:Flowers">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4921,7 +4956,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower269" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:Grasses">
+    <edge id="eid_skos:narrower270" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:Grasses">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4932,7 +4967,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower270" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:CerealCrops">
+    <edge id="eid_skos:narrower271" source="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture" target="nid_biom:CerealCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4943,7 +4978,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower271" source="nid_biom:Algae" target="nid_biom:MicroAlgae">
+    <edge id="eid_skos:narrower272" source="nid_biom:Algae" target="nid_biom:MicroAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4954,7 +4989,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower272" source="nid_biom:Algae" target="nid_biom:MacroAlgae">
+    <edge id="eid_skos:narrower273" source="nid_biom:Algae" target="nid_biom:MacroAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4965,7 +5000,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower273" source="nid_biom:Algae" target="nid_biom:BlendsAndMixturesAlgae">
+    <edge id="eid_skos:narrower274" source="nid_biom:Algae" target="nid_biom:BlendsAndMixturesAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4976,7 +5011,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader274" source="nid_biom:Algae" target="nid_biom:AquaticBiomass">
+    <edge id="eid_skos:broader275" source="nid_biom:Algae" target="nid_biom:AquaticBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4987,7 +5022,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader275" source="nid_biom:StalksAndLeavesFlowers" target="nid_biom:Flowers">
+    <edge id="eid_skos:broader276" source="nid_biom:StalksAndLeavesFlowers" target="nid_biom:Flowers">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4998,7 +5033,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader276" source="nid_biom:StalksAndLeavesOilSeedCrops" target="nid_biom:OilSeedCrops">
+    <edge id="eid_skos:broader277" source="nid_biom:StalksAndLeavesOilSeedCrops" target="nid_biom:OilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5009,7 +5044,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader277" source="nid_biom:WholeNuts" target="nid_biom:NutsandAcorns">
+    <edge id="eid_skos:broader278" source="nid_biom:WholeNuts" target="nid_biom:NutsandAcorns">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5020,7 +5055,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader278" source="nid_biom:RootCropsChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader279" source="nid_biom:RootCropsChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5031,7 +5066,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader279" source="nid_biom:BlendsAndMixturesOrchardAndHorticultureFruit" target="nid_biom:OrchardAndHorticultureFruit">
+    <edge id="eid_skos:broader280" source="nid_biom:BlendsAndMixturesOrchardAndHorticultureFruit" target="nid_biom:OrchardAndHorticultureFruit">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5042,7 +5077,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower280" source="nid_biom:WholeTreesWithRoots" target="nid_biom:ShortRotationCoppiceWholeTreesWithRoots">
+    <edge id="eid_skos:narrower281" source="nid_biom:WholeTreesWithRoots" target="nid_biom:ShortRotationCoppiceWholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5053,7 +5088,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower281" source="nid_biom:WholeTreesWithRoots" target="nid_biom:ConiferousWholeTreesWithRoots">
+    <edge id="eid_skos:narrower282" source="nid_biom:WholeTreesWithRoots" target="nid_biom:ConiferousWholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5064,7 +5099,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower282" source="nid_biom:WholeTreesWithRoots" target="nid_biom:BushesWholeTreesWithRoots">
+    <edge id="eid_skos:narrower283" source="nid_biom:WholeTreesWithRoots" target="nid_biom:BushesWholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5075,7 +5110,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower283" source="nid_biom:WholeTreesWithRoots" target="nid_biom:BroadLeafWholeTreesWithRoots">
+    <edge id="eid_skos:narrower284" source="nid_biom:WholeTreesWithRoots" target="nid_biom:BroadLeafWholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5098,7 +5133,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower284" source="nid_biom:WholeTreesWithRoots" target="nid_biom:BlendsAndMixturesWholeTreesWithRoots">
+    <edge id="eid_skos:narrower285" source="nid_biom:WholeTreesWithRoots" target="nid_biom:BlendsAndMixturesWholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5109,7 +5144,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader285" source="nid_biom:WholeTreesWithRoots" target="nid_biom:ForestPlantation">
+    <edge id="eid_skos:broader286" source="nid_biom:WholeTreesWithRoots" target="nid_biom:ForestPlantation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5120,7 +5155,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader286" source="nid_biom:RootCropsChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader287" source="nid_biom:RootCropsChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5131,7 +5166,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader287" source="nid_biom:HusksOrShellsOilSeedCrops" target="nid_biom:OilSeedCrops">
+    <edge id="eid_skos:broader288" source="nid_biom:HusksOrShellsOilSeedCrops" target="nid_biom:OilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5142,7 +5177,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower288" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:narrower289" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5153,7 +5188,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower289" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:NutsAndAcornsChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:narrower290" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:NutsAndAcornsChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5164,7 +5199,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower290" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:CrudeOliveCakeChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:narrower291" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:CrudeOliveCakeChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5175,7 +5210,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower291" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:BlendsAndMixturesChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:narrower292" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:BlendsAndMixturesChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5186,7 +5221,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower292" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:BerriesChemicallyUntreatedFruitResidues">
+    <edge id="eid_skos:narrower293" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:BerriesChemicallyUntreatedFruitResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5197,7 +5232,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader293" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
+    <edge id="eid_skos:broader294" source="nid_biom:ChemicallyUntreatedFruitResidues" target="nid_biom:ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5208,7 +5243,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader294" source="nid_biom:LegumeCropsChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
+    <edge id="eid_skos:broader295" source="nid_biom:LegumeCropsChemicallyTreatedHerbaceousResidues" target="nid_biom:ChemicallyTreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5243,7 +5278,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom295" source="nid_NULL" target="nid_biom:Aches">
+    <edge id="eid_owl:someValuesFrom296" source="nid_NULL" target="nid_biom:Aches">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5266,7 +5301,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom296" source="nid_NULL" target="nid_biom:Humidity">
+    <edge id="eid_owl:someValuesFrom297" source="nid_NULL" target="nid_biom:Humidity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5289,7 +5324,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom297" source="nid_NULL" target="nid_adapters:Energy">
+    <edge id="eid_owl:someValuesFrom298" source="nid_NULL" target="nid_adapters:Energy">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5312,7 +5347,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom298" source="nid_NULL" target="nid_biom:BiomassOrigin">
+    <edge id="eid_owl:someValuesFrom299" source="nid_NULL" target="nid_biom:BiomassOrigin">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5335,7 +5370,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty299" source="nid_NULL" target="nid_skos:narrower">
+    <edge id="eid_owl:onProperty300" source="nid_NULL" target="nid_skos:narrower">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5358,7 +5393,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom300" source="nid_NULL" target="nid_saref:Property">
+    <edge id="eid_owl:someValuesFrom301" source="nid_NULL" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5381,7 +5416,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom301" source="nid_NULL" target="nid_biom:BiomassType">
+    <edge id="eid_owl:someValuesFrom302" source="nid_NULL" target="nid_biom:BiomassType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5404,7 +5439,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom302" source="nid_NULL" target="nid_biom:Quantity">
+    <edge id="eid_owl:someValuesFrom303" source="nid_NULL" target="nid_biom:Quantity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5427,7 +5462,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty303" source="nid_NULL" target="nid_biom:hasCaliber">
+    <edge id="eid_owl:onProperty304" source="nid_NULL" target="nid_biom:hasCaliber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5450,7 +5485,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty304" source="nid_NULL" target="nid_biom:relatedTo">
+    <edge id="eid_owl:onProperty305" source="nid_NULL" target="nid_biom:relatedTo">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5473,7 +5508,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty305" source="nid_NULL" target="nid_biom:belongsToType">
+    <edge id="eid_owl:onProperty306" source="nid_NULL" target="nid_biom:belongsToType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5496,7 +5531,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty306" source="nid_NULL" target="nid_biom:hasAshes">
+    <edge id="eid_owl:onProperty307" source="nid_NULL" target="nid_biom:hasAshes">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5519,7 +5554,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom307" source="nid_NULL" target="nid_biom:BiomassSubGroup">
+    <edge id="eid_owl:someValuesFrom308" source="nid_NULL" target="nid_biom:BiomassSubGroup">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5542,7 +5577,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom308" source="nid_NULL" target="nid_xsd:float">
+    <edge id="eid_owl:someValuesFrom309" source="nid_NULL" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5565,35 +5600,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty309" source="nid_NULL" target="nid_biom:hasGroup">
+    <edge id="eid_owl:onProperty310" source="nid_NULL" target="nid_biom:hasGroup">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_biom:BiomassGroup">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="170.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:BiomassGroup</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:someValuesFrom310" source="nid_NULL" target="nid_biom:BiomassGroup">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -5622,6 +5634,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_biom:BiomassGroup">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="170.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:BiomassGroup</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom312" source="nid_NULL" target="nid_biom:BiomassGroup">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_biom:Caliber">
          <data key="d0">
             <y:ShapeNode>
@@ -5634,7 +5669,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom312" source="nid_NULL" target="nid_biom:Caliber">
+    <edge id="eid_owl:someValuesFrom313" source="nid_NULL" target="nid_biom:Caliber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5657,30 +5692,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty313" source="nid_NULL" target="nid_biom:produces">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_biom:hasSubType">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:hasSubType</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty314" source="nid_NULL" target="nid_biom:hasSubType">
+    <edge id="eid_owl:onProperty314" source="nid_NULL" target="nid_biom:produces">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5714,53 +5726,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_biom:hasHumidity">
+      <node id="nid_biom:hasSubType">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:hasHumidity</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:hasSubType</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty316" source="nid_NULL" target="nid_biom:hasHumidity">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_owl:onClass317" source="nid_NULL" target="nid_biom:BiomassSubGroup">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_biom:value">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:value</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty318" source="nid_NULL" target="nid_biom:value">
+    <edge id="eid_owl:onProperty316" source="nid_NULL" target="nid_biom:hasSubType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5783,7 +5761,64 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty319" source="nid_NULL" target="nid_biom:hasSubGroup">
+    <edge id="eid_owl:onProperty317" source="nid_NULL" target="nid_biom:hasSubGroup">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:onClass318" source="nid_NULL" target="nid_biom:BiomassSubGroup">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:value">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:value</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty319" source="nid_NULL" target="nid_biom:value">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_biom:hasHumidity">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:hasHumidity</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty320" source="nid_NULL" target="nid_biom:hasHumidity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5806,7 +5841,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom320" source="nid_NULL" target="nid_biom:TradingForm">
+    <edge id="eid_owl:someValuesFrom321" source="nid_NULL" target="nid_biom:TradingForm">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5829,7 +5864,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty321" source="nid_NULL" target="nid_biom:hasTradingForm">
+    <edge id="eid_owl:onProperty322" source="nid_NULL" target="nid_biom:hasTradingForm">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5852,7 +5887,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty322" source="nid_NULL" target="nid_saref:relatesToProperty">
+    <edge id="eid_owl:onProperty323" source="nid_NULL" target="nid_saref:relatesToProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5875,7 +5910,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty323" source="nid_NULL" target="nid_biom:hasOrigin">
+    <edge id="eid_owl:onProperty324" source="nid_NULL" target="nid_biom:hasOrigin">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5898,7 +5933,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom324" source="nid_NULL" target="nid_biom:BiomassSubType">
+    <edge id="eid_owl:someValuesFrom325" source="nid_NULL" target="nid_biom:BiomassSubType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5921,7 +5956,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty325" source="nid_NULL" target="nid_biom:quantity">
+    <edge id="eid_owl:onProperty326" source="nid_NULL" target="nid_biom:quantity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5932,7 +5967,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader326" source="nid_biom:BlendsAndMixturesCerealCrops" target="nid_biom:CerealCrops">
+    <edge id="eid_skos:broader327" source="nid_biom:BlendsAndMixturesCerealCrops" target="nid_biom:CerealCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5955,7 +5990,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:broader327" source="nid_biom:WholeFruit" target="nid_biom:StoneOrKernelFruits">
+    <edge id="eid_skos:broader328" source="nid_biom:WholeFruit" target="nid_biom:StoneOrKernelFruits">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5966,7 +6001,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader328" source="nid_biom:WithoutBarkChemicallyUntreatedUsedWood" target="nid_biom:ChemicallyUntreatedUsedWood">
+    <edge id="eid_skos:broader329" source="nid_biom:WithoutBarkChemicallyUntreatedUsedWood" target="nid_biom:ChemicallyUntreatedUsedWood">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5977,7 +6012,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader329" source="nid_biom:BlendsAndMixturesWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
+    <edge id="eid_skos:broader330" source="nid_biom:BlendsAndMixturesWholeTreesWithRoots" target="nid_biom:WholeTreesWithRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5988,7 +6023,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader330" source="nid_biom:BlendsAndMixturesWoodyBiomass" target="nid_biom:WoodyBiomass">
+    <edge id="eid_skos:broader331" source="nid_biom:BlendsAndMixturesWoodyBiomass" target="nid_biom:WoodyBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5999,7 +6034,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader331" source="nid_biom:StoredConiferous" target="nid_biom:LoggingResidues">
+    <edge id="eid_skos:broader332" source="nid_biom:StoredConiferous" target="nid_biom:LoggingResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6010,7 +6045,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader332" source="nid_biom:OilSeedCropsChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
+    <edge id="eid_skos:broader333" source="nid_biom:OilSeedCropsChemicallyUntreatedHerbaceousResidues" target="nid_biom:ChemicallyUntreatedHerbaceousResidues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6033,7 +6068,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower333" source="nid_biom:LegumeCrops" target="nid_biom:WholePlantLegumeCrops">
+    <edge id="eid_skos:narrower334" source="nid_biom:LegumeCrops" target="nid_biom:WholePlantLegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6044,7 +6079,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower334" source="nid_biom:LegumeCrops" target="nid_biom:StalksAndLeavesLegumeCrops">
+    <edge id="eid_skos:narrower335" source="nid_biom:LegumeCrops" target="nid_biom:StalksAndLeavesLegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6055,7 +6090,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower335" source="nid_biom:LegumeCrops" target="nid_biom:PodsLegumeCrops">
+    <edge id="eid_skos:narrower336" source="nid_biom:LegumeCrops" target="nid_biom:PodsLegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6066,7 +6101,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower336" source="nid_biom:LegumeCrops" target="nid_biom:FruitLegumeCrops">
+    <edge id="eid_skos:narrower337" source="nid_biom:LegumeCrops" target="nid_biom:FruitLegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6077,7 +6112,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower337" source="nid_biom:LegumeCrops" target="nid_biom:BlendsAndMixturesLegumeCrops">
+    <edge id="eid_skos:narrower338" source="nid_biom:LegumeCrops" target="nid_biom:BlendsAndMixturesLegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6088,7 +6123,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader338" source="nid_biom:LegumeCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
+    <edge id="eid_skos:broader339" source="nid_biom:LegumeCrops" target="nid_biom:HerbaceousBiomassFromAgricultureAndHorticulture">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6099,7 +6134,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader339" source="nid_biom:BrownSeaWeed" target="nid_biom:MacroAlgae">
+    <edge id="eid_skos:broader340" source="nid_biom:BrownSeaWeed" target="nid_biom:MacroAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6110,7 +6145,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader340" source="nid_biom:GreenSeaWeed" target="nid_biom:MacroAlgae">
+    <edge id="eid_skos:broader341" source="nid_biom:GreenSeaWeed" target="nid_biom:MacroAlgae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6121,7 +6156,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader341" source="nid_biom:SeedsOilSeedCrops" target="nid_biom:OilSeedCrops">
+    <edge id="eid_skos:broader342" source="nid_biom:SeedsOilSeedCrops" target="nid_biom:OilSeedCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6132,7 +6167,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower342" source="nid_biom:StumpsOrRoots" target="nid_biom:ShortRotationCoppiceStumpsOrRoots">
+    <edge id="eid_skos:narrower343" source="nid_biom:StumpsOrRoots" target="nid_biom:ShortRotationCoppiceStumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6143,7 +6178,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower343" source="nid_biom:StumpsOrRoots" target="nid_biom:ConiferousStumpsOrRoots">
+    <edge id="eid_skos:narrower344" source="nid_biom:StumpsOrRoots" target="nid_biom:ConiferousStumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6154,7 +6189,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower344" source="nid_biom:StumpsOrRoots" target="nid_biom:BushesStumpsOrRoots">
+    <edge id="eid_skos:narrower345" source="nid_biom:StumpsOrRoots" target="nid_biom:BushesStumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6177,7 +6212,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_skos:narrower345" source="nid_biom:StumpsOrRoots" target="nid_biom:BroadLeafStumpsOrRoots">
+    <edge id="eid_skos:narrower346" source="nid_biom:StumpsOrRoots" target="nid_biom:BroadLeafStumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6188,7 +6223,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower346" source="nid_biom:StumpsOrRoots" target="nid_biom:BlendsAndMixturesStumpsOrRoots">
+    <edge id="eid_skos:narrower347" source="nid_biom:StumpsOrRoots" target="nid_biom:BlendsAndMixturesStumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6199,7 +6234,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader347" source="nid_biom:StumpsOrRoots" target="nid_biom:ForestPlantation">
+    <edge id="eid_skos:broader348" source="nid_biom:StumpsOrRoots" target="nid_biom:ForestPlantation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6210,7 +6245,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower348" source="nid_biom:LakeAndSeaGrass" target="nid_biom:SeaGrass">
+    <edge id="eid_skos:narrower349" source="nid_biom:LakeAndSeaGrass" target="nid_biom:SeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6221,7 +6256,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower349" source="nid_biom:LakeAndSeaGrass" target="nid_biom:LakeGrass">
+    <edge id="eid_skos:narrower350" source="nid_biom:LakeAndSeaGrass" target="nid_biom:LakeGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6232,7 +6267,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:narrower350" source="nid_biom:LakeAndSeaGrass" target="nid_biom:BlendsAndMixturesLeakAndSeaGrass">
+    <edge id="eid_skos:narrower351" source="nid_biom:LakeAndSeaGrass" target="nid_biom:BlendsAndMixturesLeakAndSeaGrass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6243,7 +6278,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader351" source="nid_biom:LakeAndSeaGrass" target="nid_biom:AquaticBiomass">
+    <edge id="eid_skos:broader352" source="nid_biom:LakeAndSeaGrass" target="nid_biom:AquaticBiomass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6254,7 +6289,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader352" source="nid_biom:BroadLeafStumpsOrRoots" target="nid_biom:StumpsOrRoots">
+    <edge id="eid_skos:broader353" source="nid_biom:BroadLeafStumpsOrRoots" target="nid_biom:StumpsOrRoots">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6265,7 +6300,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:broader353" source="nid_biom:WholePlantLegumeCrops" target="nid_biom:LegumeCrops">
+    <edge id="eid_skos:broader354" source="nid_biom:WholePlantLegumeCrops" target="nid_biom:LegumeCrops">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6276,7 +6311,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:hasSubGroup354" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubGroup">
+    <edge id="eid_biom:hasSubGroup355" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubGroup">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6287,7 +6322,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:hasSubType355" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubType">
+    <edge id="eid_biom:hasSubType356" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassSubType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6298,11 +6333,23 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_owl:Thing">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">owl:Thing</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
       <node id="nid_xsd:string">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
+               <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:string</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -6310,7 +6357,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:hasID356" source="nid_biom:Aches" target="nid_xsd:string">
+    <edge id="eid_biom:hasID357" source="nid_owl:Thing" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6333,7 +6380,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_saref:relatesToProperty357" source="nid_saref:Measurement" target="nid_saref:Property">
+    <edge id="eid_saref:relatesToProperty358" source="nid_saref:Measurement" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6356,7 +6403,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:consumes358" source="nid_biom:Biomass" target="nid_adapters:Energy">
+    <edge id="eid_biom:consumes359" source="nid_biom:Biomass" target="nid_adapters:Energy">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6367,12 +6414,23 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:hasOrigin359" source="nid_biom:Biomass" target="nid_biom:BiomassOrigin">
+    <edge id="eid_biom:hasOrigin360" source="nid_biom:Biomass" target="nid_biom:BiomassOrigin">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:hasOrigin</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_biom:relatedTo361" source="nid_owl:Thing" target="nid_biom:BiomassSubGroup">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:relatedTo</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -6390,19 +6448,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_biom:BoughtGroup">
+      <node id="nid_biom:BoughtPerGroup">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="190.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:BoughtGroup</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:BoughtPerGroup</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:boughtQuantityPerGroup360" source="nid_ship:BoughtQuantity" target="nid_biom:BoughtGroup">
+    <edge id="eid_biom:boughtQuantityPerGroup362" source="nid_ship:BoughtQuantity" target="nid_biom:BoughtPerGroup">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6413,18 +6471,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:primaryEnergyCostObs361" source="nid_biom:Biomass" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:primaryEnergyCostObs</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_biom:hasAshes362" source="nid_biom:Biomass" target="nid_biom:Aches">
+    <edge id="eid_biom:hasAshes363" source="nid_biom:Biomass" target="nid_biom:Aches">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6435,7 +6482,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:hasDescription363" source="nid_biom:Aches" target="nid_xsd:string">
+    <edge id="eid_biom:hasDescription364" source="nid_owl:Thing" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6446,13 +6493,13 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_biom:SoldGroup">
+      <node id="nid_biom:SoldPerGroup">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="140.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="170.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:SoldGroup</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">biom:SoldPerGroup</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -6470,7 +6517,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:quantityPerCaliber364" source="nid_biom:SoldGroup" target="nid_biom:SoldPerCaliber">
+    <edge id="eid_biom:quantityPerCaliber365" source="nid_biom:SoldPerGroup" target="nid_biom:SoldPerCaliber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6481,7 +6528,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_saref:relatesToMeasurement365" source="nid_saref:Property" target="nid_saref:Measurement">
+    <edge id="eid_saref:relatesToMeasurement366" source="nid_saref:Property" target="nid_saref:Measurement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6492,7 +6539,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:quantity366" source="nid_biom:Biomass" target="nid_biom:Quantity">
+    <edge id="eid_biom:hasTradingForm367" source="nid_owl:Thing" target="nid_biom:TradingForm">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:hasTradingForm</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_biom:quantity368" source="nid_biom:Biomass" target="nid_biom:Quantity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6503,7 +6561,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:hasHumidity367" source="nid_biom:Biomass" target="nid_biom:Humidity">
+    <edge id="eid_biom:hasHumidity369" source="nid_biom:Biomass" target="nid_biom:Humidity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6526,7 +6584,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_saref:isMeasuredIn368" source="nid_saref:Measurement" target="nid_om:UnitOfMeasure">
+    <edge id="eid_saref:isMeasuredIn370" source="nid_saref:Measurement" target="nid_om:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6549,7 +6607,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_biom:soldQuantityPerGroup369" source="nid_biom:SoldQuantity" target="nid_biom:SoldGroup">
+    <edge id="eid_biom:soldQuantityPerGroup371" source="nid_biom:SoldQuantity" target="nid_biom:SoldPerGroup">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6560,7 +6618,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:produces370" source="nid_biom:Biomass" target="nid_adapters:Energy">
+    <edge id="eid_biom:produces372" source="nid_biom:Biomass" target="nid_adapters:Energy">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6571,34 +6629,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:hasName371" source="nid_biom:Aches" target="nid_xsd:string">
+    <edge id="eid_biom:hasName373" source="nid_owl:Thing" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:hasName</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_biom:primaryEnergyCost372" source="nid_biom:Biomass" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:primaryEnergyCost</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_biom:tradingForm373" source="nid_biom:Biomass" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:tradingForm</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -6672,19 +6708,18 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_owl:Thing">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">owl:Thing</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
+    <edge id="eid_biom:hasCaliber378" source="nid_biom:SoldPerCaliber" target="nid_biom:Caliber">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">biom:hasCaliber</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
          </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_biom:value378" source="nid_owl:Thing" target="nid_xsd:float">
+         <data key="d3" />
+      </edge>
+    <edge id="eid_biom:value379" source="nid_biom:Quantity" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6695,7 +6730,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:belongsToType379" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassType">
+    <edge id="eid_biom:belongsToType380" source="nid_biom:BiomassOrigin" target="nid_biom:BiomassType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -6706,7 +6741,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_biom:dimension380" source="nid_biom:Biomass" target="nid_xsd:string">
+    <edge id="eid_biom:dimension381" source="nid_biom:Biomass" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
