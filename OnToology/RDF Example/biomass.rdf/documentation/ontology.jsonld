@@ -1,0 +1,318 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+  } ],
+  "https://saref.etsi.org/core#hasPrice" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs"
+  } ],
+  "https://saref.etsi.org/core#relatesToMeasurement" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette1"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette2"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#AchesBriquettes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasDescription" : [ {
+    "@value" : "<=0.5%% ashes, as per ISO 18122"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "9798c5a9-73da-4dc5-bae4-11baa990a00e"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasName" : [ {
+    "@value" : "A0.5"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasDescription" : [ {
+    "@value" : "null"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "5"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasName" : [ {
+    "@value" : "Blends And Mixtures"
+  } ],
+  "https://www.w3.org/ns/org#broader" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BriquetteOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Briquettes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#dimension" : [ {
+    "@value" : "null"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasAches" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#AchesBriquettes"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasHumidity" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HumidityBriquettes"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "7d066f83-ad18-4147-9b05-cbf884c86518"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasName" : [ {
+    "@value" : "Briquettes"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasOrigin" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OriginBriquettes"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#produces" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#tradingForm" : [ {
+    "@value" : "null"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "https://saref.etsi.org/core#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.85"
+  } ],
+  "https://saref.etsi.org/core#isMeasuredIn" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#KilowattPerKg"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "https://saref.etsi.org/core#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "17.46"
+  } ],
+  "https://saref.etsi.org/core#isMeasuredIn" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasDescription" : [ {
+    "@value" : "null"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "1bgfd"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasName" : [ {
+    "@value" : "Forest Plantation And Other Virgin Wood"
+  } ],
+  "https://www.w3.org/ns/org#broader" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"
+  } ],
+  "https://www.w3.org/ns/org#narrower" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HumidityBriquettes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasDescription" : [ {
+    "@value" : "<=10%% humidity, as per ISO 18134-1, ISO 18134-2"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "81813d27-d816-4a6e-971f-ba56c0b21089"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasName" : [ {
+    "@value" : "M10"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OriginBriquettes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BriquetteOrigin"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#belongToType" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasGroup" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "4f914b83-9d10-4df7-a15f-a329ae2a7751"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasSubType" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "13.34"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "15.34"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasDescription" : [ {
+    "@value" : "null"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "1treyu"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasName" : [ {
+    "@value" : "Whoole Trees Without Roots"
+  } ],
+  "https://www.w3.org/ns/org#broader" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood"
+  } ],
+  "https://www.w3.org/ns/org#narrower" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasDescription" : [ {
+    "@value" : "description"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasId" : [ {
+    "@value" : "redt54"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/biomass#hasName" : [ {
+    "@value" : "Woody Briquettes"
+  } ],
+  "https://www.w3.org/ns/org#narrower" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#belongToType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#dimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#tradingForm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#relatesToMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/ns/org#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/ns/org#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

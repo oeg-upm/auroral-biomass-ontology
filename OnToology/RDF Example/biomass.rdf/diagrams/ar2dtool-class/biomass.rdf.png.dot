@@ -1,0 +1,25 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns1:EnergyBriquette2" -> "ns5:MegajoulePerKg" [ label = "ns3:isMeasuredIn" ];
+	"ns1:Briquettes" -> "ns4:EnergyProduction" [ label = "ns1:produces" ];
+	"ns1:Briquettes" -> "ns1:AchesBriquettes" [ label = "ns1:hasAches" ];
+	"ns1:Briquettes" -> "ns1:HumidityBriquettes" [ label = "ns1:hasHumidity" ];
+	"ns1:Briquettes" -> "ns1:OriginBriquettes" [ label = "ns1:hasOrigin" ];
+	"ns1:BlendsAndMixtures" -> "ns1:WhooleTreesWithoutRoots" [ label = "ns2:broader" ];
+	"ns1:OriginBriquettes" -> "ns1:BlendsAndMixtures" [ label = "ns1:hasSubType" ];
+	"ns1:OriginBriquettes" -> "ns1:WhooleTreesWithoutRoots" [ label = "ns1:belongToType" ];
+	"ns1:OriginBriquettes" -> "ns1:ForestPlantationAndOtherVirginWood" [ label = "ns1:hasSubGroup" ];
+	"ns1:OriginBriquettes" -> "ns1:WoodyBiomass" [ label = "ns1:hasGroup" ];
+	"ns1:WhooleTreesWithoutRoots" -> "ns1:ForestPlantationAndOtherVirginWood" [ label = "ns2:broader" ];
+	"ns1:WhooleTreesWithoutRoots" -> "ns1:BlendsAndMixtures" [ label = "ns2:narrower" ];
+	"ns4:EnergyProduction" -> "ns1:EnergyBriquette2" [ label = "ns3:relatesToMeasurement" ];
+	"ns4:EnergyProduction" -> "ns1:EnergyBriquette1" [ label = "ns3:relatesToMeasurement" ];
+	"ns4:EnergyProduction" -> "ns1:PrimaryEnergyCostObs" [ label = "ns3:hasPrice" ];
+	"ns4:EnergyProduction" -> "ns1:PrimaryEnergyCost" [ label = "ns3:hasPrice" ];
+	"ns1:WoodyBiomass" -> "ns1:ForestPlantationAndOtherVirginWood" [ label = "ns2:narrower" ];
+	"ns1:EnergyBriquette1" -> "ns5:KilowattPerKg" [ label = "ns3:isMeasuredIn" ];
+	"ns1:ForestPlantationAndOtherVirginWood" -> "ns1:WoodyBiomass" [ label = "ns2:broader" ];
+	"ns1:ForestPlantationAndOtherVirginWood" -> "ns1:WhooleTreesWithoutRoots" [ label = "ns2:narrower" ];
+
+}

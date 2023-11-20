@@ -1,0 +1,259 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/biomass#belongToType
+<https://auroral.iot.linkeddata.es/def/biomass#belongToType> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#dimension
+<https://auroral.iot.linkeddata.es/def/biomass#dimension> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasAches
+<https://auroral.iot.linkeddata.es/def/biomass#hasAches> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasDescription
+<https://auroral.iot.linkeddata.es/def/biomass#hasDescription> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasGroup
+<https://auroral.iot.linkeddata.es/def/biomass#hasGroup> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasHumidity
+<https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasId
+<https://auroral.iot.linkeddata.es/def/biomass#hasId> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasName
+<https://auroral.iot.linkeddata.es/def/biomass#hasName> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasOrigin
+<https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup
+<https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasSubType
+<https://auroral.iot.linkeddata.es/def/biomass#hasSubType> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#hasValue
+<https://auroral.iot.linkeddata.es/def/biomass#hasValue> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#produces
+<https://auroral.iot.linkeddata.es/def/biomass#produces> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#tradingForm
+<https://auroral.iot.linkeddata.es/def/biomass#tradingForm> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#hasPrice
+<https://saref.etsi.org/core#hasPrice> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#hasValue
+<https://saref.etsi.org/core#hasValue> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#isMeasuredIn
+<https://saref.etsi.org/core#isMeasuredIn> rdf:type owl:AnnotationProperty .
+
+
+###  https://saref.etsi.org/core#relatesToMeasurement
+<https://saref.etsi.org/core#relatesToMeasurement> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/org#broader
+<https://www.w3.org/ns/org#broader> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/ns/org#narrower
+<https://www.w3.org/ns/org#narrower> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Energy
+<https://auroral.iot.linkeddata.es/def/adapters#Energy> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Aches
+<https://auroral.iot.linkeddata.es/def/biomass#Aches> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Biomass
+<https://auroral.iot.linkeddata.es/def/biomass#Biomass> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BiomassType
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassType> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BriquetteOrigin
+<https://auroral.iot.linkeddata.es/def/biomass#BriquetteOrigin> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Humidity
+<https://auroral.iot.linkeddata.es/def/biomass#Humidity> rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core#Measurement
+<https://saref.etsi.org/core#Measurement> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction
+<https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction> rdf:type owl:NamedIndividual ,
+                                                                           <https://auroral.iot.linkeddata.es/def/adapters#Energy> ;
+                                                                  <https://saref.etsi.org/core#hasPrice> <https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost> ,
+                                                                                                         <https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs> ;
+                                                                  <https://saref.etsi.org/core#relatesToMeasurement> <https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette1> ,
+                                                                                                                     <https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette2> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#AchesBriquettes
+<https://auroral.iot.linkeddata.es/def/biomass#AchesBriquettes> rdf:type owl:NamedIndividual ,
+                                                                         <https://auroral.iot.linkeddata.es/def/biomass#Aches> ;
+                                                                <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> "<=0.5%% ashes, as per ISO 18122" ;
+                                                                <https://auroral.iot.linkeddata.es/def/biomass#hasId> "9798c5a9-73da-4dc5-bae4-11baa990a00e" ;
+                                                                <https://auroral.iot.linkeddata.es/def/biomass#hasName> "A0.5" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures
+<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures> rdf:type owl:NamedIndividual ,
+                                                                           <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> ;
+                                                                  <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> "null" ;
+                                                                  <https://auroral.iot.linkeddata.es/def/biomass#hasId> "5" ;
+                                                                  <https://auroral.iot.linkeddata.es/def/biomass#hasName> "Blends And Mixtures" ;
+                                                                  <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#Briquettes
+<https://auroral.iot.linkeddata.es/def/biomass#Briquettes> rdf:type owl:NamedIndividual ,
+                                                                    <https://auroral.iot.linkeddata.es/def/biomass#Biomass> ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#dimension> "null" ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#hasAches> <https://auroral.iot.linkeddata.es/def/biomass#AchesBriquettes> ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> <https://auroral.iot.linkeddata.es/def/biomass#HumidityBriquettes> ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#hasId> "7d066f83-ad18-4147-9b05-cbf884c86518" ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#hasName> "Briquettes" ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> <https://auroral.iot.linkeddata.es/def/biomass#OriginBriquettes> ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#produces> <https://auroral.iot.linkeddata.es/def/adapters#EnergyProduction> ;
+                                                           <https://auroral.iot.linkeddata.es/def/biomass#tradingForm> "null" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette1
+<https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette1> rdf:type owl:NamedIndividual ,
+                                                                          <https://saref.etsi.org/core#Measurement> ;
+                                                                 <https://saref.etsi.org/core#hasValue> 4.85 ;
+                                                                 <https://saref.etsi.org/core#isMeasuredIn> <https://auroral.iot.linkeddata.es/def/core#KilowattPerKg> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette2
+<https://auroral.iot.linkeddata.es/def/biomass#EnergyBriquette2> rdf:type owl:NamedIndividual ,
+                                                                          <https://saref.etsi.org/core#Measurement> ;
+                                                                 <https://saref.etsi.org/core#hasValue> 17.46 ;
+                                                                 <https://saref.etsi.org/core#isMeasuredIn> <https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood
+<https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood> rdf:type owl:NamedIndividual ,
+                                                                                            <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> ;
+                                                                                   <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> "null" ;
+                                                                                   <https://auroral.iot.linkeddata.es/def/biomass#hasId> "1bgfd" ;
+                                                                                   <https://auroral.iot.linkeddata.es/def/biomass#hasName> "Forest Plantation And Other Virgin Wood" ;
+                                                                                   <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> ;
+                                                                                   <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#HumidityBriquettes
+<https://auroral.iot.linkeddata.es/def/biomass#HumidityBriquettes> rdf:type owl:NamedIndividual ,
+                                                                            <https://auroral.iot.linkeddata.es/def/biomass#Humidity> ;
+                                                                   <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> "<=10%% humidity, as per ISO 18134-1, ISO 18134-2" ;
+                                                                   <https://auroral.iot.linkeddata.es/def/biomass#hasId> "81813d27-d816-4a6e-971f-ba56c0b21089" ;
+                                                                   <https://auroral.iot.linkeddata.es/def/biomass#hasName> "M10" .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#OriginBriquettes
+<https://auroral.iot.linkeddata.es/def/biomass#OriginBriquettes> rdf:type owl:NamedIndividual ,
+                                                                          <https://auroral.iot.linkeddata.es/def/biomass#BriquetteOrigin> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/biomass#belongToType> <https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/biomass#hasGroup> <https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/biomass#hasId> "4f914b83-9d10-4df7-a15f-a329ae2a7751" ;
+                                                                 <https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood> ;
+                                                                 <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost
+<https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost> rdf:type owl:NamedIndividual ,
+                                                                           <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> ;
+                                                                  <https://auroral.iot.linkeddata.es/def/biomass#hasValue> "13.34"^^xsd:float .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs
+<https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs> rdf:type owl:NamedIndividual ,
+                                                                              <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> ;
+                                                                     <https://auroral.iot.linkeddata.es/def/biomass#hasValue> "15.34"^^xsd:float .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots
+<https://auroral.iot.linkeddata.es/def/biomass#WhooleTreesWithoutRoots> rdf:type owl:NamedIndividual ,
+                                                                                 <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> "null" ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#hasId> "1treyu" ;
+                                                                        <https://auroral.iot.linkeddata.es/def/biomass#hasName> "Whoole Trees Without Roots" ;
+                                                                        <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood> ;
+                                                                        <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures> .
+
+
+###  https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass
+<https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> rdf:type owl:NamedIndividual ,
+                                                                      <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> ;
+                                                             <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> "description" ;
+                                                             <https://auroral.iot.linkeddata.es/def/biomass#hasId> "redt54" ;
+                                                             <https://auroral.iot.linkeddata.es/def/biomass#hasName> "Woody Briquettes" ;
+                                                             <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantationAndOtherVirginWood> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

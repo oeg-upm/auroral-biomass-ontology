@@ -15,9 +15,7 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#BiomassEnergyPrice"
-            title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">
-            <span>biomass energy price</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">Biomass Energy Price</a>
       </li>
       <li>
          <a href="#BiomassGroup"
@@ -40,8 +38,8 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/biomass#BiomassType">Biomass Type</a>
       </li>
       <li>
-         <a href="#BoughtGroup"
-            title="https://auroral.iot.linkeddata.es/def/biomass#BoughtGroup">Bought Group</a>
+         <a href="#BoughtPerGroup"
+            title="https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup">Bought Per Group</a>
       </li>
       <li>
          <a href="#https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
@@ -79,12 +77,12 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#SoldGroup"
-            title="https://auroral.iot.linkeddata.es/def/biomass#SoldGroup">Sold Group</a>
-      </li>
-      <li>
          <a href="#SoldPerCaliber"
             title="https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber">Sold Per Caliber</a>
+      </li>
+      <li>
+         <a href="#SoldPerGroup"
+            title="https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup">Sold Per Group</a>
       </li>
       <li>
          <a href="#SoldQuantity"
@@ -111,16 +109,6 @@ This section provides details for each class and property defined by [Ontology N
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Aches</p>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasDescription"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasDescription">has Description</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasID"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasID">has ID</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasName"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasName">has Name</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasAshes"
@@ -145,32 +133,22 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/biomass#consumes">consumes</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#dimension"
                title="https://auroral.iot.linkeddata.es/def/biomass#dimension">dimension</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasID"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasID">has ID</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasName"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasName">has Name</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAshes"
                title="https://auroral.iot.linkeddata.es/def/biomass#hasAshes">has ashes</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasHumidity"
                title="https://auroral.iot.linkeddata.es/def/biomass#hasHumidity">has humidity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOrigin"
                title="https://auroral.iot.linkeddata.es/def/biomass#hasOrigin">has origin</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#primaryEnergyCost"
-               title="https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost">primary Energy Cost</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#primaryEnergyCostObs"
-               title="https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs">primary Energy Cost Obs</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#produces"
+            <sup class="type-op" title="object property">op</sup>, <a href="#produces"
                title="https://auroral.iot.linkeddata.es/def/biomass#produces">produces</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#quantity"
                title="https://auroral.iot.linkeddata.es/def/biomass#quantity">quantity</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tradingForm"
-               title="https://auroral.iot.linkeddata.es/def/biomass#tradingForm">trading Form</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="BiomassEnergyPrice">
-      <h3>biomass energy price<sup class="type-c" title="class">c</sup>
+      <h3>Biomass Energy Price<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -188,6 +166,14 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/biomass#priceValue">price value</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#PrimaryEnergyCost"
+               title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost">Primary Energy Cost</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PrimaryEnergyCostObs"
+               title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs">Primary Energy Cost Obs</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="BiomassGroup">
@@ -200,16 +186,6 @@ This section provides details for each class and property defined by [Ontology N
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasDescription"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasDescription">has Description</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasID"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasID">has ID</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasName"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasName">has Name</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasGroup"
@@ -246,11 +222,7 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#belongsToType"
                title="https://auroral.iot.linkeddata.es/def/biomass#belongsToType">belongs to type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasDescription"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasDescription">has Description</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasID"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasID">has ID</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasGroup"
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasGroup"
                title="https://auroral.iot.linkeddata.es/def/biomass#hasGroup">has group</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSubGroup"
                title="https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup">has sub group</a>
@@ -280,6 +252,8 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#hasSubGroup"
                title="https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup">has sub group</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatedTo"
+               title="https://auroral.iot.linkeddata.es/def/biomass#relatedTo">related to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>has members</dt>
@@ -666,13 +640,13 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="BoughtGroup">
-      <h3>Bought Group<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="BoughtPerGroup">
+      <h3>Bought Per Group<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BoughtGroup</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -713,6 +687,14 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Caliber</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCaliber"
+               title="https://auroral.iot.linkeddata.es/def/biomass#hasCaliber">has caliber</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="CurrentQuantity">
       <h3>Current Quantity<sup class="type-c" title="class">c</sup>
@@ -764,16 +746,6 @@ This section provides details for each class and property defined by [Ontology N
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Humidity</p>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasDescription"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasDescription">has Description</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasID"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasID">has ID</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasName"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasName">has Name</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasHumidity"
@@ -818,7 +790,7 @@ This section provides details for each class and property defined by [Ontology N
          <dt>has sub-classes</dt>
          <dd>
             <a href="#BiomassEnergyPrice"
-               title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">biomass energy price</a>
+               title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">Biomass Energy Price</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -868,34 +840,16 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity">Total Quantity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#value"
+               title="https://auroral.iot.linkeddata.es/def/biomass#value">value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#quantity"
                title="https://auroral.iot.linkeddata.es/def/biomass#quantity">quantity</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="SoldGroup">
-      <h3>Sold Group<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#SoldGroup</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#quantityPerCaliber"
-               title="https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber">quantity per caliber</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#soldQuantityPerGroup"
-               title="https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup">sold quantity per group</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -910,10 +864,40 @@ This section provides details for each class and property defined by [Ontology N
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasCaliber"
+               title="https://auroral.iot.linkeddata.es/def/biomass#hasCaliber">has caliber</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#quantityPerCaliber"
                title="https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber">quantity per caliber</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SoldPerGroup">
+      <h3>Sold Per Group<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#quantityPerCaliber"
+               title="https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber">quantity per caliber</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#soldQuantityPerGroup"
+               title="https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup">sold quantity per group</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -963,6 +947,14 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#TradingForm</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasTradingForm"
+               title="https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm">has trading form</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">
       <h3>Unit of Measure<sup class="type-c" title="class">c</sup>
@@ -1008,14 +1000,6 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/biomass#consumes">
             <span>consumes</span>
          </a>
-      </li>
-      <li>
-         <a href="#forCaliber"
-            title="https://auroral.iot.linkeddata.es/def/biomass#forCaliber">for caliber</a>
-      </li>
-      <li>
-         <a href="#forGroup"
-            title="https://auroral.iot.linkeddata.es/def/biomass#forGroup">for group</a>
       </li>
       <li>
          <a href="#hasAshes"
@@ -1127,8 +1111,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#BoughtGroup"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#BoughtGroup">Bought Group</a>
+               <a href="#BoughtPerGroup"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup">Bought Per Group</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1166,22 +1150,6 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="forCaliber">
-      <h3>for caliber<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#forCaliber</p>
-   </div>
-   <div class="entity" id="forGroup">
-      <h3>for group<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#forGroup</p>
-   </div>
    <div class="entity" id="hasAshes">
       <h3>has ashes<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1213,6 +1181,22 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasCaliber</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoldPerCaliber"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber">Sold Per Caliber</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Caliber"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#Caliber">Caliber</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="hasGroup">
       <h3>has group<sup class="type-op" title="object property">op</sup>
@@ -1341,6 +1325,16 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TradingForm"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#TradingForm">Trading Form</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="https://saref.etsi.org/core#isMeasuredIn">
       <h3>is measured in<sup class="type-op" title="object property">op</sup>
@@ -1432,8 +1426,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SoldGroup"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#SoldGroup">Sold Group</a>
+               <a href="#SoldPerGroup"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup">Sold Per Group</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1452,6 +1446,16 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#relatedTo</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BiomassSubGroup"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup">Biomass Sub Group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="https://saref.etsi.org/core#relatesToMeasurement">
       <h3>relates to measurement<sup class="type-op" title="object property">op</sup>
@@ -1514,8 +1518,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#SoldGroup"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#SoldGroup">Sold Group</a>
+               <a href="#SoldPerGroup"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup">Sold Per Group</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1557,18 +1561,6 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/biomass#priceValue">price value</a>
       </li>
       <li>
-         <a href="#primaryEnergyCost"
-            title="https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost">primary Energy Cost</a>
-      </li>
-      <li>
-         <a href="#primaryEnergyCostObs"
-            title="https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs">primary Energy Cost Obs</a>
-      </li>
-      <li>
-         <a href="#tradingForm"
-            title="https://auroral.iot.linkeddata.es/def/biomass#tradingForm">trading Form</a>
-      </li>
-      <li>
          <a href="#value"
             title="https://auroral.iot.linkeddata.es/def/biomass#value">value</a>
       </li>
@@ -1606,27 +1598,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasDescription</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Aches"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Aches">Aches</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#BiomassGroup"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup">Biomass Group</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#BiomassOrigin"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin">Biomass Origin</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Humidity"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Humidity">Humidity</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -1645,32 +1616,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasID</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Aches"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Aches">Aches</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Biomass"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Biomass">Biomass</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#BiomassGroup"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup">Biomass Group</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#BiomassOrigin"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin">Biomass Origin</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Humidity"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Humidity">Humidity</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -1689,27 +1634,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasName</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Aches"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Aches">Aches</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Biomass"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Biomass">Biomass</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#BiomassGroup"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup">Biomass Group</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Humidity"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Humidity">Humidity</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -1777,7 +1701,7 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has domain</dt>
             <dd>
                <a href="#BiomassEnergyPrice"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">biomass energy price</a>
+                  title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">Biomass Energy Price</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1785,78 +1709,6 @@ This section provides details for each class and property defined by [Ontology N
                <a href="http://www.w3.org/2001/XMLSchema#float"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#float">float</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="primaryEnergyCost">
-      <h3>primary Energy Cost<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCost</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Biomass"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Biomass">Biomass</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="primaryEnergyCostObs">
-      <h3>primary Energy Cost Obs<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#primaryEnergyCostObs</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Biomass"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Biomass">Biomass</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tradingForm">
-      <h3>trading Form<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#tradingForm</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Biomass"
-                  title="https://auroral.iot.linkeddata.es/def/biomass#Biomass">Biomass</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -1870,6 +1722,12 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#value</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Quantity"
+                  title="https://auroral.iot.linkeddata.es/def/biomass#Quantity">quantity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#float"
@@ -2393,6 +2251,14 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#PodsLegumeCrops"
             title="https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops">Pods legume crops</a>
+      </li>
+      <li>
+         <a href="#PrimaryEnergyCost"
+            title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost">Primary Energy Cost</a>
+      </li>
+      <li>
+         <a href="#PrimaryEnergyCostObs"
+            title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs">Primary Energy Cost Obs</a>
       </li>
       <li>
          <a href="#RedSeaWeed"
@@ -6102,6 +5968,38 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-op" title="object property">op</sup> 
             <a href="#LegumeCrops"
                title="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops">Legume crops</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PrimaryEnergyCost">
+      <h3>Primary Energy Cost<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#BiomassEnergyPrice"
+               title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">Biomass Energy Price</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PrimaryEnergyCostObs">
+      <h3>Primary Energy Cost Obs<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#BiomassEnergyPrice"
+               title="https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice">Biomass Energy Price</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
