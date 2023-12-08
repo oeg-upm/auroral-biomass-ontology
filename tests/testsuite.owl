@@ -1,0 +1,182 @@
+@prefix : <https://auroral.iot.linkeddata.es/def/tests/biomass#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://auroral.iot.linkeddata.es/def/tests/biomass#> .
+
+<https://auroral.iot.linkeddata.es/def/tests/biomass#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/def/vtc#belongsTo
+<https://w3id.org/def/vtc#belongsTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vtc#desiredBehaviour
+<https://w3id.org/def/vtc#desiredBehaviour> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/vtc#TestCaseDesign
+<https://w3id.org/def/vtc#TestCaseDesign> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vtc#TestSuite
+<https://w3id.org/def/vtc#TestSuite> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/vtc#Test1
+<https://w3id.org/def/vtc#Test1> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "BiomassOrigin belongsToType BiomassType" .
+
+
+###  https://w3id.org/def/vtc#Test10
+<https://w3id.org/def/vtc#Test10> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "BiomassOrigin hasSubGroup BiomassSubGroup" .
+
+
+###  https://w3id.org/def/vtc#Test11
+<https://w3id.org/def/vtc#Test11> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "BiomassOrigin hasSubType BiomassSubType" .
+
+
+###  https://w3id.org/def/vtc#Test12
+<https://w3id.org/def/vtc#Test12> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Price inCurrency Currency" .
+
+
+###  https://w3id.org/def/vtc#Test13
+<https://w3id.org/def/vtc#Test13> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Measurement isMeasuredIn UnitOfMeasure" .
+
+
+###  https://w3id.org/def/vtc#Test14
+<https://w3id.org/def/vtc#Test14> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Biomass produces Energy" .
+
+
+###  https://w3id.org/def/vtc#Test15
+<https://w3id.org/def/vtc#Test15> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Biomass quantity Quantity" .
+
+
+###  https://w3id.org/def/vtc#Test16
+<https://w3id.org/def/vtc#Test16> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "SoldPerGroup quantityPerCaliber SoldPerCaliber" .
+
+
+###  https://w3id.org/def/vtc#Test17
+<https://w3id.org/def/vtc#Test17> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Property relatesToMeasurement Measurement" .
+
+
+###  https://w3id.org/def/vtc#Test18
+<https://w3id.org/def/vtc#Test18> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Measurement relatesToProperty Property" .
+
+
+###  https://w3id.org/def/vtc#Test19
+<https://w3id.org/def/vtc#Test19> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "SoldQuantity soldQuantityPerGroup SoldPerGroup" .
+
+
+###  https://w3id.org/def/vtc#Test2
+<https://w3id.org/def/vtc#Test2> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "BoughtQuantity boughtQuantityPerGroup BoughtPerGroup" .
+
+
+###  https://w3id.org/def/vtc#Test20
+<https://w3id.org/def/vtc#Test20> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "BoughtQuantity subClassOf Quantity" .
+
+
+###  https://w3id.org/def/vtc#Test21
+<https://w3id.org/def/vtc#Test21> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "CurrentQuantity subClassOf Quantity" .
+
+
+###  https://w3id.org/def/vtc#Test22
+<https://w3id.org/def/vtc#Test22> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "SoldQuantity subClassOf Quantity" .
+
+
+###  https://w3id.org/def/vtc#Test23
+<https://w3id.org/def/vtc#Test23> rdf:type owl:NamedIndividual ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "TotalQuantity subClassOf Quantity" .
+
+
+###  https://w3id.org/def/vtc#Test3
+<https://w3id.org/def/vtc#Test3> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Biomass consumes Energy" .
+
+
+###  https://w3id.org/def/vtc#Test4
+<https://w3id.org/def/vtc#Test4> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Biomass hasAshes Aches" .
+
+
+###  https://w3id.org/def/vtc#Test5
+<https://w3id.org/def/vtc#Test5> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "SoldPerCaliber hasCaliber Caliber" .
+
+
+###  https://w3id.org/def/vtc#Test6
+<https://w3id.org/def/vtc#Test6> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "BiomassOrigin hasGroup BiomassGroup" .
+
+
+###  https://w3id.org/def/vtc#Test7
+<https://w3id.org/def/vtc#Test7> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Biomass hasHumidity Humidity" .
+
+
+###  https://w3id.org/def/vtc#Test8
+<https://w3id.org/def/vtc#Test8> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Biomass hasOrigin BiomassOrigin" .
+
+
+###  https://w3id.org/def/vtc#Test9
+<https://w3id.org/def/vtc#Test9> rdf:type owl:NamedIndividual ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteBiomass> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Energy hasPrice Price" .
+
+
+###  https://w3id.org/def/vtc#TestSuiteBiomass
+<https://w3id.org/def/vtc#TestSuiteBiomass> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/def/vtc#TestSuite> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
