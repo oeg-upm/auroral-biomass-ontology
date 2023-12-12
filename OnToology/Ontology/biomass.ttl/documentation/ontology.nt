@@ -5,6 +5,7 @@
 <https://auroral.iot.linkeddata.es/def/biomass#> <http://purl.org/dc/elements/1.1/creator> "Maria Poveda Villalon" .
 <https://auroral.iot.linkeddata.es/def/biomass#> <http://purl.org/dc/elements/1.1/creator> "Raul Garcia Castro" .
 <https://auroral.iot.linkeddata.es/def/biomass#> <http://purl.org/dc/elements/1.1/description> "This ontology aims to model the characteristics of the biomass for the AURORAL project." .
+<https://auroral.iot.linkeddata.es/def/biomass#> <http://purl.org/dc/elements/1.1/title> "The AURORAL Biomass Ontology" .
 <https://auroral.iot.linkeddata.es/def/biomass#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 # 
 # 
@@ -20,6 +21,9 @@
 # 
 # http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -97,6 +101,12 @@
 <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#TradingForm> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <http://www.w3.org/2000/01/rdf-schema#label> "has trading form" .
 # 
+# https://auroral.iot.linkeddata.es/def/biomass#inCurrency
+<https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Price> .
+<https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://publications.europa.eu/resource/authority/Currency> .
+<https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "in currency" .
+# 
 # https://auroral.iot.linkeddata.es/def/biomass#produces
 <https://auroral.iot.linkeddata.es/def/biomass#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
@@ -123,6 +133,12 @@
 <https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> .
 <https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#label> "sold quantity per group" .
+# 
+# https://saref.etsi.org/core#hasPrice
+<https://saref.etsi.org/core#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+<https://saref.etsi.org/core#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Price> .
+<https://saref.etsi.org/core#hasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "has price" .
 # 
 # https://saref.etsi.org/core#isMeasuredIn
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -159,6 +175,11 @@
 # #################################################################
 # 
 # 
+# https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore
+<https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore> <http://www.w3.org/2000/01/rdf-schema#label> "avg sustainability score" .
+# 
 # https://auroral.iot.linkeddata.es/def/biomass#dimension
 <https://auroral.iot.linkeddata.es/def/biomass#dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#dimension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
@@ -167,17 +188,17 @@
 # https://auroral.iot.linkeddata.es/def/biomass#hasDescription
 <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has Description" .
+<https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description" .
 # 
-# https://auroral.iot.linkeddata.es/def/biomass#hasID
-<https://auroral.iot.linkeddata.es/def/biomass#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/biomass#hasID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/biomass#hasID> <http://www.w3.org/2000/01/rdf-schema#label> "has ID" .
+# https://auroral.iot.linkeddata.es/def/biomass#hasId
+<https://auroral.iot.linkeddata.es/def/biomass#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasId> <http://www.w3.org/2000/01/rdf-schema#label> "has id" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasName
 <https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has Name" .
+<https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#priceValue
 <https://auroral.iot.linkeddata.es/def/biomass#priceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -195,12 +216,13 @@
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "has timestamp" .
 # 
 # https://saref.etsi.org/core#hasValue
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Value" .
+<https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
 # 
 # 
 # 
@@ -210,6 +232,10 @@
 # #
 # #################################################################
 # 
+# 
+# http://publications.europa.eu/resource/authority/Currency
+<http://publications.europa.eu/resource/authority/Currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://publications.europa.eu/resource/authority/Currency> <http://www.w3.org/2000/01/rdf-schema#label> "Currency" .
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure
 <http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -348,7 +374,7 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
 _:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#value> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/biomass#Quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity" .
+<https://auroral.iot.linkeddata.es/def/biomass#Quantity> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber
 <https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -443,48 +469,40 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> .
 <https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#Reeds> .
 <https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth> .
-<https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Aquatic Biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses
 <https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Grasses> .
-<https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses> <http://www.w3.org/2000/01/rdf-schema#label> "Bamboo grasses" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Bark chemically treated used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
-<https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/2000/01/rdf-schema#label> "Bark chemically treated wood by products residues fibres and wood constituents" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Bark chemically untreated used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/2000/01/rdf-schema#comment> "from industry operations" .
-<https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Bark chemically untreated wood by products and residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations
 <https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
-<https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations> <http://www.w3.org/2000/01/rdf-schema#label> "Bark from forestry operations" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations
 <https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
-<https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations> <http://www.w3.org/2000/01/rdf-schema#label> "Bark from industry operations" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Berries
 <https://auroral.iot.linkeddata.es/def/biomass#Berries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -499,13 +517,11 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyTreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Berries chemically treated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Berries chemically untreated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Blends
 <https://auroral.iot.linkeddata.es/def/biomass#Blends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -515,168 +531,140 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruit> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruit> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures stone or kernel fruit" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and Mixtures" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Algae> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures algae" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures aquatic biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Berries> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures berries" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures by products and residues from food and  fruit processing industry" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures by products and residues from food and herbaceous procesing industry" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures by products and residues from wood processing industry" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures cereal crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures chemically treated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures chemically treated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures chemically untreated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures chemically untreated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Flowers> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures flowers" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures forest plantation" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures fruit biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Grasses> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures grasses" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures herbaceous biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures herbaceous biomass from agriculture and horticulture" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures leak and sea grass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures legume crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures logging residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures nuts and acorns" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures oil seed crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures orchard and horticulture fruit" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Reeds> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures reeds" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures root crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures stemwood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStumpsOrRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -688,91 +676,76 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#UsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures whole trees with roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures whole trees without roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> .
-<https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Blends and mixtures woody biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Broad leaf stumps or roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Broad leaf whole trees with roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Broad Leaf whole trees without roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Broad leaf with bark chemically untreated wood by products and residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> .
-<https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood> <http://www.w3.org/2000/01/rdf-schema#label> "Broad leaf with bark stemwood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Broad leaf without bark chemically untreated wood by products and residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> .
-<https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood> <http://www.w3.org/2000/01/rdf-schema#label> "Broad leaf without bark stemwood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed
 <https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> .
-<https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed> <http://www.w3.org/2000/01/rdf-schema#label> "Brown sea weed" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Bushes stumps or roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Bushes whole trees with roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots
 <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Bushes whole trees without roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -781,7 +754,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry> .
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry> <http://www.w3.org/2000/01/rdf-schema#label> "By product and residues from food and fruit processing industry" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -790,7 +762,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry> .
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry> <http://www.w3.org/2000/01/rdf-schema#label> "by products and residue from wood processing industry" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -799,7 +770,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry> .
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry> <http://www.w3.org/2000/01/rdf-schema#label> "By product and residues From food and Herbaceous processing industry" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#CerealCrops
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -810,26 +780,22 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Cereal crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses> <http://www.w3.org/2000/01/rdf-schema#label> "Cereal crops and grasses" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Cereal crops and grasses chemically treated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Cereal crops and grasses chemically untreated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -840,7 +806,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically treated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -852,7 +817,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically treated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -861,7 +825,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically treated used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -871,7 +834,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically treated wood by products residues fibres and wood constituents" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -882,7 +844,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically untreated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -894,7 +855,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically untreated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -903,7 +863,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically untreated used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -914,84 +873,70 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Chemically untreated wood by products and residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#CommonReed
 <https://auroral.iot.linkeddata.es/def/biomass#CommonReed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#CommonReed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#CommonReed> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Reeds> .
-<https://auroral.iot.linkeddata.es/def/biomass#CommonReed> <http://www.w3.org/2000/01/rdf-schema#label> "Common reed" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Coniferous stumps or roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Coniferous whole trees with roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Coniferous Whole trees without roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> .
-<https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood> <http://www.w3.org/2000/01/rdf-schema#label> "Coniferous with bark stemwood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Coniferous with bark chemically untreated wood by products and residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Coniferous without bark chemically untreated wood by products and residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> .
-<https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood> <http://www.w3.org/2000/01/rdf-schema#label> "Coniferous without bark stemwood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Crude olive cake chemically untreated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Exhausted olive cake chemically treated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 <https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
-<https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/2000/01/rdf-schema#label> "Fibres and wood constituents chemically treated wood by products residues fibres and wood constituents" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FleshBerries
 <https://auroral.iot.linkeddata.es/def/biomass#FleshBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FleshBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
-<https://auroral.iot.linkeddata.es/def/biomass#FleshBerries> <http://www.w3.org/2000/01/rdf-schema#label> "Flesh berries" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits
 <https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> .
-<https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Flesh stone or kernel fruits" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Flowers
 <https://auroral.iot.linkeddata.es/def/biomass#Flowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1001,19 +946,16 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#Flowers> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers> .
 <https://auroral.iot.linkeddata.es/def/biomass#Flowers> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers> .
 <https://auroral.iot.linkeddata.es/def/biomass#Flowers> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers> .
-<https://auroral.iot.linkeddata.es/def/biomass#Flowers> <http://www.w3.org/2000/01/rdf-schema#label> "Flowers" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Flowers chemically treated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Flowers chemically untreated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation
 <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1026,21 +968,18 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> <http://www.w3.org/2000/01/rdf-schema#label> "Forest Plantation" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf> <http://www.w3.org/2000/01/rdf-schema#comment> "Fresh or green broad leaf  (including leaves)" .
-<https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh or green broad leaf" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous> <http://www.w3.org/2000/01/rdf-schema#comment> "Fresh or green coniferous (including needles)" .
-<https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh or green coniferous" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass
 <https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1048,19 +987,16 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry> .
 <https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit> .
-<https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Fruit Biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops
 <https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Fruit legume Crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops
 <https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Grains or seeds cereal crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Grasses
 <https://auroral.iot.linkeddata.es/def/biomass#Grasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1077,7 +1013,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> .
-<https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed> <http://www.w3.org/2000/01/rdf-schema#label> "Green sea weed" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1085,7 +1020,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry> .
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> .
-<https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Herbaceous Biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1099,25 +1033,21 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards> .
-<https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> <http://www.w3.org/2000/01/rdf-schema#label> "Herbaceous biomass from agriculture and horticulture" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops
 <https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Husks or shells cereal crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops
 <https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Husks or shells oil seed crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns
 <https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> .
-<https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns> <http://www.w3.org/2000/01/rdf-schema#label> "kernels nuts and acorns" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass
 <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1126,13 +1056,11 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass> .
 <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#LakeGrass> .
 <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#SeaGrass> .
-<https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> <http://www.w3.org/2000/01/rdf-schema#label> "Lake and sea grass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#LakeGrass
 <https://auroral.iot.linkeddata.es/def/biomass#LakeGrass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#LakeGrass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#LakeGrass> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> .
-<https://auroral.iot.linkeddata.es/def/biomass#LakeGrass> <http://www.w3.org/2000/01/rdf-schema#label> "Lake grass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1143,19 +1071,16 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Legume crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Legume crops chemically treated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Legume crops chemically untreated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues
 <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1166,7 +1091,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous> .
 <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf> .
 <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous> .
-<https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Logging residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae
 <https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1175,13 +1099,11 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed> .
 <https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed> .
 <https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed> .
-<https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> <http://www.w3.org/2000/01/rdf-schema#label> "Macro algae" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae
 <https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Algae> .
-<https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae> <http://www.w3.org/2000/01/rdf-schema#label> "Micro algae" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Mixtures
 <https://auroral.iot.linkeddata.es/def/biomass#Mixtures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1191,13 +1113,11 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Nuts and acorns chemically treated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Nuts and acorns chemically untreated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns
 <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1207,7 +1127,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns> .
 <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns> .
 <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholeNuts> .
-<https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> <http://www.w3.org/2000/01/rdf-schema#label> "Nuts and acorns" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1218,19 +1137,16 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> <http://www.w3.org/2000/01/rdf-schema#label> "OIl seed corps" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Oil seed crops chemically treated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Oil seed chemically untreated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit
 <https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1240,35 +1156,29 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit> .
 <https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> .
 <https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> .
-<https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit> <http://www.w3.org/2000/01/rdf-schema#label> "Orchard and horticulture fruit" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#OtherReed
 <https://auroral.iot.linkeddata.es/def/biomass#OtherReed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#OtherReed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#OtherReed> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Reeds> .
-<https://auroral.iot.linkeddata.es/def/biomass#OtherReed> <http://www.w3.org/2000/01/rdf-schema#label> "Other reed" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops
 <https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Pods legume crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost
 <https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> .
-<https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Energy Cost" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs
 <https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> .
-<https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Energy Cost Obs" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed
 <https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae> .
-<https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed> <http://www.w3.org/2000/01/rdf-schema#label> "Red sea weed" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Reeds
 <https://auroral.iot.linkeddata.es/def/biomass#Reeds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1286,120 +1196,100 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#RootCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Root corps" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Root crops chemically treated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues
 <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Root crops chemically untreated herbaceous residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops
 <https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Root root crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SeaGrass
 <https://auroral.iot.linkeddata.es/def/biomass#SeaGrass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeaGrass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeaGrass> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass> .
-<https://auroral.iot.linkeddata.es/def/biomass#SeaGrass> <http://www.w3.org/2000/01/rdf-schema#label> "Sea grass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
-<https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries> <http://www.w3.org/2000/01/rdf-schema#label> "Seeds berries" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Flowers> .
-<https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers> <http://www.w3.org/2000/01/rdf-schema#label> "Seeds Flowers" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Grasses> .
-<https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses> <http://www.w3.org/2000/01/rdf-schema#label> "Seeds grasses" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Seeds oil seed crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards
 <https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture> .
-<https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards> <http://www.w3.org/2000/01/rdf-schema#label> "Segregated herbaceous" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater
 <https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 <https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> .
-<https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater> <http://www.w3.org/2000/01/rdf-schema#label> "Segregated wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses
 <https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Grasses> .
-<https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses> <http://www.w3.org/2000/01/rdf-schema#label> "Shells Grasses" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns
 <https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> .
-<https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns> <http://www.w3.org/2000/01/rdf-schema#label> "Shells or husks nuts and acorns" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Short rotation coppice stumps or roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Short rotation coppice whole trees with roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Short rotation coppice whole trees without roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Flowers> .
-<https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers> <http://www.w3.org/2000/01/rdf-schema#label> "Stalks and leaves flowers" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Stalks and leaves legume crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Stalks and leaves oil seed crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Stalks and leaves root crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Stemwood
 <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1410,7 +1300,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood> .
 <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood> .
 <https://auroral.iot.linkeddata.es/def/biomass#Stemwood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood> .
-<https://auroral.iot.linkeddata.es/def/biomass#Stemwood> <http://www.w3.org/2000/01/rdf-schema#label> "Stemwood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1420,49 +1309,41 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits> .
-<https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Stone or kernel fruits" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Stone or kernels fruits chemically treated fuit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues> <http://www.w3.org/2000/01/rdf-schema#label> "Stone or kernel fruits or fruit fibre chemically untreated fruit residues" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> .
-<https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit> <http://www.w3.org/2000/01/rdf-schema#label> "Stone or kernel or fruit fibre" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf
 <https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf> <http://www.w3.org/2000/01/rdf-schema#label> "Stored broad leaf" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous
 <https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues> .
-<https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous> <http://www.w3.org/2000/01/rdf-schema#label> "Stored coniferous" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops
 <https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Straw parts cereal crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses
 <https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Grasses> .
-<https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses> <http://www.w3.org/2000/01/rdf-schema#label> "Straw parts grasses" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots
 <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1473,7 +1354,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Stumps or roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#UsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#UsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1482,19 +1362,16 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#UsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood> .
 <https://auroral.iot.linkeddata.es/def/biomass#UsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues> .
 <https://auroral.iot.linkeddata.es/def/biomass#UsedWood> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#UsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth
 <https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass> .
-<https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth> <http://www.w3.org/2000/01/rdf-schema#label> "Water Hyacinth" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholeBerries
 <https://auroral.iot.linkeddata.es/def/biomass#WholeBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeBerries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeBerries> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Berries> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholeBerries> <http://www.w3.org/2000/01/rdf-schema#label> "Whole berries" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholeFruit
 <https://auroral.iot.linkeddata.es/def/biomass#WholeFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1505,49 +1382,41 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Whole fruit stone or kernel fruits" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholeNuts
 <https://auroral.iot.linkeddata.es/def/biomass#WholeNuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeNuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeNuts> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholeNuts> <http://www.w3.org/2000/01/rdf-schema#label> "Whole nuts" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#CerealCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Whole plant cereal crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Flowers> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers> <http://www.w3.org/2000/01/rdf-schema#label> "Whole plant flowers" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#Grasses> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses> <http://www.w3.org/2000/01/rdf-schema#label> "Whole plant grasses" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Whole plant legume crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Whole plant oil seed crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#RootCrops> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops> <http://www.w3.org/2000/01/rdf-schema#label> "Whole plant root crops" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1558,7 +1427,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Whole trees with roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1569,43 +1437,36 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots> .
 <https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots> .
-<https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots> <http://www.w3.org/2000/01/rdf-schema#label> "Whole trees without roots" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "With bark chemically treated used  wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
-<https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/2000/01/rdf-schema#label> "With bark chemically treated wood by products residues fibres and wood constituents" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "With bark chemically untreated used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Without bark chemically treated used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> .
-<https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents> <http://www.w3.org/2000/01/rdf-schema#label> "Without bark chemically treated wood by products residues fibres and wood constituents" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 <https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood> <https://www.w3.org/ns/org#broader> <https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood> <http://www.w3.org/2000/01/rdf-schema#label> "Without bark chemically untreated used wood" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass
 <https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1614,7 +1475,6 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry> .
 <https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation> .
 <https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> <https://www.w3.org/ns/org#narrower> <https://auroral.iot.linkeddata.es/def/biomass#UsedWood> .
-<https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass> <http://www.w3.org/2000/01/rdf-schema#label> "Woody Biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#KilowattPerKg
 <https://auroral.iot.linkeddata.es/def/core#KilowattPerKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

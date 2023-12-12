@@ -1,8 +1,8 @@
-<h2 id="overv" class="list">[Ontology Name]: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">The AURORAL Biomass Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul xmlns:extra="https://w3id.org/extra#"
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
@@ -50,6 +50,10 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/biomass#Caliber">Caliber</a>
    </li>
    <li>
+      <a href="#http://publications.europa.eu/resource/authority/Currency"
+         title="http://publications.europa.eu/resource/authority/Currency">Currency</a>
+   </li>
+   <li>
       <a href="#CurrentQuantity"
          title="https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity">Current Quantity</a>
    </li>
@@ -72,9 +76,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Quantity"
-         title="https://auroral.iot.linkeddata.es/def/biomass#Quantity">
-         <span>quantity</span>
-      </a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#Quantity">Quantity</a>
    </li>
    <li>
       <a href="#SoldPerCaliber"
@@ -100,7 +102,7 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
          title="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">Unit of Measure</a>
    </li>
-</ul><h4>Object Properties</h4><ul xmlns:extra="https://w3id.org/extra#"
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
@@ -141,6 +143,9 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/biomass#hasOrigin">has origin</a>
    </li>
    <li>
+      <a href="#https://saref.etsi.org/core#hasPrice" title="https://saref.etsi.org/core#hasPrice">has price</a>
+   </li>
+   <li>
       <a href="#hasSubGroup"
          title="https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup">has sub group</a>
    </li>
@@ -151,6 +156,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasTradingForm"
          title="https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm">has trading form</a>
+   </li>
+   <li>
+      <a href="#inCurrency"
+         title="https://auroral.iot.linkeddata.es/def/biomass#inCurrency">in currency</a>
    </li>
    <li>
       <a href="#https://saref.etsi.org/core#isMeasuredIn" title="https://saref.etsi.org/core#isMeasuredIn">is measured in</a>
@@ -188,9 +197,13 @@ This ontology has the following classes and properties.</span>
       <a href="#soldQuantityPerGroup"
          title="https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup">sold quantity per group</a>
    </li>
-</ul><h4>Data Properties</h4><ul xmlns:extra="https://w3id.org/extra#"
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
+   <li>
+      <a href="#avgSustainabilityScore"
+         title="https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore">avg sustainability score</a>
+   </li>
    <li>
       <a href="#dimension"
          title="https://auroral.iot.linkeddata.es/def/biomass#dimension">
@@ -199,23 +212,21 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasDescription"
-         title="https://auroral.iot.linkeddata.es/def/biomass#hasDescription">has Description</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#hasDescription">has description</a>
    </li>
    <li>
-      <a href="#hasID"
-         title="https://auroral.iot.linkeddata.es/def/biomass#hasID">has ID</a>
+      <a href="#hasId"
+         title="https://auroral.iot.linkeddata.es/def/biomass#hasId">has id</a>
    </li>
    <li>
       <a href="#hasName"
-         title="https://auroral.iot.linkeddata.es/def/biomass#hasName">has Name</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#hasName">has name</a>
    </li>
    <li>
-      <a href="#https://saref.etsi.org/core#hasTimeStamp" title="https://saref.etsi.org/core#hasTimeStamp">
-         <span>has time stamp</span>
-      </a>
+      <a href="#https://saref.etsi.org/core#hasTimeStamp" title="https://saref.etsi.org/core#hasTimeStamp">has timestamp</a>
    </li>
    <li>
-      <a href="#https://saref.etsi.org/core#hasValue" title="https://saref.etsi.org/core#hasValue">has Value</a>
+      <a href="#https://saref.etsi.org/core#hasValue" title="https://saref.etsi.org/core#hasValue">has value</a>
    </li>
    <li>
       <a href="#priceValue"
@@ -225,7 +236,7 @@ This ontology has the following classes and properties.</span>
       <a href="#value"
          title="https://auroral.iot.linkeddata.es/def/biomass#value">value</a>
    </li>
-</ul><h4>Named Individuals</h4><ul xmlns:extra="https://w3id.org/extra#"
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
@@ -236,35 +247,51 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#AquaticBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass">Aquatic Biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass">
+         <span>aquatic biomass</span>
+      </a>
    </li>
    <li>
       <a href="#BambooGrasses"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses">Bamboo grasses</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BambooGrasses">
+         <span>bamboo grasses</span>
+      </a>
    </li>
    <li>
       <a href="#BarkChemicallyTreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood">Bark chemically treated used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedUsedWood">
+         <span>bark chemically treated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">Bark chemically treated wood by products residues fibres and wood constituents</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+         <span>bark chemically treated wood by products residues fibres and wood constituents</span>
+      </a>
    </li>
    <li>
       <a href="#BarkChemicallyUntreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood">Bark chemically untreated used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedUsedWood">
+         <span>bark chemically untreated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#BarkChemicallyUntreatedWoodByProductsAndResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues">Bark chemically untreated wood by products and residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BarkChemicallyUntreatedWoodByProductsAndResidues">
+         <span>bark chemically untreated wood by products and residues</span>
+      </a>
    </li>
    <li>
       <a href="#BarkFromForestryOperations"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations">Bark from forestry operations</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BarkFromForestryOperations">
+         <span>bark from forestry operations</span>
+      </a>
    </li>
    <li>
       <a href="#BarkFromIndustryOperations"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations">Bark from industry operations</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations">
+         <span>bark from industry operations</span>
+      </a>
    </li>
    <li>
       <a href="#Berries"
@@ -274,11 +301,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#BerriesChemicallyTreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyTreatedFruitResidues">Berries chemically treated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyTreatedFruitResidues">
+         <span>berries chemically treated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#BerriesChemicallyUntreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues">Berries chemically untreated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BerriesChemicallyUntreatedFruitResidues">
+         <span>berries chemically untreated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#Blends"
@@ -287,116 +318,172 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#BlendsAndMIxturesStoneOrKernelFruit"
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruit">
+         <span>blends and m ixtures stone or kernel fruit</span>
+      </a>
+   </li>
+   <li>
       <a href="#BlendsAndMixtures"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures">Blends and Mixtures</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixtures">
+         <span>blends and mixtures</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesAlgae"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae">Blends and mixtures algae</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae">
+         <span>blends and mixtures algae</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesAquaticBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass">Blends and mixtures aquatic biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAquaticBiomass">
+         <span>blends and mixtures aquatic biomass</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesBerries"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries">Blends and mixtures berries</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesBerries">
+         <span>blends and mixtures berries</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry">Blends and mixtures by products and residues from food and  fruit processing industry</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
+         <span>blends and mixtures by products and residues from food and fruit processing industry</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry">Blends and mixtures by products and residues from food and herbaceous procesing industry</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromFoodAndHerbaceousProcesingIndustry">
+         <span>blends and mixtures by products and residues from food and herbaceous procesing industry</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry">Blends and mixtures by products and residues from wood processing industry</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesByProductsAndResiduesFromWoodProcessingIndustry">
+         <span>blends and mixtures by products and residues from wood processing industry</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesCerealCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops">Blends and mixtures cereal crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesCerealCrops">
+         <span>blends and mixtures cereal crops</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesChemicallyTreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues">Blends and mixtures chemically treated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedFruitResidues">
+         <span>blends and mixtures chemically treated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesChemicallyTreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues">Blends and mixtures chemically treated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyTreatedHerbaceousResidues">
+         <span>blends and mixtures chemically treated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesChemicallyUntreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues">Blends and mixtures chemically untreated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedFruitResidues">
+         <span>blends and mixtures chemically untreated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues">Blends and mixtures chemically untreated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesChemicallyUntreatedHerbaceousResidues">
+         <span>blends and mixtures chemically untreated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesFlowers"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers">Blends and mixtures flowers</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFlowers">
+         <span>blends and mixtures flowers</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesForestPlantation"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation">Blends and mixtures forest plantation</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesForestPlantation">
+         <span>blends and mixtures forest plantation</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesFruitBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass">Blends and mixtures fruit biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass">
+         <span>blends and mixtures fruit biomass</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesGrasses"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses">Blends and mixtures grasses</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesGrasses">
+         <span>blends and mixtures grasses</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesHerbaceousBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass">Blends and mixtures herbaceous biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass">
+         <span>blends and mixtures herbaceous biomass</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture">Blends and mixtures herbaceous biomass from agriculture and horticulture</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomassFromAgricultureAndHorticulture">
+         <span>blends and mixtures herbaceous biomass from agriculture and horticulture</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesLeakAndSeaGrass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass">Blends and mixtures leak and sea grass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLeakAndSeaGrass">
+         <span>blends and mixtures leak and sea grass</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesLegumeCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops">Blends and mixtures legume crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLegumeCrops">
+         <span>blends and mixtures legume crops</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesLoggingResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues">Blends and mixtures logging residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesLoggingResidues">
+         <span>blends and mixtures logging residues</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesNutsAndAcorns"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns">Blends and mixtures nuts and acorns</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesNutsAndAcorns">
+         <span>blends and mixtures nuts and acorns</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesOilSeedCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops">Blends and mixtures oil seed crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOilSeedCrops">
+         <span>blends and mixtures oil seed crops</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesOrchardAndHorticultureFruit"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit">Blends and mixtures orchard and horticulture fruit</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesOrchardAndHorticultureFruit">
+         <span>blends and mixtures orchard and horticulture fruit</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesReeds"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds">Blends and mixtures reeds</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesReeds">
+         <span>blends and mixtures reeds</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesRootCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops">Blends and mixtures root crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesRootCrops">
+         <span>blends and mixtures root crops</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesStemwood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood">Blends and mixtures stemwood</a>
-   </li>
-   <li>
-      <a href="#BlendsAndMIxturesStoneOrKernelFruit"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMIxturesStoneOrKernelFruit">Blends and mixtures stone or kernel fruit</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesStemwood">
+         <span>blends and mixtures stemwood</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesStumpsOrRoots"
@@ -404,159 +491,237 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#BlendsAndMixturesUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood">Blends and mixtures used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesUsedWood">
+         <span>blends and mixtures used wood</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesWholeTreesWithRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots">Blends and mixtures whole trees with roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithRoots">
+         <span>blends and mixtures whole trees with roots</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesWholeTreesWithoutRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots">Blends and mixtures whole trees without roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWholeTreesWithoutRoots">
+         <span>blends and mixtures whole trees without roots</span>
+      </a>
    </li>
    <li>
       <a href="#BlendsAndMixturesWoodyBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass">Blends and mixtures woody biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass">
+         <span>blends and mixtures woody biomass</span>
+      </a>
    </li>
    <li>
       <a href="#BroadLeafStumpsOrRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots">Broad leaf stumps or roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafStumpsOrRoots">
+         <span>broad leaf stumps or roots</span>
+      </a>
    </li>
    <li>
       <a href="#BroadLeafWholeTreesWithRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots">Broad leaf whole trees with roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithRoots">
+         <span>broad leaf whole trees with roots</span>
+      </a>
    </li>
    <li>
       <a href="#BroadLeafWholeTreesWithoutRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots">Broad Leaf whole trees without roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWholeTreesWithoutRoots">
+         <span>broad leaf whole trees without roots</span>
+      </a>
    </li>
    <li>
       <a href="#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues">Broad leaf with bark chemically untreated wood by products and residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkChemicallyUntreatedWoodByProductsAndResidues">
+         <span>broad leaf with bark chemically untreated wood by products and residues</span>
+      </a>
    </li>
    <li>
       <a href="#BroadLeafWithBarkStemwood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood">Broad leaf with bark stemwood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithBarkStemwood">
+         <span>broad leaf with bark stemwood</span>
+      </a>
    </li>
    <li>
       <a href="#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues">Broad leaf without bark chemically untreated wood by products and residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkChemicallyUntreatedWoodByProductsAndResidues">
+         <span>broad leaf without bark chemically untreated wood by products and residues</span>
+      </a>
    </li>
    <li>
       <a href="#BroadLeafWithoutBarkStemwood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood">Broad leaf without bark stemwood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BroadLeafWithoutBarkStemwood">
+         <span>broad leaf without bark stemwood</span>
+      </a>
    </li>
    <li>
       <a href="#BrownSeaWeed"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed">Brown sea weed</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BrownSeaWeed">
+         <span>brown sea weed</span>
+      </a>
    </li>
    <li>
       <a href="#BushesStumpsOrRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots">Bushes stumps or roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BushesStumpsOrRoots">
+         <span>bushes stumps or roots</span>
+      </a>
    </li>
    <li>
       <a href="#BushesWholeTreesWithRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots">Bushes whole trees with roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithRoots">
+         <span>bushes whole trees with roots</span>
+      </a>
    </li>
    <li>
       <a href="#BushesWholeTreesWithoutRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots">Bushes whole trees without roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#BushesWholeTreesWithoutRoots">
+         <span>bushes whole trees without roots</span>
+      </a>
    </li>
    <li>
       <a href="#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">By product and residues from food and fruit processing industry</a>
-   </li>
-   <li>
-      <a href="#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">By product and residues From food and Herbaceous processing industry</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry">
+         <span>by products and residues from food and fruit processing industry</span>
+      </a>
    </li>
    <li>
       <a href="#ByProductsAndResiduesFromWoodProcessingIndustry"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry">by products and residue from wood processing industry</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry">
+         <span>by products and residues from wood processing industry</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"
+         title="https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry">
+         <span>by products andresidues from food and herbaceous processing industry</span>
+      </a>
    </li>
    <li>
       <a href="#CerealCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops">Cereal crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCrops">
+         <span>cereal crops</span>
+      </a>
    </li>
    <li>
       <a href="#CerealCropsAndGrasses"
-         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses">Cereal crops and grasses</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrasses">
+         <span>cereal crops and grasses</span>
+      </a>
    </li>
    <li>
       <a href="#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues">Cereal crops and grasses chemically treated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyTreatedherbaceousResidues">
+         <span>cereal crops and grasses chemically treatedherbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues">Cereal crops and grasses chemically untreated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#CerealCropsAndGrassesChemicallyUntreatedHerbaceousResidues">
+         <span>cereal crops and grasses chemically untreated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyTreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues">Chemically treated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues">
+         <span>chemically treated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyTreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues">Chemically treated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues">
+         <span>chemically treated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyTreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood">Chemically treated used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood">
+         <span>chemically treated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">Chemically treated wood by products residues fibres and wood constituents</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+         <span>chemically treated wood by products residues fibres and wood constituents</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyUntreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues">Chemically untreated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues">
+         <span>chemically untreated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyUntreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues">Chemically untreated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues">
+         <span>chemically untreated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyUntreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood">Chemically untreated used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood">
+         <span>chemically untreated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#ChemicallyUntreatedWoodbyProductsAndResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues">Chemically untreated wood by products and residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues">
+         <span>chemically untreated woodby products and residues</span>
+      </a>
    </li>
    <li>
       <a href="#CommonReed"
-         title="https://auroral.iot.linkeddata.es/def/biomass#CommonReed">Common reed</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#CommonReed">
+         <span>common reed</span>
+      </a>
    </li>
    <li>
       <a href="#ConiferousStumpsOrRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots">Coniferous stumps or roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousStumpsOrRoots">
+         <span>coniferous stumps or roots</span>
+      </a>
    </li>
    <li>
       <a href="#ConiferousWholeTreesWithRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots">Coniferous whole trees with roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithRoots">
+         <span>coniferous whole trees with roots</span>
+      </a>
    </li>
    <li>
       <a href="#ConiferousWholeTreesWithoutRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots">Coniferous Whole trees without roots</a>
-   </li>
-   <li>
-      <a href="#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues">Coniferous with bark chemically untreated wood by products and residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWholeTreesWithoutRoots">
+         <span>coniferous whole trees without roots</span>
+      </a>
    </li>
    <li>
       <a href="#ConiferousWithBarkStemwood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood">Coniferous with bark stemwood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBarkStemwood">
+         <span>coniferous with bark stemwood</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues"
+         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithBrakChemicallyUntreatedWoodByProductsAndResidues">
+         <span>coniferous with brak chemically untreated wood by products and residues</span>
+      </a>
    </li>
    <li>
       <a href="#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues">Coniferous without bark chemically untreated wood by products and residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkChemicallyUntreatedWoodByProductsAndResidues">
+         <span>coniferous without bark chemically untreated wood by products and residues</span>
+      </a>
    </li>
    <li>
       <a href="#ConiferousWithoutBarkStemwood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood">Coniferous without bark stemwood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ConiferousWithoutBarkStemwood">
+         <span>coniferous without bark stemwood</span>
+      </a>
    </li>
    <li>
       <a href="#CrudeOliveCakeChemicallyUntreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues">Crude olive cake chemically untreated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#CrudeOliveCakeChemicallyUntreatedFruitResidues">
+         <span>crude olive cake chemically untreated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#https://auroral.iot.linkeddata.es/def/adapters#EnergyConsumption"
@@ -572,55 +737,81 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#ExhaustedOliveCakeChemicallyTreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues">Exhausted olive cake chemically treated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ExhaustedOliveCakeChemicallyTreatedFruitResidues">
+         <span>exhausted olive cake chemically treated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">Fibres and wood constituents chemically treated wood by products residues fibres and wood constituents</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FibresAndWoodConstituentsChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+         <span>fibres and wood constituents chemically treated wood by products residues fibres and wood constituents</span>
+      </a>
    </li>
    <li>
       <a href="#FleshBerries"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FleshBerries">Flesh berries</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FleshBerries">
+         <span>flesh berries</span>
+      </a>
    </li>
    <li>
       <a href="#FleshStoneOrKernelFruits"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits">Flesh stone or kernel fruits</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits">
+         <span>flesh stone or kernel fruits</span>
+      </a>
    </li>
    <li>
       <a href="#Flowers"
-         title="https://auroral.iot.linkeddata.es/def/biomass#Flowers">Flowers</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#Flowers">
+         <span>flowers</span>
+      </a>
    </li>
    <li>
       <a href="#FlowersChemicallyTreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues">Flowers chemically treated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyTreatedHerbaceousResidues">
+         <span>flowers chemically treated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#FlowersChemicallyUntreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues">Flowers chemically untreated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FlowersChemicallyUntreatedHerbaceousResidues">
+         <span>flowers chemically untreated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#ForestPlantation"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation">Forest Plantation</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation">
+         <span>forest plantation</span>
+      </a>
    </li>
    <li>
       <a href="#FreshOrGreenBroadLeaf"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf">Fresh or green broad leaf</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenBroadLeaf">
+         <span>fresh or green broad leaf</span>
+      </a>
    </li>
    <li>
       <a href="#FreshOrGreenConiferous"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous">Fresh or green coniferous</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FreshOrGreenConiferous">
+         <span>fresh or green coniferous</span>
+      </a>
    </li>
    <li>
       <a href="#FruitBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass">Fruit Biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass">
+         <span>fruit biomass</span>
+      </a>
    </li>
    <li>
       <a href="#FruitLegumeCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops">Fruit legume Crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#FruitLegumeCrops">
+         <span>fruit legume crops</span>
+      </a>
    </li>
    <li>
       <a href="#GrainsOrSeedsCerealCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops">Grains or seeds cereal crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#GrainsOrSeedsCerealCrops">
+         <span>grains or seeds cereal crops</span>
+      </a>
    </li>
    <li>
       <a href="#Grasses"
@@ -630,27 +821,39 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#GreenSeaWeed"
-         title="https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed">Green sea weed</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#GreenSeaWeed">
+         <span>green sea weed</span>
+      </a>
    </li>
    <li>
       <a href="#HerbaceousBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass">Herbaceous Biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass">
+         <span>herbaceous biomass</span>
+      </a>
    </li>
    <li>
       <a href="#HerbaceousBiomassFromAgricultureAndHorticulture"
-         title="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture">Herbaceous biomass from agriculture and horticulture</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture">
+         <span>herbaceous biomass from agriculture and horticulture</span>
+      </a>
    </li>
    <li>
       <a href="#HusksOrShellsCerealCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops">Husks or shells cereal crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsCerealCrops">
+         <span>husks or shells cereal crops</span>
+      </a>
    </li>
    <li>
       <a href="#HusksOrShellsOilSeedCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops">Husks or shells oil seed crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#HusksOrShellsOilSeedCrops">
+         <span>husks or shells oil seed crops</span>
+      </a>
    </li>
    <li>
       <a href="#KernelsNutsAndAcorns"
-         title="https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns">kernels nuts and acorns</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#KernelsNutsAndAcorns">
+         <span>kernels nuts and acorns</span>
+      </a>
    </li>
    <li>
       <a href="#https://auroral.iot.linkeddata.es/def/core#KilowattPerKg"
@@ -660,31 +863,45 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#LakeAndSeaGrass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass">Lake and sea grass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass">
+         <span>lake and sea grass</span>
+      </a>
    </li>
    <li>
       <a href="#LakeGrass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#LakeGrass">Lake grass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#LakeGrass">
+         <span>lake grass</span>
+      </a>
    </li>
    <li>
       <a href="#LegumeCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops">Legume crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops">
+         <span>legume crops</span>
+      </a>
    </li>
    <li>
       <a href="#LegumeCropsChemicallyTreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues">Legume crops chemically treated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyTreatedHerbaceousResidues">
+         <span>legume crops chemically treated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#LegumeCropsChemicallyUntreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues">Legume crops chemically untreated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#LegumeCropsChemicallyUntreatedHerbaceousResidues">
+         <span>legume crops chemically untreated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#LoggingResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues">Logging residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues">
+         <span>logging residues</span>
+      </a>
    </li>
    <li>
       <a href="#MacroAlgae"
-         title="https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae">Macro algae</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae">
+         <span>macro algae</span>
+      </a>
    </li>
    <li>
       <a href="#https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg"
@@ -694,7 +911,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#MicroAlgae"
-         title="https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae">Micro algae</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#MicroAlgae">
+         <span>micro algae</span>
+      </a>
    </li>
    <li>
       <a href="#Mixtures"
@@ -703,52 +922,76 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#NutsandAcorns"
-         title="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns">Nuts and acorns</a>
-   </li>
-   <li>
       <a href="#NutsAndAcornsChemicallyTreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues">Nuts and acorns chemically treated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyTreatedFruitResidues">
+         <span>nuts and acorns chemically treated fruit residues</span>
+      </a>
    </li>
    <li>
       <a href="#NutsAndAcornsChemicallyUntreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues">Nuts and acorns chemically untreated fruit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#NutsAndAcornsChemicallyUntreatedFruitResidues">
+         <span>nuts and acorns chemically untreated fruit residues</span>
+      </a>
    </li>
    <li>
-      <a href="#OilSeedCropsChemicallyUntreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues">Oil seed chemically untreated herbaceous residues</a>
+      <a href="#NutsandAcorns"
+         title="https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns">
+         <span>nutsand acorns</span>
+      </a>
    </li>
    <li>
       <a href="#OilSeedCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops">OIl seed corps</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops">
+         <span>oil seed crops</span>
+      </a>
    </li>
    <li>
       <a href="#OilSeedCropsChemicallyTreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues">Oil seed crops chemically treated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyTreatedHerbaceousResidues">
+         <span>oil seed crops chemically treated herbaceous residues</span>
+      </a>
+   </li>
+   <li>
+      <a href="#OilSeedCropsChemicallyUntreatedHerbaceousResidues"
+         title="https://auroral.iot.linkeddata.es/def/biomass#OilSeedCropsChemicallyUntreatedHerbaceousResidues">
+         <span>oil seed crops chemically untreated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#OrchardAndHorticultureFruit"
-         title="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit">Orchard and horticulture fruit</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit">
+         <span>orchard and horticulture fruit</span>
+      </a>
    </li>
    <li>
       <a href="#OtherReed"
-         title="https://auroral.iot.linkeddata.es/def/biomass#OtherReed">Other reed</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#OtherReed">
+         <span>other reed</span>
+      </a>
    </li>
    <li>
       <a href="#PodsLegumeCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops">Pods legume crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#PodsLegumeCrops">
+         <span>pods legume crops</span>
+      </a>
    </li>
    <li>
       <a href="#PrimaryEnergyCost"
-         title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost">Primary Energy Cost</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCost">
+         <span>primary energy cost</span>
+      </a>
    </li>
    <li>
       <a href="#PrimaryEnergyCostObs"
-         title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs">Primary Energy Cost Obs</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs">
+         <span>primary energy cost obs</span>
+      </a>
    </li>
    <li>
       <a href="#RedSeaWeed"
-         title="https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed">Red sea weed</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#RedSeaWeed">
+         <span>red sea weed</span>
+      </a>
    </li>
    <li>
       <a href="#Reeds"
@@ -758,135 +1001,201 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#RootCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#RootCrops">Root corps</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#RootCrops">
+         <span>root crops</span>
+      </a>
    </li>
    <li>
       <a href="#RootCropsChemicallyTreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues">Root crops chemically treated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyTreatedHerbaceousResidues">
+         <span>root crops chemically treated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#RootCropsChemicallyUntreatedHerbaceousResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues">Root crops chemically untreated herbaceous residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#RootCropsChemicallyUntreatedHerbaceousResidues">
+         <span>root crops chemically untreated herbaceous residues</span>
+      </a>
    </li>
    <li>
       <a href="#RootRootCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops">Root root crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#RootRootCrops">
+         <span>root root crops</span>
+      </a>
    </li>
    <li>
       <a href="#SeaGrass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#SeaGrass">Sea grass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#SeaGrass">
+         <span>sea grass</span>
+      </a>
    </li>
    <li>
       <a href="#SeedsBerries"
-         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries">Seeds berries</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsBerries">
+         <span>seeds berries</span>
+      </a>
    </li>
    <li>
       <a href="#SeedsFlowers"
-         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers">Seeds Flowers</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers">
+         <span>seeds flowers</span>
+      </a>
    </li>
    <li>
       <a href="#SeedsGrasses"
-         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses">Seeds grasses</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsGrasses">
+         <span>seeds grasses</span>
+      </a>
    </li>
    <li>
       <a href="#SeedsOilSeedCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops">Seeds oil seed crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#SeedsOilSeedCrops">
+         <span>seeds oil seed crops</span>
+      </a>
    </li>
    <li>
       <a href="#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards"
-         title="https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards">Segregated herbaceous</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#SegregatedHerbaceousBiomassFromGardensParksRoadsideMaintenanceVineyardsAndFruitOrchards">
+         <span>segregated herbaceous biomass from gardens parks roadside maintenance vineyards and fruit orchards</span>
+      </a>
    </li>
    <li>
       <a href="#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater"
-         title="https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater">Segregated wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#SegregatedWoodFromGardensParksRoadsideMaintenanceVineyardsFruitOrchardsAndDriftwoodFromFreshwater">
+         <span>segregated wood from gardens parks roadside maintenance vineyards fruit orchards and driftwood from freshwater</span>
+      </a>
    </li>
    <li>
       <a href="#ShellsGrasses"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses">Shells Grasses</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ShellsGrasses">
+         <span>shells grasses</span>
+      </a>
    </li>
    <li>
       <a href="#ShellsOrHusksNutsAndAcorns"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns">Shells or husks nuts and acorns</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ShellsOrHusksNutsAndAcorns">
+         <span>shells or husks nuts and acorns</span>
+      </a>
    </li>
    <li>
       <a href="#ShortRotationCoppiceStumpsOrRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots">Short rotation coppice stumps or roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceStumpsOrRoots">
+         <span>short rotation coppice stumps or roots</span>
+      </a>
    </li>
    <li>
       <a href="#ShortRotationCoppiceWholeTreesWithRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots">Short rotation coppice whole trees with roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithRoots">
+         <span>short rotation coppice whole trees with roots</span>
+      </a>
    </li>
    <li>
       <a href="#ShortRotationCoppiceWholeTreesWithoutRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots">Short rotation coppice whole trees without roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#ShortRotationCoppiceWholeTreesWithoutRoots">
+         <span>short rotation coppice whole trees without roots</span>
+      </a>
    </li>
    <li>
       <a href="#StalksAndLeavesFlowers"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers">Stalks and leaves flowers</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesFlowers">
+         <span>stalks and leaves flowers</span>
+      </a>
    </li>
    <li>
       <a href="#StalksAndLeavesLegumeCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops">Stalks and leaves legume crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesLegumeCrops">
+         <span>stalks and leaves legume crops</span>
+      </a>
    </li>
    <li>
       <a href="#StalksAndLeavesOilSeedCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops">Stalks and leaves oil seed crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesOilSeedCrops">
+         <span>stalks and leaves oil seed crops</span>
+      </a>
    </li>
    <li>
       <a href="#StalksAndLeavesRootCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops">Stalks and leaves root crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StalksAndLeavesRootCrops">
+         <span>stalks and leaves root crops</span>
+      </a>
    </li>
    <li>
       <a href="#Stemwood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#Stemwood">Stemwood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#Stemwood">
+         <span>stemwood</span>
+      </a>
    </li>
    <li>
       <a href="#StoneOrKernelFruits"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits">Stone or kernel fruits</a>
-   </li>
-   <li>
-      <a href="#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues">Stone or kernel fruits or fruit fibre chemically untreated fruit residues</a>
-   </li>
-   <li>
-      <a href="#StoneOrKernelOrFruitFibreStoneOrKernelFruit"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit">Stone or kernel or fruit fibre</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits">
+         <span>stone or kernel fruits</span>
+      </a>
    </li>
    <li>
       <a href="#StoneOrKernelFruitsChemicallyTreatedFruitResidues"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues">Stone or kernels fruits chemically treated fuit residues</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsChemicallyTreatedFruitResidues">
+         <span>stone or kernel fruits chemically treated fruit residues</span>
+      </a>
+   </li>
+   <li>
+      <a href="#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues"
+         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruitsOrFruitFibreChemicallyUntreatedFruitResidues">
+         <span>stone or kernel fruits or fruit fibre chemically untreated fruit residues</span>
+      </a>
+   </li>
+   <li>
+      <a href="#StoneOrKernelOrFruitFibreStoneOrKernelFruit"
+         title="https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelOrFruitFibreStoneOrKernelFruit">
+         <span>stone or kernel or fruit fibre stone or kernel fruit</span>
+      </a>
    </li>
    <li>
       <a href="#StoredBroadLeaf"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf">Stored broad leaf</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StoredBroadLeaf">
+         <span>stored broad leaf</span>
+      </a>
    </li>
    <li>
       <a href="#StoredConiferous"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous">Stored coniferous</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StoredConiferous">
+         <span>stored coniferous</span>
+      </a>
    </li>
    <li>
       <a href="#StrawPartsCerealCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops">Straw parts cereal crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsCerealCrops">
+         <span>straw parts cereal crops</span>
+      </a>
    </li>
    <li>
       <a href="#StrawPartsGrasses"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses">Straw parts grasses</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StrawPartsGrasses">
+         <span>straw parts grasses</span>
+      </a>
    </li>
    <li>
       <a href="#StumpsOrRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots">Stumps or roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots">
+         <span>stumps or roots</span>
+      </a>
    </li>
    <li>
       <a href="#UsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#UsedWood">Used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#UsedWood">
+         <span>used wood</span>
+      </a>
    </li>
    <li>
       <a href="#WaterHyacinth"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth">Water Hyacinth</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WaterHyacinth">
+         <span>water hyacinth</span>
+      </a>
    </li>
    <li>
       <a href="#WholeBerries"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholeBerries">Whole berries</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholeBerries">
+         <span>whole berries</span>
+      </a>
    </li>
    <li>
       <a href="#WholeFruit"
@@ -896,70 +1205,106 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#WholeFruitStoneOrKernelFruits"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits">Whole fruit stone or kernel fruits</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholeFruitStoneOrKernelFruits">
+         <span>whole fruit stone or kernel fruits</span>
+      </a>
    </li>
    <li>
       <a href="#WholeNuts"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholeNuts">Whole nuts</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholeNuts">
+         <span>whole nuts</span>
+      </a>
    </li>
    <li>
       <a href="#WholePlantCerealCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops">Whole plant cereal crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantCerealCrops">
+         <span>whole plant cereal crops</span>
+      </a>
    </li>
    <li>
       <a href="#WholePlantFlowers"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers">Whole plant flowers</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantFlowers">
+         <span>whole plant flowers</span>
+      </a>
    </li>
    <li>
       <a href="#WholePlantGrasses"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses">Whole plant grasses</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantGrasses">
+         <span>whole plant grasses</span>
+      </a>
    </li>
    <li>
       <a href="#WholePlantLegumeCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops">Whole plant legume crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantLegumeCrops">
+         <span>whole plant legume crops</span>
+      </a>
    </li>
    <li>
       <a href="#WholePlantOilSeedCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops">Whole plant oil seed crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantOilSeedCrops">
+         <span>whole plant oil seed crops</span>
+      </a>
    </li>
    <li>
       <a href="#WholePlantRootCrops"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops">Whole plant root crops</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholePlantRootCrops">
+         <span>whole plant root crops</span>
+      </a>
    </li>
    <li>
       <a href="#WholeTreesWithRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots">Whole trees with roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots">
+         <span>whole trees with roots</span>
+      </a>
    </li>
    <li>
       <a href="#WholeTreesWithoutRoots"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots">Whole trees without roots</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots">
+         <span>whole trees without roots</span>
+      </a>
    </li>
    <li>
       <a href="#WithBarkChemicallyTreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood">With bark chemically treated used  wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedUsedWood">
+         <span>with bark chemically treated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">With bark chemically treated wood by products residues fibres and wood constituents</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WithBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+         <span>with bark chemically treated wood by products residues fibres and wood constituents</span>
+      </a>
    </li>
    <li>
       <a href="#WithBrakChemicallyUntreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood">With bark chemically untreated used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WithBrakChemicallyUntreatedUsedWood">
+         <span>with brak chemically untreated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#WithoutBarkChemicallyTreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood">Without bark chemically treated used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedUsedWood">
+         <span>without bark chemically treated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">Without bark chemically treated wood by products residues fibres and wood constituents</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents">
+         <span>without bark chemically treated wood by products residues fibres and wood constituents</span>
+      </a>
    </li>
    <li>
       <a href="#WithoutBarkChemicallyUntreatedUsedWood"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood">Without bark chemically untreated used wood</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WithoutBarkChemicallyUntreatedUsedWood">
+         <span>without bark chemically untreated used wood</span>
+      </a>
    </li>
    <li>
       <a href="#WoodyBiomass"
-         title="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass">Woody Biomass</a>
+         title="https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass">
+         <span>woody biomass</span>
+      </a>
    </li>
-</ul>
+</ul><h4> Rules </h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist"/>

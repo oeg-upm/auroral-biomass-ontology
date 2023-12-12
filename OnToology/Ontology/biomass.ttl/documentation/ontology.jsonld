@@ -223,10 +223,19 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
   } ]
 }, {
+  "@id" : "http://publications.europa.eu/resource/authority/Currency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Currency"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
@@ -272,6 +281,9 @@
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "This ontology aims to model the characteristics of the biomass for the AURORAL project."
   } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "The AURORAL Biomass Ontology"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ]
@@ -303,9 +315,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Aquatic Biomass"
-  } ],
   "https://www.w3.org/ns/org#narrower" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Algae"
   }, {
@@ -323,9 +332,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bamboo grasses"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Grasses"
   } ]
@@ -334,9 +340,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bark chemically treated used wood"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood"
@@ -347,9 +350,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bark chemically treated wood by products residues fibres and wood constituents"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
   } ]
@@ -358,9 +358,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bark chemically untreated used wood"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"
@@ -374,9 +371,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "from industry operations"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bark chemically untreated wood by products and residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"
   } ]
@@ -385,18 +379,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bark from forestry operations"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BarkFromIndustryOperations",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bark from industry operations"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Berries",
@@ -422,9 +410,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Berries chemically treated fruit residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"
   } ]
@@ -433,9 +418,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Berries chemically untreated fruit residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"
@@ -535,9 +517,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures stone or kernel fruit"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"
   } ]
@@ -546,18 +525,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and Mixtures"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesAlgae",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures algae"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Algae"
@@ -568,9 +541,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures aquatic biomass"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass"
   } ]
@@ -579,9 +549,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures berries"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Berries"
@@ -592,9 +559,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures by products and residues from food and  fruit processing industry"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"
   } ]
@@ -603,9 +567,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures by products and residues from food and herbaceous procesing industry"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"
@@ -616,9 +577,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures by products and residues from wood processing industry"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry"
   } ]
@@ -627,9 +585,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures cereal crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"
@@ -640,9 +595,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures chemically treated fruit residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"
   } ]
@@ -651,9 +603,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures chemically treated herbaceous residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"
@@ -664,9 +613,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures chemically untreated fruit residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"
   } ]
@@ -675,9 +621,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures chemically untreated herbaceous residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"
@@ -688,9 +631,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures flowers"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Flowers"
   } ]
@@ -699,9 +639,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures forest plantation"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
@@ -712,9 +649,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures fruit biomass"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass"
   } ]
@@ -723,9 +657,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures grasses"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Grasses"
@@ -736,9 +667,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures herbaceous biomass"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass"
   } ]
@@ -747,9 +675,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures herbaceous biomass from agriculture and horticulture"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"
@@ -760,9 +685,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures leak and sea grass"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass"
   } ]
@@ -771,9 +693,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures legume crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"
@@ -784,9 +703,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures logging residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"
   } ]
@@ -795,9 +711,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures nuts and acorns"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"
@@ -808,9 +721,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures oil seed crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"
   } ]
@@ -819,9 +729,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures orchard and horticulture fruit"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"
@@ -832,9 +739,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures reeds"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Reeds"
   } ]
@@ -844,9 +748,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures root crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#RootCrops"
   } ]
@@ -855,9 +756,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures stemwood"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Stemwood"
@@ -880,9 +778,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures used wood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#UsedWood"
   } ]
@@ -891,9 +786,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures whole trees with roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots"
@@ -904,9 +796,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures whole trees without roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots"
   } ]
@@ -915,9 +804,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Blends and mixtures woody biomass"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"
@@ -939,9 +825,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Broad leaf stumps or roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"
   } ]
@@ -950,9 +833,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Broad leaf whole trees with roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots"
@@ -963,9 +843,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Broad Leaf whole trees without roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots"
   } ]
@@ -974,9 +851,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Broad leaf with bark chemically untreated wood by products and residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"
@@ -987,9 +861,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Broad leaf with bark stemwood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Stemwood"
   } ]
@@ -998,9 +869,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Broad leaf without bark chemically untreated wood by products and residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"
@@ -1011,9 +879,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Broad leaf without bark stemwood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Stemwood"
   } ]
@@ -1022,9 +887,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Brown sea weed"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae"
@@ -1035,9 +897,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bushes stumps or roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"
   } ]
@@ -1046,9 +905,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bushes whole trees with roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots"
@@ -1059,9 +915,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Bushes whole trees without roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots"
   } ]
@@ -1070,9 +923,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "By product and residues from food and fruit processing industry"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass"
@@ -1090,9 +940,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "by products and residue from wood processing industry"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"
   } ],
@@ -1108,9 +955,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "By product and residues From food and Herbaceous processing industry"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass"
@@ -1134,9 +978,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Cereal crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"
   } ],
@@ -1157,9 +998,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Cereal crops and grasses"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"
   }, {
@@ -1171,9 +1009,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Cereal crops and grasses chemically treated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"
   } ]
@@ -1183,9 +1018,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Cereal crops and grasses chemically untreated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"
   } ]
@@ -1194,9 +1026,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically treated fruit residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"
@@ -1217,9 +1046,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically treated herbaceous residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"
@@ -1243,9 +1069,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically treated used wood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#UsedWood"
   } ],
@@ -1261,9 +1084,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically treated wood by products residues fibres and wood constituents"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry"
@@ -1282,9 +1102,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically untreated fruit residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromFoodAndFruitProcessingIndustry"
@@ -1305,9 +1122,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically untreated herbaceous residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndresiduesFromFoodAndHerbaceousProcessingIndustry"
@@ -1331,9 +1145,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically untreated used wood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#UsedWood"
   } ],
@@ -1349,9 +1160,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Chemically untreated wood by products and residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ByProductsAndResiduesFromWoodProcessingIndustry"
@@ -1373,9 +1181,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Common reed"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Reeds"
   } ]
@@ -1384,9 +1189,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Coniferous stumps or roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"
@@ -1397,9 +1199,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Coniferous whole trees with roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots"
   } ]
@@ -1408,9 +1207,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Coniferous Whole trees without roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots"
@@ -1421,9 +1217,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Coniferous with bark stemwood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Stemwood"
   } ]
@@ -1432,9 +1225,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Coniferous with bark chemically untreated wood by products and residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"
@@ -1445,9 +1235,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Coniferous without bark chemically untreated wood by products and residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedWoodbyProductsAndResidues"
   } ]
@@ -1457,9 +1244,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Coniferous without bark stemwood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Stemwood"
   } ]
@@ -1468,9 +1252,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Crude olive cake chemically untreated fruit residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"
@@ -1490,9 +1271,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Exhausted olive cake chemically treated fruit residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"
   } ]
@@ -1502,9 +1280,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Fibres and wood constituents chemically treated wood by products residues fibres and wood constituents"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
   } ]
@@ -1513,18 +1288,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Flesh berries"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#FleshStoneOrKernelFruits",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Flesh stone or kernel fruits"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"
@@ -1534,9 +1303,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Flowers"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"
@@ -1556,9 +1322,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Flowers chemically treated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"
   } ]
@@ -1568,9 +1331,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Flowers chemically untreated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"
   } ]
@@ -1579,9 +1339,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Forest Plantation"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"
@@ -1610,9 +1367,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Fresh or green broad leaf  (including leaves)"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Fresh or green broad leaf"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"
   } ]
@@ -1625,9 +1379,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Fresh or green coniferous (including needles)"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Fresh or green coniferous"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"
   } ]
@@ -1636,9 +1387,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Fruit Biomass"
   } ],
   "https://www.w3.org/ns/org#narrower" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesFruitBiomass"
@@ -1653,9 +1401,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Fruit legume Crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"
   } ]
@@ -1664,9 +1409,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Grains or seeds cereal crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"
@@ -1699,9 +1441,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Green sea weed"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae"
   } ]
@@ -1710,9 +1449,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Herbaceous Biomass"
   } ],
   "https://www.w3.org/ns/org#narrower" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesHerbaceousBiomass"
@@ -1726,9 +1462,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Herbaceous biomass from agriculture and horticulture"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomass"
@@ -1762,9 +1495,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Husks or shells cereal crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"
   } ]
@@ -1773,9 +1503,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Husks or shells oil seed crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"
@@ -1786,9 +1513,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "kernels nuts and acorns"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"
   } ]
@@ -1797,9 +1521,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Lake and sea grass"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass"
@@ -1817,9 +1538,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Lake grass"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass"
   } ]
@@ -1828,9 +1546,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Legume crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"
@@ -1852,9 +1567,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Legume crops chemically treated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"
   } ]
@@ -1864,9 +1576,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Legume crops chemically untreated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"
   } ]
@@ -1875,9 +1584,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Logging residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
@@ -1899,9 +1605,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Macro algae"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Algae"
   } ],
@@ -1918,9 +1621,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Micro algae"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Algae"
   } ]
@@ -1936,9 +1636,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Nuts and acorns chemically treated fruit residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"
   } ]
@@ -1948,9 +1645,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Nuts and acorns chemically untreated fruit residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"
   } ]
@@ -1959,9 +1653,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Nuts and acorns"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"
@@ -1980,9 +1671,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "OIl seed corps"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"
@@ -2004,9 +1692,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Oil seed crops chemically treated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"
   } ]
@@ -2016,9 +1701,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Oil seed chemically untreated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"
   } ]
@@ -2027,9 +1709,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Orchard and horticulture fruit"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#FruitBiomass"
@@ -2049,9 +1728,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Other reed"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Reeds"
   } ]
@@ -2061,9 +1737,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Pods legume crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"
   } ]
@@ -2072,23 +1745,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Primary Energy Cost"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#PrimaryEnergyCostObs",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Primary Energy Cost Obs"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2099,9 +1766,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Red sea weed"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#MacroAlgae"
@@ -2128,9 +1792,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Root corps"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"
   } ],
@@ -2149,9 +1810,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Root crops chemically treated herbaceous residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedHerbaceousResidues"
   } ]
@@ -2160,9 +1818,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Root crops chemically untreated herbaceous residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedHerbaceousResidues"
@@ -2173,9 +1828,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Root root crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#RootCrops"
   } ]
@@ -2185,9 +1837,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sea grass"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LakeAndSeaGrass"
   } ]
@@ -2196,18 +1845,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Seeds berries"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SeedsFlowers",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Seeds Flowers"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Flowers"
@@ -2218,9 +1861,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Seeds grasses"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Grasses"
   } ]
@@ -2229,9 +1869,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Seeds oil seed crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"
@@ -2242,9 +1879,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Segregated herbaceous"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#HerbaceousBiomassFromAgricultureAndHorticulture"
   } ]
@@ -2253,9 +1887,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Segregated wood"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
@@ -2266,9 +1897,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Shells Grasses"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Grasses"
   } ]
@@ -2277,9 +1905,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Shells or husks nuts and acorns"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"
@@ -2290,9 +1915,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Short rotation coppice stumps or roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StumpsOrRoots"
   } ]
@@ -2302,9 +1924,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Short rotation coppice whole trees with roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithRoots"
   } ]
@@ -2313,9 +1932,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Short rotation coppice whole trees without roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WholeTreesWithoutRoots"
@@ -2357,9 +1973,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stalks and leaves flowers"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Flowers"
   } ]
@@ -2368,9 +1981,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stalks and leaves legume crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"
@@ -2381,9 +1991,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stalks and leaves oil seed crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"
   } ]
@@ -2393,9 +2000,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stalks and leaves root crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#RootCrops"
   } ]
@@ -2404,9 +2008,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stemwood"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
@@ -2428,9 +2029,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stone or kernel fruits"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OrchardAndHorticultureFruit"
   } ],
@@ -2449,9 +2047,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stone or kernels fruits chemically treated fuit residues"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedFruitResidues"
   } ]
@@ -2460,9 +2055,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stone or kernel fruits or fruit fibre chemically untreated fruit residues"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedFruitResidues"
@@ -2473,9 +2065,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stone or kernel or fruit fibre"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"
   } ]
@@ -2484,9 +2073,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stored broad leaf"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"
@@ -2497,9 +2083,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stored coniferous"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LoggingResidues"
   } ]
@@ -2508,9 +2091,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Straw parts cereal crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"
@@ -2521,9 +2101,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Straw parts grasses"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Grasses"
   } ]
@@ -2532,9 +2109,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Stumps or roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
@@ -2571,9 +2145,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Used wood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#WoodyBiomass"
   } ],
@@ -2590,9 +2161,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Water Hyacinth"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#AquaticBiomass"
   } ]
@@ -2601,9 +2169,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole berries"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Berries"
@@ -2623,9 +2188,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole fruit stone or kernel fruits"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#StoneOrKernelFruits"
   } ]
@@ -2634,9 +2196,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole nuts"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#NutsandAcorns"
@@ -2647,9 +2206,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole plant cereal crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CerealCrops"
   } ]
@@ -2658,9 +2214,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole plant flowers"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Flowers"
@@ -2671,9 +2224,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole plant grasses"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Grasses"
   } ]
@@ -2682,9 +2232,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole plant legume crops"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#LegumeCrops"
@@ -2695,9 +2242,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole plant oil seed crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#OilSeedCrops"
   } ]
@@ -2707,9 +2251,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole plant root crops"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#RootCrops"
   } ]
@@ -2718,9 +2259,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole trees with roots"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
@@ -2742,9 +2280,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Whole trees without roots"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
   } ],
@@ -2765,9 +2300,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "With bark chemically treated used  wood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood"
   } ]
@@ -2776,9 +2308,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "With bark chemically treated wood by products residues fibres and wood constituents"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
@@ -2789,9 +2318,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "With bark chemically untreated used wood"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"
   } ]
@@ -2800,9 +2326,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Without bark chemically treated used wood"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedUsedWood"
@@ -2813,9 +2336,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Without bark chemically treated wood by products residues fibres and wood constituents"
-  } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyTreatedWoodByProductsResiduesFibresAndWoodConstituents"
   } ]
@@ -2824,9 +2344,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Without bark chemically untreated used wood"
   } ],
   "https://www.w3.org/ns/org#broader" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ChemicallyUntreatedUsedWood"
@@ -2837,9 +2354,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Woody Biomass"
-  } ],
   "https://www.w3.org/ns/org#narrower" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BlendsAndMixturesWoodyBiomass"
   }, {
@@ -2848,6 +2362,15 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#ForestPlantation"
   }, {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#UsedWood"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "avg sustainability score"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#belongsToType",
@@ -2919,7 +2442,7 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Description"
+    "@value" : "has description"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2949,10 +2472,10 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasID",
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has ID"
+    "@value" : "has id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2961,7 +2484,7 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Name"
+    "@value" : "has name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -3010,6 +2533,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#TradingForm"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#inCurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core#Price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "in currency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/Currency"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#priceValue",
@@ -3129,10 +2664,25 @@
     "@value" : "Property"
   } ]
 }, {
+  "@id" : "https://saref.etsi.org/core#hasPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core#Price"
+  } ]
+}, {
   "@id" : "https://saref.etsi.org/core#hasTimeStamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has timestamp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -3144,7 +2694,7 @@
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Value"
+    "@value" : "has value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
