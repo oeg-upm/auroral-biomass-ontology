@@ -54,6 +54,7 @@ dc:title rdf:type owl:AnnotationProperty .
 biom:belongsToType rdf:type owl:ObjectProperty ;
                    rdfs:domain biom:BiomassOrigin ;
                    rdfs:range biom:BiomassType ;
+                   rdfs:comment "Relationship between the biomass and its type" ;
                    rdfs:label "belongs to type" .
 
 
@@ -61,26 +62,31 @@ biom:belongsToType rdf:type owl:ObjectProperty ;
 biom:boughtQuantityPerGroup rdf:type owl:ObjectProperty ;
                             rdfs:domain ship:BoughtQuantity ;
                             rdfs:range biom:BoughtPerGroup ;
+                            rdfs:comment "Relationship between the biomass and the quantity per group" ;
                             rdfs:label "bought quantity per group" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#consumes
 biom:consumes rdf:type owl:ObjectProperty ;
               rdfs:domain biom:Biomass ;
-              rdfs:range adapters:Energy .
+              rdfs:range adapters:Energy ;
+              rdfs:comment "Relationship between the Biomass and the energy that it consumes" ;
+              rdfs:label "consumes" .
 
 
-###  https://auroral.iot.linkeddata.es/def/biomass#hasAshes
-biom:hasAshes rdf:type owl:ObjectProperty ;
+###  https://auroral.iot.linkeddata.es/def/biomass#hasAches
+biom:hasAches rdf:type owl:ObjectProperty ;
               rdfs:domain biom:Biomass ;
               rdfs:range biom:Aches ;
-              rdfs:label "has ashes" .
+              rdfs:comment "Relationship between the biomass and the aches" ;
+              rdfs:label "has aches" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#hasCaliber
 biom:hasCaliber rdf:type owl:ObjectProperty ;
                 rdfs:domain biom:SoldPerCaliber ;
                 rdfs:range biom:Caliber ;
+                rdfs:comment "Relationship between the biomass quantity and its caliber" ;
                 rdfs:label "has caliber" .
 
 
@@ -88,6 +94,7 @@ biom:hasCaliber rdf:type owl:ObjectProperty ;
 biom:hasGroup rdf:type owl:ObjectProperty ;
               rdfs:domain biom:BiomassOrigin ;
               rdfs:range biom:BiomassGroup ;
+              rdfs:comment "Relationship between the biomass and the its groups" ;
               rdfs:label "has group" .
 
 
@@ -95,6 +102,7 @@ biom:hasGroup rdf:type owl:ObjectProperty ;
 biom:hasHumidity rdf:type owl:ObjectProperty ;
                  rdfs:domain biom:Biomass ;
                  rdfs:range biom:Humidity ;
+                 rdfs:comment "Relationship between the biomass and its humidity" ;
                  rdfs:label "has humidity" .
 
 
@@ -102,6 +110,7 @@ biom:hasHumidity rdf:type owl:ObjectProperty ;
 biom:hasOrigin rdf:type owl:ObjectProperty ;
                rdfs:domain biom:Biomass ;
                rdfs:range biom:BiomassOrigin ;
+               rdfs:comment "Relationship between the biomass and its origin" ;
                rdfs:label "has origin" .
 
 
@@ -109,6 +118,7 @@ biom:hasOrigin rdf:type owl:ObjectProperty ;
 biom:hasSubGroup rdf:type owl:ObjectProperty ;
                  rdfs:domain biom:BiomassOrigin ;
                  rdfs:range biom:BiomassSubGroup ;
+                 rdfs:comment "Relationship between the biomass and its subgroup" ;
                  rdfs:label "has sub group" .
 
 
@@ -116,12 +126,14 @@ biom:hasSubGroup rdf:type owl:ObjectProperty ;
 biom:hasSubType rdf:type owl:ObjectProperty ;
                 rdfs:domain biom:BiomassOrigin ;
                 rdfs:range biom:BiomassSubType ;
+                rdfs:comment "Relationship between the biomass and its subType" ;
                 rdfs:label "has sub type" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm
 biom:hasTradingForm rdf:type owl:ObjectProperty ;
                     rdfs:range biom:TradingForm ;
+                    rdfs:comment "Relationship between the quantity of the biomass and it strading form" ;
                     rdfs:label "has trading form" .
 
 
@@ -129,31 +141,37 @@ biom:hasTradingForm rdf:type owl:ObjectProperty ;
 biom:inCurrency rdf:type owl:ObjectProperty ;
                 rdfs:domain saref:Price ;
                 rdfs:range <http://publications.europa.eu/resource/authority/Currency> ;
+                rdfs:comment "Relationship between the price and its currencies" ;
                 rdfs:label "in currency" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#produces
 biom:produces rdf:type owl:ObjectProperty ;
               rdfs:domain biom:Biomass ;
-              rdfs:range adapters:Energy .
+              rdfs:range adapters:Energy ;
+              rdfs:comment "Relationship between the Biomass and the enregy that it produces" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#quantity
 biom:quantity rdf:type owl:ObjectProperty ;
               rdfs:domain biom:Biomass ;
-              rdfs:range biom:Quantity .
+              rdfs:range biom:Quantity ;
+              rdfs:comment "Relationship between the Biomass and its quantity" ;
+              rdfs:label "quantity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber
 biom:quantityPerCaliber rdf:type owl:ObjectProperty ;
                         rdfs:domain biom:SoldPerGroup ;
                         rdfs:range biom:SoldPerCaliber ;
+                        rdfs:comment "Relationship between the sold quantity per group and its related Caliber" ;
                         rdfs:label "quantity per caliber" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#relatedTo
 biom:relatedTo rdf:type owl:ObjectProperty ;
                rdfs:range biom:BiomassSubGroup ;
+               rdfs:comment "Relationship between the quantity per group and the quantity per sold and its and its subgroup" ;
                rdfs:label "related to" .
 
 
@@ -161,6 +179,7 @@ biom:relatedTo rdf:type owl:ObjectProperty ;
 biom:soldQuantityPerGroup rdf:type owl:ObjectProperty ;
                           rdfs:domain biom:SoldQuantity ;
                           rdfs:range biom:SoldPerGroup ;
+                          rdfs:comment "A relationship between a sold quantity and its groups" ;
                           rdfs:label "sold quantity per group" .
 
 
@@ -168,13 +187,15 @@ biom:soldQuantityPerGroup rdf:type owl:ObjectProperty ;
 saref:hasPrice rdf:type owl:ObjectProperty ;
                rdfs:domain adapters:Energy ;
                rdfs:range saref:Price ;
+               rdfs:comment "Relationship between the price and the energy" ;
                rdfs:label "has price" .
 
 
 ###  https://saref.etsi.org/core#isMeasuredIn
 saref:isMeasuredIn rdf:type owl:ObjectProperty ;
                    rdfs:domain saref:Measurement ;
-                   rdfs:range om:UnitOfMeasure ;
+                   rdfs:range saref:UnitOfMeasure ;
+                   rdfs:comment "Relationship between the measurement and its units" ;
                    rdfs:label "is measured in" .
 
 
@@ -182,6 +203,7 @@ saref:isMeasuredIn rdf:type owl:ObjectProperty ;
 saref:relatesToMeasurement rdf:type owl:ObjectProperty ;
                            rdfs:domain saref:Property ;
                            rdfs:range saref:Measurement ;
+                           rdfs:comment "A relationship between a property and the measurements it relates to" ;
                            rdfs:label "relates to measurement" .
 
 
@@ -189,16 +211,19 @@ saref:relatesToMeasurement rdf:type owl:ObjectProperty ;
 saref:relatesToProperty rdf:type owl:ObjectProperty ;
                         rdfs:domain saref:Measurement ;
                         rdfs:range saref:Property ;
+                        rdfs:comment "A relationship between a measurement and the property it relates to" ;
                         rdfs:label "relates to property" .
 
 
 ###  https://www.w3.org/ns/org#broader
 skos:broader rdf:type owl:ObjectProperty ;
+             rdfs:comment "To assert that one concept is broader in meaning (i.e. more general) than another" ;
              rdfs:label "broader" .
 
 
 ###  https://www.w3.org/ns/org#narrower
 skos:narrower rdf:type owl:ObjectProperty ;
+              rdfs:comment "Assert the inverse of the broader relationship, namely when one concept is narrower in meaning (i.e. more specific) than another." ;
               rdfs:label "narrower" .
 
 
@@ -209,30 +234,35 @@ skos:narrower rdf:type owl:ObjectProperty ;
 ###  https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore
 biom:avgSustainabilityScore rdf:type owl:DatatypeProperty ;
                             rdfs:range xsd:float ;
+                            rdfs:comment "The average sustainability of a biomass" ;
                             rdfs:label "avg sustainability score" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#dimension
 biom:dimension rdf:type owl:DatatypeProperty ;
                rdfs:domain biom:Biomass ;
-               rdfs:range xsd:string .
+               rdfs:range xsd:string ;
+               rdfs:comment "The dimension of a Biomass" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#hasDescription
 biom:hasDescription rdf:type owl:DatatypeProperty ;
                     rdfs:range xsd:string ;
+                    rdfs:comment "The description of a given entity" ;
                     rdfs:label "has description" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#hasId
 biom:hasId rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:string ;
+           rdfs:comment "The identifier of an entity" ;
            rdfs:label "has id" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#hasName
 biom:hasName rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:string ;
+             rdfs:comment "The name of an entity" ;
              rdfs:label "has name" .
 
 
@@ -240,6 +270,7 @@ biom:hasName rdf:type owl:DatatypeProperty ;
 biom:priceValue rdf:type owl:DatatypeProperty ;
                 rdfs:domain biom:BiomassEnergyPrice ;
                 rdfs:range xsd:float ;
+                rdfs:comment "The value of a price" ;
                 rdfs:label "price value" .
 
 
@@ -247,6 +278,7 @@ biom:priceValue rdf:type owl:DatatypeProperty ;
 biom:value rdf:type owl:DatatypeProperty ;
            rdfs:domain biom:Quantity ;
            rdfs:range xsd:float ;
+           rdfs:comment "The value of a quantity" ;
            rdfs:label "value" .
 
 
@@ -254,6 +286,7 @@ biom:value rdf:type owl:DatatypeProperty ;
 saref:hasTimeStamp rdf:type owl:DatatypeProperty ;
                    rdfs:domain saref:Measurement ;
                    rdfs:range xsd:dateTime ;
+                   rdfs:comment "The timestamp of a Measurement" ;
                    rdfs:label "has timestamp" .
 
 
@@ -261,6 +294,7 @@ saref:hasTimeStamp rdf:type owl:DatatypeProperty ;
 saref:hasValue rdf:type owl:DatatypeProperty ;
                rdfs:domain saref:Measurement ;
                rdfs:range xsd:float ;
+               rdfs:comment "The value of a measurement" ;
                rdfs:label "has value" .
 
 
@@ -270,21 +304,19 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 
 ###  http://publications.europa.eu/resource/authority/Currency
 <http://publications.europa.eu/resource/authority/Currency> rdf:type owl:Class ;
+                                                            rdfs:comment "The currency of the biomass energy price" ;
                                                             rdfs:label "Currency" .
-
-
-###  http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure
-om:UnitOfMeasure rdf:type owl:Class ;
-                 rdfs:label "Unit of Measure" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/adapters#Energy
 adapters:Energy rdf:type owl:Class ;
+                rdfs:comment "Refers to the energy that could be produced or used by a Biomass" ;
                 rdfs:label "Energy" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Aches
 biom:Aches rdf:type owl:Class ;
+           rdfs:comment "Ash is the residue after combustion. Biomass ash is naturally alkaline. Ash content is usually small for wood but can reach up to 20% in mass for some biomasses (see Table 9.6)." ;
            rdfs:label "Aches" .
 
 
@@ -295,7 +327,7 @@ biom:Biomass rdf:type owl:Class ;
                                owl:someValuesFrom adapters:Energy
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty biom:hasAshes ;
+                               owl:onProperty biom:hasAches ;
                                owl:someValuesFrom biom:Aches
                              ] ,
                              [ rdf:type owl:Restriction ;
@@ -314,12 +346,14 @@ biom:Biomass rdf:type owl:Class ;
                                owl:onProperty biom:quantity ;
                                owl:someValuesFrom biom:Quantity
                              ] ;
+             rdfs:comment "Biomass is organic, non-fossil material of biological origin (plants and animals) used as a raw material for production of biofuels." ;
              rdfs:label "Biomass" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice
 biom:BiomassEnergyPrice rdf:type owl:Class ;
                         rdfs:subClassOf saref:Price ;
+                        rdfs:comment "The amount of the  biomass energy price" ;
                         rdfs:label "Biomass Energy Price" .
 
 
@@ -329,6 +363,7 @@ biom:BiomassGroup rdf:type owl:Class ;
                                     owl:onProperty skos:narrower ;
                                     owl:someValuesFrom biom:BiomassSubGroup
                                   ] ;
+                  rdfs:comment "Determines the five main groups of biomass: Woody, Herbaceous, Fruit, Aquatic, Blends and mixtures" ;
                   rdfs:label "Biomass Group" .
 
 
@@ -350,6 +385,7 @@ biom:BiomassOrigin rdf:type owl:Class ;
                                      owl:onProperty biom:hasSubType ;
                                      owl:someValuesFrom biom:BiomassSubType
                                    ] ;
+                   rdfs:comment "Detremine the origin of the biomass, The origin is mainly composed by the group, the sub-group, the type and the sub-type" ;
                    rdfs:label "Biomass Origin" .
 
 
@@ -363,6 +399,7 @@ biom:BiomassSubGroup rdf:type owl:Class ;
                                        owl:onProperty skos:narrower ;
                                        owl:someValuesFrom biom:BiomassType
                                      ] ;
+                     rdfs:comment "Refers to the list sub-group of the biomass" ;
                      rdfs:label "Biomass Sub Group" .
 
 
@@ -372,6 +409,7 @@ biom:BiomassSubType rdf:type owl:Class ;
                                       owl:onProperty skos:broader ;
                                       owl:someValuesFrom biom:BiomassType
                                     ] ;
+                    rdfs:comment "Refers to the list of biomass sub-type origin" ;
                     rdfs:label "Biomass Sub Type" .
 
 
@@ -385,6 +423,7 @@ biom:BiomassType rdf:type owl:Class ;
                                    owl:onProperty skos:narrower ;
                                    owl:someValuesFrom biom:BiomassSubType
                                  ] ;
+                 rdfs:comment "Refers to the list of biomass type origin" ;
                  rdfs:label "Biomass Type" .
 
 
@@ -399,22 +438,26 @@ biom:BoughtPerGroup rdf:type owl:Class ;
                                       owl:onProperty biom:value ;
                                       owl:someValuesFrom xsd:float
                                     ] ;
+                    rdfs:comment "Refers to the  bought quantity of biomass per group" ;
                     rdfs:label "Bought Per Group" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Caliber
 biom:Caliber rdf:type owl:Class ;
+             rdfs:comment "The degree of quality or excellence of biomass quantity" ;
              rdfs:label "Caliber" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity
 biom:CurrentQuantity rdf:type owl:Class ;
                      rdfs:subClassOf biom:Quantity ;
+                     rdfs:comment "The current quantity biomass" ;
                      rdfs:label "Current Quantity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Humidity
 biom:Humidity rdf:type owl:Class ;
+              rdfs:comment "Refers to the humidity of a biomass" ;
               rdfs:label "Humidity" .
 
 
@@ -424,6 +467,7 @@ biom:Quantity rdf:type owl:Class ;
                                 owl:onProperty biom:value ;
                                 owl:someValuesFrom xsd:float
                               ] ;
+              rdfs:comment "The quantity of the biomass" ;
               rdfs:label "Quantity" .
 
 
@@ -437,6 +481,7 @@ biom:SoldPerCaliber rdf:type owl:Class ;
                                       owl:onProperty biom:hasTradingForm ;
                                       owl:someValuesFrom biom:TradingForm
                                     ] ;
+                    rdfs:comment "The sold quantity per caliber for a biomass" ;
                     rdfs:label "Sold Per Caliber" .
 
 
@@ -451,29 +496,34 @@ biom:SoldPerGroup rdf:type owl:Class ;
                                     owl:onProperty biom:value ;
                                     owl:someValuesFrom xsd:float
                                   ] ;
+                  rdfs:comment "The sold quantity per group for a biomass" ;
                   rdfs:label "Sold Per Group" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity
 biom:SoldQuantity rdf:type owl:Class ;
                   rdfs:subClassOf biom:Quantity ;
+                  rdfs:comment "The sold quantity of the biomass" ;
                   rdfs:label "Sold Quantity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity
 biom:TotalQuantity rdf:type owl:Class ;
                    rdfs:subClassOf biom:Quantity ;
+                   rdfs:comment "The total quantity of the biomass" ;
                    rdfs:label "Total Quantity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#TradingForm
 biom:TradingForm rdf:type owl:Class ;
+                 rdfs:comment "The trading form of a biomass" ;
                  rdfs:label "Trading Form" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity
 ship:BoughtQuantity rdf:type owl:Class ;
                     rdfs:subClassOf biom:Quantity ;
+                    rdfs:comment "The bought quantity of the biomass" ;
                     rdfs:label "Bought Quantity" .
 
 
@@ -483,17 +533,26 @@ saref:Measurement rdf:type owl:Class ;
                                     owl:onProperty saref:relatesToProperty ;
                                     owl:someValuesFrom saref:Property
                                   ] ;
+                  rdfs:comment "The measurement related to the energy produced or consumed by a biomass" ;
                   rdfs:label "Measurement" .
 
 
 ###  https://saref.etsi.org/core#Price
 saref:Price rdf:type owl:Class ;
+            rdfs:comment "The price of the biomass energy" ;
             rdfs:label "Price" .
 
 
 ###  https://saref.etsi.org/core#Property
 saref:Property rdf:type owl:Class ;
+               rdfs:comment "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature" ;
                rdfs:label "Property" .
+
+
+###  https://saref.etsi.org/core#UnitOfMeasure
+saref:UnitOfMeasure rdf:type owl:Class ;
+                    rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)." ;
+                    rdfs:label "Unit of Measure" .
 
 
 #################################################################
@@ -1709,12 +1768,12 @@ biom:WoodyBiomass rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/core#KilowattPerKg
 core:KilowattPerKg rdf:type owl:NamedIndividual ,
-                            om:UnitOfMeasure .
+                            saref:UnitOfMeasure .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg
 core:MegajoulePerKg rdf:type owl:NamedIndividual ,
-                             om:UnitOfMeasure .
+                             saref:UnitOfMeasure .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
