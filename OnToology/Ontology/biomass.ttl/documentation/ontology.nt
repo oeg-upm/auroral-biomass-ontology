@@ -41,129 +41,154 @@
 <https://auroral.iot.linkeddata.es/def/biomass#belongsToType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#belongsToType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
 <https://auroral.iot.linkeddata.es/def/biomass#belongsToType> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
+<https://auroral.iot.linkeddata.es/def/biomass#belongsToType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and its type" .
 <https://auroral.iot.linkeddata.es/def/biomass#belongsToType> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to type" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup
 <https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> .
 <https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup> .
+<https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and the quantity per group" .
 <https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#label> "bought quantity per group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#consumes
 <https://auroral.iot.linkeddata.es/def/biomass#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#consumes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#consumes> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+<https://auroral.iot.linkeddata.es/def/biomass#consumes> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the Biomass and the energy that it consumes" .
+<https://auroral.iot.linkeddata.es/def/biomass#consumes> <http://www.w3.org/2000/01/rdf-schema#label> "consumes" .
 # 
-# https://auroral.iot.linkeddata.es/def/biomass#hasAshes
-<https://auroral.iot.linkeddata.es/def/biomass#hasAshes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://auroral.iot.linkeddata.es/def/biomass#hasAshes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
-<https://auroral.iot.linkeddata.es/def/biomass#hasAshes> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#Aches> .
-<https://auroral.iot.linkeddata.es/def/biomass#hasAshes> <http://www.w3.org/2000/01/rdf-schema#label> "has ashes" .
+# https://auroral.iot.linkeddata.es/def/biomass#hasAches
+<https://auroral.iot.linkeddata.es/def/biomass#hasAches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasAches> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasAches> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#Aches> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasAches> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and the aches" .
+<https://auroral.iot.linkeddata.es/def/biomass#hasAches> <http://www.w3.org/2000/01/rdf-schema#label> "has aches" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasCaliber
 <https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#Caliber> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass quantity and its caliber" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasCaliber> <http://www.w3.org/2000/01/rdf-schema#label> "has caliber" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasGroup
 <https://auroral.iot.linkeddata.es/def/biomass#hasGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and the its groups" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasHumidity
 <https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#Humidity> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and its humidity" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "has humidity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasOrigin
 <https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and its origin" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "has origin" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and its subgroup" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has sub group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasSubType
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasSubType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the biomass and its subType" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> <http://www.w3.org/2000/01/rdf-schema#label> "has sub type" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm
 <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#TradingForm> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the quantity of the biomass and it strading form" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> <http://www.w3.org/2000/01/rdf-schema#label> "has trading form" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#inCurrency
 <https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Price> .
 <https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://publications.europa.eu/resource/authority/Currency> .
+<https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the price and its currencies" .
 <https://auroral.iot.linkeddata.es/def/biomass#inCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "in currency" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#produces
 <https://auroral.iot.linkeddata.es/def/biomass#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#produces> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
+<https://auroral.iot.linkeddata.es/def/biomass#produces> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the Biomass and the enregy that it produces" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#quantity
 <https://auroral.iot.linkeddata.es/def/biomass#quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#quantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#quantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#Quantity> .
+<https://auroral.iot.linkeddata.es/def/biomass#quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the Biomass and its quantity" .
+<https://auroral.iot.linkeddata.es/def/biomass#quantity> <http://www.w3.org/2000/01/rdf-schema#label> "quantity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber
 <https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup> .
 <https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber> .
+<https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the sold quantity per group and its related Caliber" .
 <https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber> <http://www.w3.org/2000/01/rdf-schema#label> "quantity per caliber" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#relatedTo
 <https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
+<https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the quantity per group and the quantity per sold and its and its subgroup" .
 <https://auroral.iot.linkeddata.es/def/biomass#relatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "related to" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup
 <https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> .
 <https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup> .
+<https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a sold quantity and its groups" .
 <https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup> <http://www.w3.org/2000/01/rdf-schema#label> "sold quantity per group" .
 # 
 # https://saref.etsi.org/core#hasPrice
 <https://saref.etsi.org/core#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/adapters#Energy> .
 <https://saref.etsi.org/core#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Price> .
+<https://saref.etsi.org/core#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the price and the energy" .
 <https://saref.etsi.org/core#hasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "has price" .
 # 
 # https://saref.etsi.org/core#isMeasuredIn
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
-<https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure> .
+<https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#UnitOfMeasure> .
+<https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the measurement and its units" .
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in" .
 # 
 # https://saref.etsi.org/core#relatesToMeasurement
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Property> .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Measurement> .
+<https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a property and the measurements it relates to" .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "relates to measurement" .
 # 
 # https://saref.etsi.org/core#relatesToProperty
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Property> .
+<https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a measurement and the property it relates to" .
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relates to property" .
 # 
 # https://www.w3.org/ns/org#broader
 <https://www.w3.org/ns/org#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/ns/org#broader> <http://www.w3.org/2000/01/rdf-schema#comment> "To assert that one concept is broader in meaning (i.e. more general) than another" .
 <https://www.w3.org/ns/org#broader> <http://www.w3.org/2000/01/rdf-schema#label> "broader" .
 # 
 # https://www.w3.org/ns/org#narrower
 <https://www.w3.org/ns/org#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/ns/org#narrower> <http://www.w3.org/2000/01/rdf-schema#comment> "Assert the inverse of the broader relationship, namely when one concept is narrower in meaning (i.e. more specific) than another." .
 <https://www.w3.org/ns/org#narrower> <http://www.w3.org/2000/01/rdf-schema#label> "narrower" .
 # 
 # 
@@ -178,50 +203,59 @@
 # https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore
 <https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore> <http://www.w3.org/2000/01/rdf-schema#comment> "The average sustainability of a biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore> <http://www.w3.org/2000/01/rdf-schema#label> "avg sustainability score" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#dimension
 <https://auroral.iot.linkeddata.es/def/biomass#dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#dimension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Biomass> .
 <https://auroral.iot.linkeddata.es/def/biomass#dimension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/biomass#dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "The dimension of a Biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasDescription
 <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The description of a given entity" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasId
 <https://auroral.iot.linkeddata.es/def/biomass#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasId> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of an entity" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasId> <http://www.w3.org/2000/01/rdf-schema#label> "has id" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#hasName
 <https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an entity" .
 <https://auroral.iot.linkeddata.es/def/biomass#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#priceValue
 <https://auroral.iot.linkeddata.es/def/biomass#priceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#priceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> .
 <https://auroral.iot.linkeddata.es/def/biomass#priceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://auroral.iot.linkeddata.es/def/biomass#priceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of a price" .
 <https://auroral.iot.linkeddata.es/def/biomass#priceValue> <http://www.w3.org/2000/01/rdf-schema#label> "price value" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#value
 <https://auroral.iot.linkeddata.es/def/biomass#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/biomass#value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/biomass#Quantity> .
 <https://auroral.iot.linkeddata.es/def/biomass#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://auroral.iot.linkeddata.es/def/biomass#value> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of a quantity" .
 <https://auroral.iot.linkeddata.es/def/biomass#value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
 # 
 # https://saref.etsi.org/core#hasTimeStamp
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp of a Measurement" .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "has timestamp" .
 # 
 # https://saref.etsi.org/core#hasValue
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of a measurement" .
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
 # 
 # 
@@ -235,18 +269,17 @@
 # 
 # http://publications.europa.eu/resource/authority/Currency
 <http://publications.europa.eu/resource/authority/Currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://publications.europa.eu/resource/authority/Currency> <http://www.w3.org/2000/01/rdf-schema#comment> "The currency of the biomass energy price" .
 <http://publications.europa.eu/resource/authority/Currency> <http://www.w3.org/2000/01/rdf-schema#label> "Currency" .
-# 
-# http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure
-<http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of Measure" .
 # 
 # https://auroral.iot.linkeddata.es/def/adapters#Energy
 <https://auroral.iot.linkeddata.es/def/adapters#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/adapters#Energy> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the energy that could be produced or used by a Biomass" .
 <https://auroral.iot.linkeddata.es/def/adapters#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Aches
 <https://auroral.iot.linkeddata.es/def/biomass#Aches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/biomass#Aches> <http://www.w3.org/2000/01/rdf-schema#comment> "Ash is the residue after combustion. Biomass ash is naturally alkaline. Ash content is usually small for wood but can reach up to 20% in mass for some biomasses (see Table 9.6)." .
 <https://auroral.iot.linkeddata.es/def/biomass#Aches> <http://www.w3.org/2000/01/rdf-schema#label> "Aches" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Biomass
@@ -257,7 +290,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkedd
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/biomass#Biomass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
 _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#Aches> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#hasAshes> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#hasAches> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/biomass#Biomass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
 _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#Humidity> .
@@ -275,11 +308,13 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#Quantity> .
 _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#quantity> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#Biomass> <http://www.w3.org/2000/01/rdf-schema#comment> "Biomass is organic, non-fossil material of biological origin (plants and animals) used as a raw material for production of biofuels." .
 <https://auroral.iot.linkeddata.es/def/biomass#Biomass> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#Price> .
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of the  biomass energy price" .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Energy Price" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup
@@ -288,6 +323,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/org#narrower> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines the five main groups of biomass: Woody, Herbaceous, Fruit, Aquatic, Blends and mixtures" .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin
@@ -308,6 +344,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#hasSubType> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Detremine the origin of the biomass, The origin is mainly composed by the group, the sub-group, the type and the sub-type" .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Origin" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup
@@ -320,6 +357,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 _:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/org#narrower> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the list sub-group of the biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Sub Group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType
@@ -328,6 +366,7 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> .
 _:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/org#broader> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the list of biomass sub-type origin" .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Sub Type" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BiomassType
@@ -340,6 +379,7 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType> .
 _:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/org#narrower> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#BiomassType> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the list of biomass type origin" .
 <https://auroral.iot.linkeddata.es/def/biomass#BiomassType> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Type" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup
@@ -353,19 +393,23 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
 _:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#value> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the  bought quantity of biomass per group" .
 <https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Bought Per Group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Caliber
 <https://auroral.iot.linkeddata.es/def/biomass#Caliber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/biomass#Caliber> <http://www.w3.org/2000/01/rdf-schema#comment> "The degree of quality or excellence of biomass quantity" .
 <https://auroral.iot.linkeddata.es/def/biomass#Caliber> <http://www.w3.org/2000/01/rdf-schema#label> "Caliber" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity
 <https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/biomass#Quantity> .
+<https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The current quantity biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "Current Quantity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Humidity
 <https://auroral.iot.linkeddata.es/def/biomass#Humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/biomass#Humidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the humidity of a biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#Humidity> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#Quantity
@@ -374,6 +418,7 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
 _:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#value> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#Quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity of the biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#Quantity> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber
@@ -386,6 +431,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/biomass#TradingForm> .
 _:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber> <http://www.w3.org/2000/01/rdf-schema#comment> "The sold quantity per caliber for a biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber> <http://www.w3.org/2000/01/rdf-schema#label> "Sold Per Caliber" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup
@@ -399,25 +445,30 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
 _:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/biomass#value> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "The sold quantity per group for a biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Sold Per Group" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity
 <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/biomass#Quantity> .
+<https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The sold quantity of the biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "Sold Quantity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity
 <https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/biomass#Quantity> .
+<https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The total quantity of the biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "Total Quantity" .
 # 
 # https://auroral.iot.linkeddata.es/def/biomass#TradingForm
 <https://auroral.iot.linkeddata.es/def/biomass#TradingForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/biomass#TradingForm> <http://www.w3.org/2000/01/rdf-schema#comment> "The trading form of a biomass" .
 <https://auroral.iot.linkeddata.es/def/biomass#TradingForm> <http://www.w3.org/2000/01/rdf-schema#label> "Trading Form" .
 # 
 # https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity
 <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/biomass#Quantity> .
+<https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The bought quantity of the biomass" .
 <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "Bought Quantity" .
 # 
 # https://saref.etsi.org/core#Measurement
@@ -426,15 +477,23 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core#Property> .
 _:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#relatesToProperty> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "The measurement related to the energy produced or consumed by a biomass" .
 <https://saref.etsi.org/core#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
 # 
 # https://saref.etsi.org/core#Price
 <https://saref.etsi.org/core#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#Price> <http://www.w3.org/2000/01/rdf-schema#comment> "The price of the biomass energy" .
 <https://saref.etsi.org/core#Price> <http://www.w3.org/2000/01/rdf-schema#label> "Price" .
 # 
 # https://saref.etsi.org/core#Property
 <https://saref.etsi.org/core#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature" .
 <https://saref.etsi.org/core#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
+# 
+# https://saref.etsi.org/core#UnitOfMeasure
+<https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)." .
+<https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of Measure" .
 # 
 # 
 # 
@@ -1478,10 +1537,10 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://auroral.iot.linkeddata.es/def/core#KilowattPerKg
 <https://auroral.iot.linkeddata.es/def/core#KilowattPerKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#KilowattPerKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure> .
+<https://auroral.iot.linkeddata.es/def/core#KilowattPerKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg
 <https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure> .
+<https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

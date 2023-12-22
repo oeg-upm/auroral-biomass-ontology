@@ -105,7 +105,7 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAshes"
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAches"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches"
@@ -225,6 +225,9 @@
 }, {
   "@id" : "http://publications.europa.eu/resource/authority/Currency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The currency of the biomass energy price"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Currency"
   } ]
@@ -241,14 +244,11 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Unit of Measure"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the energy that could be produced or used by a Biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Energy"
   } ]
@@ -290,6 +290,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ash is the residue after combustion. Biomass ash is naturally alkaline. Ash content is usually small for wood but can reach up to 20% in mass for some biomasses (see Table 9.6)."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Aches"
   } ]
@@ -425,6 +428,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Biomass is organic, non-fossil material of biological origin (plants and animals) used as a raw material for production of biofuels."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass"
   } ],
@@ -444,6 +450,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The amount of the  biomass energy price"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Energy Price"
   } ],
@@ -453,6 +462,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Determines the five main groups of biomass: Woody, Herbaceous, Fruit, Aquatic, Blends and mixtures"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Group"
   } ],
@@ -462,6 +474,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Detremine the origin of the biomass, The origin is mainly composed by the group, the sub-group, the type and the sub-type"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Origin"
   } ],
@@ -477,6 +492,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the list sub-group of the biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Sub Group"
   } ],
@@ -488,6 +506,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the list of biomass sub-type origin"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Sub Type"
   } ],
@@ -497,6 +518,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the list of biomass type origin"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Biomass Type"
   } ],
@@ -811,6 +835,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the  bought quantity of biomass per group"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Bought Per Group"
   } ],
@@ -969,6 +996,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Caliber",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The degree of quality or excellence of biomass quantity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Caliber"
   } ]
@@ -1259,6 +1289,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The current quantity biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Current Quantity"
   } ],
@@ -1486,6 +1519,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Humidity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the humidity of a biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Humidity"
   } ]
@@ -1755,6 +1791,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The quantity of the biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Quantity"
   } ],
@@ -1939,6 +1978,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The sold quantity per caliber for a biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Sold Per Caliber"
   } ],
@@ -1950,6 +1992,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The sold quantity per group for a biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Sold Per Group"
   } ],
@@ -1961,6 +2006,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The sold quantity of the biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Sold Quantity"
   } ],
@@ -2127,6 +2175,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The total quantity of the biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Total Quantity"
   } ],
@@ -2136,6 +2187,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#TradingForm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The trading form of a biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Trading Form"
   } ]
@@ -2366,6 +2420,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The average sustainability of a biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "avg sustainability score"
   } ],
@@ -2375,6 +2432,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#belongsToType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and its type"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"
   } ],
@@ -2387,6 +2447,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and the quantity per group"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
   } ],
@@ -2399,8 +2462,14 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#consumes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the Biomass and the energy that it consumes"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "consumes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
@@ -2408,6 +2477,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#dimension",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The dimension of a Biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
   } ],
@@ -2415,13 +2487,16 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAshes",
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasAches",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and the aches"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has ashes"
+    "@value" : "has aches"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Aches"
@@ -2429,6 +2504,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasCaliber",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass quantity and its caliber"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber"
   } ],
@@ -2441,6 +2519,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The description of a given entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has description"
   } ],
@@ -2450,6 +2531,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and the its groups"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"
   } ],
@@ -2462,6 +2546,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasHumidity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and its humidity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
   } ],
@@ -2474,6 +2561,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has id"
   } ],
@@ -2483,6 +2573,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has name"
   } ],
@@ -2492,6 +2585,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasOrigin",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and its origin"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
   } ],
@@ -2504,6 +2600,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and its subgroup"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"
   } ],
@@ -2516,6 +2615,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasSubType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the biomass and its subType"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin"
   } ],
@@ -2528,6 +2630,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the quantity of the biomass and it strading form"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has trading form"
   } ],
@@ -2537,6 +2642,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#inCurrency",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the price and its currencies"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Price"
   } ],
@@ -2549,6 +2657,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#priceValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The value of a price"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice"
   } ],
@@ -2561,6 +2672,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#produces",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the Biomass and the enregy that it produces"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
   } ],
@@ -2570,8 +2684,14 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the Biomass and its quantity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Biomass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity"
@@ -2579,6 +2699,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the sold quantity per group and its related Caliber"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup"
   } ],
@@ -2591,6 +2714,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#relatedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the quantity per group and the quantity per sold and its and its subgroup"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "related to"
   } ],
@@ -2600,6 +2726,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a sold quantity and its groups"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity"
   } ],
@@ -2612,6 +2741,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/biomass#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The value of a quantity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Quantity"
   } ],
@@ -2625,17 +2757,20 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/core#KilowattPerKg",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#MegajoulePerKg",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The bought quantity of the biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Bought Quantity"
   } ],
@@ -2645,6 +2780,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#Measurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The measurement related to the energy produced or consumed by a biomass"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Measurement"
   } ],
@@ -2654,18 +2792,36 @@
 }, {
   "@id" : "https://saref.etsi.org/core#Price",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The price of the biomass energy"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Price"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#Property",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Property"
   } ]
 }, {
+  "@id" : "https://saref.etsi.org/core#UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unit of Measure"
+  } ]
+}, {
   "@id" : "https://saref.etsi.org/core#hasPrice",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the price and the energy"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Energy"
   } ],
@@ -2678,6 +2834,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasTimeStamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The timestamp of a Measurement"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
@@ -2690,6 +2849,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The value of a measurement"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
@@ -2702,6 +2864,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#isMeasuredIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relationship between the measurement and its units"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
@@ -2709,11 +2874,14 @@
     "@value" : "is measured in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
+    "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#relatesToMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a property and the measurements it relates to"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Property"
   } ],
@@ -2726,6 +2894,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#relatesToProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a measurement and the property it relates to"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
@@ -2738,12 +2909,18 @@
 }, {
   "@id" : "https://www.w3.org/ns/org#broader",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "To assert that one concept is broader in meaning (i.e. more general) than another"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "broader"
   } ]
 }, {
   "@id" : "https://www.w3.org/ns/org#narrower",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Assert the inverse of the broader relationship, namely when one concept is narrower in meaning (i.e. more specific) than another."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "narrower"
   } ]

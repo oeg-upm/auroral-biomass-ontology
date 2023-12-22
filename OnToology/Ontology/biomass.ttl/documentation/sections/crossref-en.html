@@ -99,8 +99,7 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/biomass#TradingForm">Trading Form</a>
       </li>
       <li>
-         <a href="#http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
-            title="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">Unit of Measure</a>
+         <a href="#https://saref.etsi.org/core#UnitOfMeasure" title="https://saref.etsi.org/core#UnitOfMeasure">Unit of Measure</a>
       </li>
    </ul>
    <div class="entity" id="Aches">
@@ -110,11 +109,14 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Aches</p>
+      <div class="comment">
+         <span class="markdown">Ash is the residue after combustion. Biomass ash is naturally alkaline. Ash content is usually small for wood but can reach up to 20% in mass for some biomasses (see Table 9.6).</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasAshes"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasAshes">has ashes</a>
+            <a href="#hasAches"
+               title="https://auroral.iot.linkeddata.es/def/biomass#hasAches">has aches</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -126,6 +128,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Biomass</p>
+      <div class="comment">
+         <span class="markdown">Biomass is organic, non-fossil material of biological origin (plants and animals) used as a raw material for production of biofuels.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -135,8 +140,8 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/biomass#consumes">consumes</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#dimension"
                title="https://auroral.iot.linkeddata.es/def/biomass#dimension">dimension</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAshes"
-               title="https://auroral.iot.linkeddata.es/def/biomass#hasAshes">has ashes</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAches"
+               title="https://auroral.iot.linkeddata.es/def/biomass#hasAches">has aches</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasHumidity"
                title="https://auroral.iot.linkeddata.es/def/biomass#hasHumidity">has humidity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOrigin"
@@ -156,6 +161,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BiomassEnergyPrice</p>
+      <div class="comment">
+         <span class="markdown">The amount of the  biomass energy price</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -185,6 +193,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BiomassGroup</p>
+      <div class="comment">
+         <span class="markdown">Determines the five main groups of biomass: Woody, Herbaceous, Fruit, Aquatic, Blends and mixtures</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -217,6 +228,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BiomassOrigin</p>
+      <div class="comment">
+         <span class="markdown">Detremine the origin of the biomass, The origin is mainly composed by the group, the sub-group, the type and the sub-type</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -247,6 +261,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BiomassSubGroup</p>
+      <div class="comment">
+         <span class="markdown">Refers to the list sub-group of the biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -305,6 +322,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BiomassSubType</p>
+      <div class="comment">
+         <span class="markdown">Refers to the list of biomass sub-type origin</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -545,6 +565,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BiomassType</p>
+      <div class="comment">
+         <span class="markdown">Refers to the list of biomass type origin</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -649,6 +672,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#BoughtPerGroup</p>
+      <div class="comment">
+         <span class="markdown">Refers to the  bought quantity of biomass per group</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -667,6 +693,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity</p>
+      <div class="comment">
+         <span class="markdown">The bought quantity of the biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -689,6 +718,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Caliber</p>
+      <div class="comment">
+         <span class="markdown">The degree of quality or excellence of biomass quantity</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -705,6 +737,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> http://publications.europa.eu/resource/authority/Currency</p>
+      <div class="comment">
+         <span class="markdown">The currency of the biomass energy price</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -721,6 +756,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#CurrentQuantity</p>
+      <div class="comment">
+         <span class="markdown">The current quantity biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -737,6 +775,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/adapters#Energy</p>
+      <div class="comment">
+         <span class="markdown">Refers to the energy that could be produced or used by a Biomass</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
@@ -768,6 +809,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Humidity</p>
+      <div class="comment">
+         <span class="markdown">Refers to the humidity of a biomass</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -784,6 +828,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#Measurement</p>
+      <div class="comment">
+         <span class="markdown">The measurement related to the energy produced or consumed by a biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -809,6 +856,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#Price</p>
+      <div class="comment">
+         <span class="markdown">The price of the biomass energy</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -836,6 +886,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#Property</p>
+      <div class="comment">
+         <span class="markdown">A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
@@ -856,6 +909,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#Quantity</p>
+      <div class="comment">
+         <span class="markdown">The quantity of the biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -892,6 +948,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#SoldPerCaliber</p>
+      <div class="comment">
+         <span class="markdown">The sold quantity per caliber for a biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -916,6 +975,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#SoldPerGroup</p>
+      <div class="comment">
+         <span class="markdown">The sold quantity per group for a biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -940,6 +1002,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#SoldQuantity</p>
+      <div class="comment">
+         <span class="markdown">The sold quantity of the biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -962,6 +1027,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#TotalQuantity</p>
+      <div class="comment">
+         <span class="markdown">The total quantity of the biomass</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -978,6 +1046,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#TradingForm</p>
+      <div class="comment">
+         <span class="markdown">The trading form of a biomass</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -987,13 +1058,16 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">
+   <div class="entity" id="https://saref.etsi.org/core#UnitOfMeasure">
       <h3>Unit of Measure<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure</p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#UnitOfMeasure</p>
+      <div class="comment">
+         <span class="markdown">The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called "watt". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -1028,13 +1102,11 @@ This section provides details for each class and property defined by The AURORAL
       </li>
       <li>
          <a href="#consumes"
-            title="https://auroral.iot.linkeddata.es/def/biomass#consumes">
-            <span>consumes</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/biomass#consumes">consumes</a>
       </li>
       <li>
-         <a href="#hasAshes"
-            title="https://auroral.iot.linkeddata.es/def/biomass#hasAshes">has ashes</a>
+         <a href="#hasAches"
+            title="https://auroral.iot.linkeddata.es/def/biomass#hasAches">has aches</a>
       </li>
       <li>
          <a href="#hasCaliber"
@@ -1085,9 +1157,7 @@ This section provides details for each class and property defined by The AURORAL
       </li>
       <li>
          <a href="#quantity"
-            title="https://auroral.iot.linkeddata.es/def/biomass#quantity">
-            <span>quantity</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/biomass#quantity">quantity</a>
       </li>
       <li>
          <a href="#quantityPerCaliber"
@@ -1115,6 +1185,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#belongsToType</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and its type</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1139,6 +1212,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#boughtQuantityPerGroup</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and the quantity per group</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1163,6 +1239,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://www.w3.org/ns/org#broader</p>
+      <div class="comment">
+         <span class="markdown">To assert that one concept is broader in meaning (i.e. more general) than another</span>
+      </div>
    </div>
    <div class="entity" id="consumes">
       <h3>consumes<sup class="type-op" title="object property">op</sup>
@@ -1171,6 +1250,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#consumes</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the Biomass and the energy that it consumes</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1188,13 +1270,16 @@ This section provides details for each class and property defined by The AURORAL
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasAshes">
-      <h3>has ashes<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasAches">
+      <h3>has aches<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasAshes</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasAches</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and the aches</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1219,6 +1304,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasCaliber</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass quantity and its caliber</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1243,6 +1331,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasGroup</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and the its groups</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1267,6 +1358,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasHumidity</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and its humidity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1291,6 +1385,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasOrigin</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and its origin</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1315,6 +1412,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#hasPrice</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the price and the energy</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1338,6 +1438,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasSubGroup</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and its subgroup</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1362,6 +1465,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasSubType</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the biomass and its subType</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1386,6 +1492,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasTradingForm</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the quantity of the biomass and it strading form</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -1404,6 +1513,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#inCurrency</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the price and its currencies</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1427,6 +1539,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#isMeasuredIn</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the measurement and its units</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1436,8 +1551,7 @@ This section provides details for each class and property defined by The AURORAL
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
-                  title="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">Unit of Measure</a>
+               <a href="#https://saref.etsi.org/core#UnitOfMeasure" title="https://saref.etsi.org/core#UnitOfMeasure">Unit of Measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1450,6 +1564,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://www.w3.org/ns/org#narrower</p>
+      <div class="comment">
+         <span class="markdown">Assert the inverse of the broader relationship, namely when one concept is narrower in meaning (i.e. more specific) than another.</span>
+      </div>
    </div>
    <div class="entity" id="produces">
       <h3>produces<sup class="type-op" title="object property">op</sup>
@@ -1458,6 +1575,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#produces</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the Biomass and the enregy that it produces</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1482,6 +1602,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#quantity</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the Biomass and its quantity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1506,6 +1629,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#quantityPerCaliber</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the sold quantity per group and its related Caliber</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1530,6 +1656,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#relatedTo</p>
+      <div class="comment">
+         <span class="markdown">Relationship between the quantity per group and the quantity per sold and its and its subgroup</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -1548,6 +1677,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#relatesToMeasurement</p>
+      <div class="comment">
+         <span class="markdown">A relationship between a property and the measurements it relates to</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1570,6 +1702,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#relatesToProperty</p>
+      <div class="comment">
+         <span class="markdown">A relationship between a measurement and the property it relates to</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1592,6 +1727,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#soldQuantityPerGroup</p>
+      <div class="comment">
+         <span class="markdown">A relationship between a sold quantity and its groups</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1658,6 +1796,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#avgSustainabilityScore</p>
+      <div class="comment">
+         <span class="markdown">The average sustainability of a biomass</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -1676,6 +1817,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#dimension</p>
+      <div class="comment">
+         <span class="markdown">The dimension of a Biomass</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1700,6 +1844,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasDescription</p>
+      <div class="comment">
+         <span class="markdown">The description of a given entity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -1718,6 +1865,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasId</p>
+      <div class="comment">
+         <span class="markdown">The identifier of an entity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -1736,6 +1886,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#hasName</p>
+      <div class="comment">
+         <span class="markdown">The name of an entity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has range</dt>
@@ -1754,6 +1907,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#hasTimeStamp</p>
+      <div class="comment">
+         <span class="markdown">The timestamp of a Measurement</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1777,6 +1933,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#hasValue</p>
+      <div class="comment">
+         <span class="markdown">The value of a measurement</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1800,6 +1959,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#priceValue</p>
+      <div class="comment">
+         <span class="markdown">The value of a price</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1824,6 +1986,9 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/biomass#value</p>
+      <div class="comment">
+         <span class="markdown">The value of a quantity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -5804,8 +5969,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
-               title="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">Unit of Measure</a>
+            <a href="#https://saref.etsi.org/core#UnitOfMeasure" title="https://saref.etsi.org/core#UnitOfMeasure">Unit of Measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -6077,8 +6241,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure"
-               title="http://www.ontology-of-units-of-measure.org/page/om-2/UnitOfMeasure">Unit of Measure</a>
+            <a href="#https://saref.etsi.org/core#UnitOfMeasure" title="https://saref.etsi.org/core#UnitOfMeasure">Unit of Measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
